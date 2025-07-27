@@ -1,7 +1,33 @@
-export default function Extraordinary() {
+import React, { useState } from "react";
+import dot from "../assets/Dot Background.svg";
+
+const faqs = [
+    { question: "Who is this cohort for?", answer: "This cohort is for ambitious individuals looking to master communication for leadership and influence." },
+    { question: "What makes YC different from other public speaking or communication courses?", answer: "YC focuses on real-world leadership communication—not just English or public speaking." },
+    { question: "I’m not very confident on camera or in English. Can I still join?", answer: "Absolutely. YC is built to transform your confidence step-by-step." },
+    { question: "How much time do I need to commit each week?", answer: "3-4 hours, including sessions and assignments." },
+    { question: "What happens if I miss a session?", answer: "You’ll get access to replays. Live participation is encouraged but not mandatory." },
+    { question: "Will I get personal feedback on my content, voice, or business?", answer: "Yes. We offer personalized coaching during the cohort." },
+    { question: "Is this only for people who want to start a business?", answer: "Not at all. It’s for anyone looking to lead, present, or influence better." },
+    { question: "What’s the price and refund policy?", answer: "Pricing is transparent. If you’re not satisfied after two sessions, we offer a full refund." },
+    { question: "Can I speak to someone before joining?", answer: "Yes. You can book a call with our team before joining." },
+    { question: "Will I get a certificate after completing YC?", answer: "Yes. But what matters more is how the world responds when you speak." }
+];
+
+export default function FAQSection() {
+    const [openIndex, setOpenIndex] = useState(null);
+
+    const toggleFAQ = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
     return (
-        <div className="bg-black flex items-center justify-center pb-[152px] max-w-6xl mx-auto ">
-            {/* <div className="absolute bottom-110 right-0 opacity-80">
+        <section className="relative pb-[158px]">
+            <div className="absolute grid-svg  bottom-[-162px] left-[-320px] !z-1">
+                <img src={dot} alt="" width="" height="" />
+            </div>
+
+            <div className="absolute bottom-[-106px] right-20 !z-1">
                 <svg width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.6">
                         <path opacity="0.5" d="M152.425 109.357V108.357H151.425V109.357H152.425ZM147.091 374.492C147.091 377.437 149.479 379.825 152.425 379.825C155.37 379.825 157.758 377.437 157.758 374.492C157.758 371.546 155.37 369.158 152.425 369.158C149.479 369.158 147.091 371.546 147.091 374.492ZM355.991 109.357V108.357H152.425V109.357V110.357H355.991V109.357ZM152.425 109.357H151.425V374.492H152.425H153.425V109.357H152.425Z" fill="url(#paint0_linear_313_3598)" />
@@ -39,24 +65,31 @@ export default function Extraordinary() {
                     </defs>
                 </svg>
 
-            </div> */}
-            <div className="text-center space-y-4">
-                <h2 className="">
-                    Extraordinary claims require extraordinary evidence.
-                </h2>
-
-                <div className="max-w-4xl mx-auto">
-                    <p>Only 2 - 3% of Indians are trained in vocal expression.Coincidentally, only 1 - 5% of Indians are actually rich. See the overlap?</p>
-                </div>
-
-                <div className="pt-2 max-w-4xl mx-auto">
-                    <p>It's not the vocal training that makes you rich —It's the ability to express, influence, and sell that separates the elite from the average.</p>
-                </div>
-
-                <p className="pt-2 max-w-4xl mx-auto">
-                    You master that, you print money.
-                </p>
             </div>
-        </div>
+
+            <div className="relative max-w-6xl mx-auto z-1">
+                <h2 className="text-center pb-12">FAQs</h2>
+                <div className="space-y-6">
+                    {faqs.map((faq, index) => (
+                        <div className="!border-b !border-white m-0" key={index}>
+                            <button
+                                onClick={() => toggleFAQ(index)}
+                                className="w-full text-left flex justify-between items-center !py-7 !px-0 focus:outline-none !shadow-none !rounded-none !bg-transparent"
+                            >
+                                <p className="">{faq.question}</p>
+                                <span className="!text-[30px] transform transition-transform duration-300">
+                                    {openIndex === index ? "−" : "+"}
+                                </span>
+                            </button>
+                            {openIndex === index && (
+                                <div className="mt-3 text-white/80 pb-7">
+                                    <p>{faq.answer}</p>
+                                </div>
+                            )}
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
     );
 }

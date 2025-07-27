@@ -3,7 +3,7 @@ import dot from "../assets/Dot Background.svg";
 
 export default function YCDifference() {
   return (
-    <div className="relative min-h-screen bg-black text-white px-8 py-18">
+    <div className="relative min-h-screen bg-black text-white pb-[152px] max-w-6xl mx-auto">
 
       <div className="absolute grid-svg !w-2/3 top-0 right-[-300px] !z-0">
                       <img src={dot} alt="" width="" height="" />

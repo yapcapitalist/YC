@@ -3,7 +3,7 @@ import Gurmeet from '../assets/Gurmeet.png'
 
 const TheManBehindYc = () => {
   return (
-    <section className="relative bg-black text-white py-12 px-6 md:px-16">
+    <section className="relative bg-black text-white px-6 md:px-16 pb-[158px]">
       <div className="absolute bottom-[256px] left-0">
         <svg width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g opacity="0.6">

@@ -47,7 +47,7 @@ const people = [
 
 export default function WhoThisIsFor() {
     return (
-        <section className="relative text-center px-6 py-16 text-white max-w-6xl mx-auto z-1">
+        <section className="relative text-center px-6 py-0 text-white max-w-6xl mx-auto z-1">
             <div className="absolute grid-svg !w-2/3 top-0 right-[-300px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>

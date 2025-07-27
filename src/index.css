@@ -51,7 +51,7 @@ p {
   color: #ffffff;
 }
 
-span {
+span, li {
   font-size: 14px;
 
 }
@@ -116,6 +116,27 @@ padding: 12px 24px;
     z-index: -1;
     overflow: hidden;
 }
+
+/* You can add this to your global CSS or Tailwind config via @layer utilities */
+.stacked-card {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.stacked-card.stacked {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+@layer utilities {
+  .stacked-card {
+    @apply opacity-0 translate-y-8 transition-all duration-500;
+  }
+  .stacked-card.stacked {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
 
 /* 
 

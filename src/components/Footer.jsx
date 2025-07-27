@@ -1,25 +1,27 @@
 import React from 'react';
+import yclogo from '../assets/YAAP_CAPITAL.svg'
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white px-6 md:px-12 pt-16 pb-8">
-      {/* Main Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 items-start gap-6">
-        {/* Left Contact Info */}
-        <div className="space-y-4">
-          <div className="inline-block bg-[#ffff00] text-black font-bold px-2 py-1 text-sm rounded">
-            YC
-          </div>
-          <div className="text-white text-sm">example@gmail.com</div>
-          <div className="text-white text-sm">+91 1234567890</div>
-        </div>
-
-        {/* Center Title */}
-        <div className="text-center">
-          <h2 className="text-2xl font-bold" style={{ color: '#ffff00' }}>
+    <footer className="bg-black text-white px-6 md:px-12 pb-8">
+      <div className="text-center">
+          <h2 className="pb-12">
             Contact Us
           </h2>
         </div>
+        
+      {/* Main Grid */}
+      <div className="max-w-6xl mx-auto flex justify-between items-start gap-6 pb-50">
+        {/* Left Contact Info */}
+        <div className="space-y-4">
+          <div className="relative w-11 rounded z-2">
+            <img src={yclogo} alt="" />
+          </div>
+          <p className="">example@gmail.com</p>
+          <p className="">+91 1234567890</p>
+        </div>
+
+        {/* Center Title */}
 
         {/* Right Policy Buttons */}
         <div className="flex flex-col items-end space-y-3 w-full md:w-auto">
@@ -53,12 +55,12 @@ const Footer = () => {
       </div>
 
       {/* Divider */}
-      <div className="w-full h-px bg-gray-800 my-8" />
+      {/* <div className="w-full h-px bg-gray-800 my-8" /> */}
 
       {/* Copyright */}
-      <div className="text-center text-xs text-gray-500">
+      <span className="flex justify-center align-center w-full text-center text-gray-500">
         © COPYRIGHT 2025 Gogrowth Labs PVT LTD.
-      </div>
+      </span>
     </footer>
   );
 };
