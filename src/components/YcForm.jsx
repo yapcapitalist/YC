@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-import booksmockup from '../Assets/Books.png';
+import booksmockup from '../assets/Books.png';
 
 export default function YCForm() {
     const [formData, setFormData] = useState({
