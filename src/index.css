@@ -1,14 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
-
-@font-face {
-  font-family: 'NewTitle';
-  src: url('src/assets/fonts/NewTitle-Variable.woff2') format('woff2'),
-       url('src/assets/fonts/NewTitle-Variable.woff') format('woff'),
-       url('src/assets/fonts/NewTitle-Variable.ttf') format('truetype');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.cdnfonts.com/css/satoshi');
 
 @import "tailwindcss";
 
@@ -28,29 +19,29 @@
   -moz-osx-font-smoothing: grayscale; */
 }
 
-h1{
+h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  font-family: 'NewTitle';
-  color: #ffff00;
+  font-family: "Montserrat", sans-serif;
+  color: #fefe00;
 }
 
-h2{
-  font-family: 'NewTitle';
+h2 {
+  font-family: "Montserrat", sans-serif;
   font-size: 2.875rem;
-  color: #ffff00;
-  font-weight:700;
+  color: #fefe00;
+  font-weight: 700;
 }
 
-h3{
-  font-family: 'NewTitle';
+h3 {
+  font-family: "Montserrat", sans-serif;
   font-size: 2.375rem;
-  color: #ffff00;
-  font-weight:700;
+  color: #fefe00;
+  font-weight: 700;
 }
 
-p{
-  font-family: 'Hanken Grotesk', sans-serif;
+p {
+  font-family: 'Satoshi', sans-serif;
   font-size: 1.375rem;
   font-weight: 400;
   color: #ffffff;
@@ -61,6 +52,14 @@ span {
 
 }
 
+h2 span {
+  font-size: 2.875rem;
+}
+
+p span {
+  font-size: 1.375rem;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -69,8 +68,44 @@ img {
 /* In your CSS file */
 .fill-available {
   width: -webkit-fill-available;
-  width: -moz-available; /* optional for Firefox */
+  width: -moz-available;
+  /* optional for Firefox */
 }
+
+.custom-border {
+  border: 4px solid #3B3B3B;
+  background: #000000;
+}
+
+.form-background {
+  background: #2B2B2B;
+}
+
+input,
+textarea {
+  border: 1px solid #4A4A00;
+}
+
+button {
+  color: #ffff00;
+  background-color: #000;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+padding: 12px 24px;
+  box-shadow:
+    0 -2px 4px rgba(255, 255, 0, 0.8),  /* bright yellow top glow */
+    0 1px 6px rgba(255, 255, 0, 0.2);   /* soft yellow bottom glow */
+  transition: box-shadow 0.3s ease;
+}
+
+.text-18 {
+  @apply text-base; /* closest: 16px */
+  font-size: 18px;
+}
+
 
 /* 
 

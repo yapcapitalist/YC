@@ -1,7 +1,7 @@
 export default function Extraordinary() {
     return (
-        <div className="min-h-screen bg-black flex items-center justify-center p-8">
-            <div className="absolute bottom-110 right-0 opacity-80">
+        <div className="bg-black flex items-center justify-center py-18 max-w-6xl mx-auto ">
+            {/* <div className="absolute bottom-110 right-0 opacity-80">
                 <svg width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.6">
                         <path opacity="0.5" d="M152.425 109.357V108.357H151.425V109.357H152.425ZM147.091 374.492C147.091 377.437 149.479 379.825 152.425 379.825C155.37 379.825 157.758 377.437 157.758 374.492C157.758 371.546 155.37 369.158 152.425 369.158C149.479 369.158 147.091 371.546 147.091 374.492ZM355.991 109.357V108.357H152.425V109.357V110.357H355.991V109.357ZM152.425 109.357H151.425V374.492H152.425H153.425V109.357H152.425Z" fill="url(#paint0_linear_313_3598)" />
@@ -39,33 +39,21 @@ export default function Extraordinary() {
                     </defs>
                 </svg>
 
-            </div>
-            <div className="max-w-4xl mx-auto text-center space-y-8">
-                {/* Main heading */}
-                <h2 className="" style={{ color: '#ffff00' }}>
+            </div> */}
+            <div className="text-center space-y-4">
+                <h2 className="">
                     Extraordinary claims require extraordinary evidence.
                 </h2>
 
-                {/* Statistics */}
-                <div className="">
-                    <p>Only 2 - 3% of Indians are trained in vocal expression.</p>
-                    <p>Coincidentally, only 1 - 5% of Indians are actually rich.</p>
+                <div className="max-w-4xl mx-auto">
+                    <p>Only 2 - 3% of Indians are trained in vocal expression.Coincidentally, only 1 - 5% of Indians are actually rich. See the overlap?</p>
                 </div>
 
-                {/* Question */}
-                <p className=" pt-2">
-                    See the overlap?
-                </p>
-
-                {/* Explanation */}
-                <div className="pt-2">
-                    <p>It's not the vocal training that makes you rich —</p>
-                    <p>It's the ability to express, influence, and sell</p>
-                    <p>that separates the elite from the average.</p>
+                <div className="pt-2 max-w-4xl mx-auto">
+                    <p>It's not the vocal training that makes you rich —It's the ability to express, influence, and sell that separates the elite from the average.</p>
                 </div>
 
-                {/* Call to action */}
-                <p className="pt-2">
+                <p className="pt-2 max-w-4xl mx-auto">
                     You master that, you print money.
                 </p>
             </div>

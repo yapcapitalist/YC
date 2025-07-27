@@ -3,11 +3,13 @@ import heroBrain from '../assets/hero-brain.svg';
 
 export default function Hero() {
   return (
-    <section className="bg-black text-white min-h-screen flex items-center justify-center px-4 py-20 relative">
+    <section className="relative bg-black text-white min-h-screen flex items-center justify-center px-4 py-20 pb-0 relative">
+
+    
       {/* Background Image Overlay if needed */}
       <img src={heroBrain} alt="" className="max-w-[800px] object-fill absolute top-[0px] left-1/2 -translate-x-1/2" />
 
-      <div className="max-w-3xl text-center z-10">
+      <div className="max-w-6xl text-center z-10">
         <h1 className="leading-tight mb-6">
           You are only as good as you <br />
           communicate
@@ -18,8 +20,8 @@ export default function Hero() {
           Founders, Professionals and Graduates.
         </p>
 
-        <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-yellow-500 transition duration-200 mt-[47px]">
-          Apply to join the YC Cohort
+        <button className="bg-yellow-400 text-black font-semibold !px-17 py-3 rounded-full shadow-lg hover:shadow-yellow-500 transition duration-200 mt-[47px]">
+          JOIN WAITLIST
         </button>
 
         <p className="text-sm text-white-600 font-semibold mt-[47px]">
@@ -37,6 +39,7 @@ export default function Hero() {
           </svg>
         </div>
       </div>
+      
     </section>
   );
 }
