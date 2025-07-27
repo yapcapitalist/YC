@@ -1,9 +1,15 @@
 import React from 'react';
+import dot from "../assets/Dot Background.svg";
 
 export default function YCDifference() {
   return (
-    <div className="min-h-screen bg-black text-white px-8 py-18">
-      <div className="max-w-6xl mx-auto">
+    <div className="relative min-h-screen bg-black text-white px-8 py-18">
+
+      <div className="absolute grid-svg !w-2/3 top-0 right-[-300px] !z-0">
+                      <img src={dot} alt="" width="" height="" />
+      </div>
+
+      <div className="relative max-w-6xl mx-auto z-10">
         {/* Title */}
         <h2 className="mb-12 text-center">
           The YC Difference
@@ -78,6 +84,7 @@ export default function YCDifference() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

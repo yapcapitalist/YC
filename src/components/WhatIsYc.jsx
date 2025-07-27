@@ -14,7 +14,7 @@ export default function WhatIsYC() {
 
     return (
         <div >
-            <section className="relative maincon container" style={{
+            <section className="relative maincon container pb-[158px]" style={{
                 maxWidth: 1200,
                 margin: "0 auto",
             }}>
@@ -64,6 +64,7 @@ export default function WhatIsYC() {
                     A 5-month creator program that gives you everything you need to succeed on social media. Learn how to make great content, grow your audience, and earn money doing what you love.        
                 </p>
 
+<div className="relative z-1">
                 {/* Main Video */}
                 <div className="main-video-container" style={{
                     width: "100%",
@@ -137,6 +138,8 @@ export default function WhatIsYC() {
                             </div>
                         ))}
                     </div>
+                </div>
+
                 </div>
 
                 {/* Animation Keyframes & Responsive Styles */}

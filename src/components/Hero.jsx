@@ -1,13 +1,17 @@
 import scroll from '../assets/Scroll.svg';
 import heroBrain from '../assets/hero-brain.svg';
+import dot from "../assets/Dot Background.svg";
+
 
 export default function Hero() {
   return (
-    <section className="relative bg-black text-white min-h-screen flex items-center justify-center px-4 py-20 pb-0 relative">
+    <section className="relative bg-black text-white min-h-screen flex items-center justify-center px-4 py-20 pb-0 relative overflow-hidden">
 
-    
-      {/* Background Image Overlay if needed */}
-      <img src={heroBrain} alt="" className="max-w-[800px] object-fill absolute top-[0px] left-1/2 -translate-x-1/2" />
+      <img src={heroBrain} alt="" className="max-w-[800px] object-fill absolute top-[0px] left-1/2 -translate-x-1/2 opacity-80 z-1" />
+
+      <div className="absolute grid-svg top0 right-[-368px] !z-0">
+        <img src={dot} alt="" width="" height="" />
+      </div>
 
       <div className="max-w-6xl text-center z-10">
         <h1 className="leading-tight mb-6">
@@ -20,11 +24,11 @@ export default function Hero() {
           Founders, Professionals and Graduates.
         </p>
 
-        <button className="bg-yellow-400 text-black font-semibold !px-17 py-3 rounded-full shadow-lg hover:shadow-yellow-500 transition duration-200 mt-[47px]">
+        <button className="bg-yellow-400 text-black font-semibold !px-17 py-3 rounded-full shadow-lg hover:shadow-yellow-500 transition duration-200 my-[36px]">
           JOIN WAITLIST
         </button>
 
-        <p className="text-sm text-white-600 font-semibold mt-[47px]">
+        <p className="text-sm text-white-600 font-semibold">
           20 Seats | Handpicked | No Fluff
         </p>
 
@@ -39,7 +43,7 @@ export default function Hero() {
           </svg>
         </div>
       </div>
-      
+
     </section>
   );
 }
