@@ -12,6 +12,7 @@ import YCForm from './components/YcForm.jsx'
 // import Curriculumn from './components/Curriculumn.jsx'
 // import YCContactFooter from './components/Footer.jsx'
 import WhatIsYC from './components/WhatIsYc.jsx'
+import StartCreatorCareer from './components/ReadytoStart.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -25,6 +26,7 @@ createRoot(document.getElementById('root')).render(
     <YCForm />
     <YCDifference />
     <TheManBehindYc />
-    {/* <YCContactFooter /> */}
+    <StartCreatorCareer/>
+    <YCContactFooter />
   </StrictMode>,
 )
