@@ -17,8 +17,8 @@ const Footer = () => {
           <div className="relative w-11 rounded z-2">
             <img src={yclogo} alt="" />
           </div>
-          <p className="">example@gmail.com</p>
-          <p className="">+91 1234567890</p>
+          <p className="">info@yapcapitalist.com</p>
+          <p className="">+91 99520 34731</p>
         </div>
 
         {/* Center Title */}

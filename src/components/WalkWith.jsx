@@ -183,7 +183,7 @@ const items = [
 
 export default function WhatYouWalkAwayWith() {
     return (
-        <section className="relative px-4 pb-[158px]">
+        <section className="relative px-4 pb-[158px] max-w-8xl mx-auto">
             <div className="absolute grid-svg top-[-180px] right-[-300px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>

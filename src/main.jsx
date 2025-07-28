@@ -6,13 +6,13 @@ import WhyYc from './components/WhyYc.jsx'
 import WhoThisIsFor from './components/WhoThisIsFor.jsx'
 import TheManBehindYc from './components/TheManBehindYc.jsx'
 import WhyChooseUs from './components/WhyChooseUs.jsx'
-// import Extraordinary from './components/Extraordinary.jsx'
+import Extraordinary from './components/Extraordinary.jsx'
 import YCDifference from './components/TheYcDifference.jsx'
 import YCForm from './components/YcForm.jsx'
 import Curriculumn from './components/Curriculumn.jsx'
 import YCContactFooter from './components/Footer.jsx'
 import WhatIsYC from './components/WhatIsYc.jsx'
-import StartCreatorCareer from './components/ReadytoStart.jsx'
+// import StartCreatorCareer from './components/ReadytoStart.jsx'
 import FAQSection from './components/Faq.jsx'
 import WhatYouWalkAwayWith from './components/WalkWith.jsx'
 import ProgramDetails from './components/Program-Details.jsx'
@@ -25,7 +25,7 @@ createRoot(document.getElementById('root')).render(
     <WhoThisIsFor />
     <WhyChooseUs />
     <Curriculumn />
-    {/* <Extraordinary /> */}
+    <Extraordinary />
     <WhatIsYC />
     <FormatStructure/>
     <WhatYouWalkAwayWith/>
@@ -33,7 +33,7 @@ createRoot(document.getElementById('root')).render(
     <YCDifference />
     <ProgramDetails/>
     <TheManBehindYc />
-    <StartCreatorCareer/>
+    {/* <StartCreatorCareer/> */}
     <FAQSection />
     <YCContactFooter />
   </StrictMode>,

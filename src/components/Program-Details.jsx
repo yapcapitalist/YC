@@ -4,7 +4,7 @@ import dot from "../assets/Dot Background.svg";
 const ProgramDetails = () => {
     return (
         <section className="relative text-white pb-[158px] max-w-6xl mx-auto">
-            <div className="absolute grid-svg  top-[-268px] left-[-320px] !z-0">
+            <div className="absolute grid-svg top-[-268px] !w-2/3 left-[-320px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>
             <div className="relative text-center mb-20 z-1">
@@ -17,8 +17,8 @@ const ProgramDetails = () => {
             <div className="relative flex gap-6 z-1">
                 <div className="flex flex-col gap-6">
                     {/* Left Box */}
-                    <div className="bg-[#1a1a1a] border border-gray-600 rounded-xl px-6 py-12">
-                        <p className="!text-[#fefe00] mb-4">Your Next Level Starts Here</p>
+                    <div className="bg-[#1a1a1a] border border-gray-600 rounded-xl px-6 py-6 pb-16">
+                        <p className="!text-[#fefe00] mb-4 !font-bold">Your Next Level Starts Here</p>
                         <ul className="space-y-4 text-gray-200">
                             <li className="flex items-start gap-2">
                                 <span className="text-yellow-400"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,9 +70,9 @@ const ProgramDetails = () => {
                     {/* Right Box */}
 
                     <div className="bg-[#1a1a1a] flex flex-col border border-gray-600 rounded-xl p-5">
-                        <p className="!text-[#fefe00] mb-2">PAYMENT OPTIONS</p>
+                        <p className="!text-[#fefe00] !font-bold mb-2">PAYMENT OPTIONS</p>
                         <span className="text-gray-300">
-                            Upfront: Pay Via Razorpay Or Stripe As An Individual Or <a href="#" className="text-yellow-400 underline">Via Company</a> To Avail Invoice For GST Benefit After Payment.
+                            Upfront: Pay Via Razorpay Or Stripe As An Individual Or <a href="#" className="!text-[#fefe00] underline">Via Company</a> To Avail Invoice For GST Benefit After Payment.
                         </span>
                         <span className="text-gray-300 mt-2">EMI: Available For 3—24mo Duration</span>
                     </div>
@@ -81,7 +81,7 @@ const ProgramDetails = () => {
                 {/* Payment Options */}
                 <div className=" flex flex-col space-y-6">
                     <div className="bg-[#1a1a1a] border border-gray-600 rounded-xl p-5 flex flex-col">
-                        <p className="!text-[#fefe00] mb-4">INTERESTED?</p>
+                        <p className="!font-bold !text-[#fefe00] mb-4">INTERESTED?</p>
                         <span className="text-gray-300 mb-4">
                             We Offer This Cohort Only 20 Members And Every Application Is Assessed And Individually Handpicked Based On Our Internal Criteria.
                         </span>
@@ -102,13 +102,13 @@ const ProgramDetails = () => {
                     <div className="grid bg-[#1a1a1a] md:grid-cols-2 gap-6 p-5 border border-gray-600 rounded-xl">
                         <div className="bg-black flex flex-col rounded-xl p-6 text-center">
                             <span className="text-sm text-gray-400 mb-2">PAY UPFRONT</span>
-                            <span className="text-3xl font-bold text-yellow-400">₹69,000</span>
+                            <span className="text-3xl font-bold !text-[#fefe00] ">₹69,000</span>
                             <span className="text-gray-400 mt-1 text-sm">₹58,474 + 18% GST Via Razorpay</span>
                         </div>
 
                         <div className="bg-black flex flex-col rounded-xl p-6 text-center">
                             <span className="text-sm text-gray-400 mb-2">PAY VIA STRIPE</span>
-                            <span className="text-3xl font-bold text-yellow-400">$800</span>
+                            <span className="text-3xl font-bold !text-[#fefe00] ">$800</span>
                             <span className="text-gray-400 mt-1 text-sm">For International Payments</span>
                         </div>
                     </div>

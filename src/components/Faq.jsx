@@ -22,7 +22,7 @@ export default function FAQSection() {
     };
 
     return (
-        <section className="relative pb-[158px]">
+        <section className="relative max-w-6xl mx-auto pb-[158px]">
             <div className="absolute grid-svg  bottom-[-162px] left-[-320px] !z-1">
                 <img src={dot} alt="" width="" height="" />
             </div>
@@ -74,16 +74,16 @@ export default function FAQSection() {
                         <div className="!border-b !border-white m-0" key={index}>
                             <button
                                 onClick={() => toggleFAQ(index)}
-                                className="w-full text-left flex justify-between items-center !py-7 !px-0 focus:outline-none !shadow-none !rounded-none !bg-transparent"
+                                className="w-full !normal-case text-left flex justify-between items-center !py-4 !px-0 focus:outline-none !shadow-none !rounded-none !bg-transparent"
                             >
-                                <p className="">{faq.question}</p>
+                                <span className="!text-white">{faq.question}</span>
                                 <span className="!text-[30px] transform transition-transform duration-300">
                                     {openIndex === index ? "−" : "+"}
                                 </span>
                             </button>
                             {openIndex === index && (
                                 <div className="mt-3 text-white/80 pb-7">
-                                    <p>{faq.answer}</p>
+                                    <span className="!text-white">{faq.answer}</span>
                                 </div>
                             )}
                         </div>

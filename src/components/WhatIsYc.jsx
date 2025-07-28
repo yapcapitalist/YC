@@ -20,7 +20,7 @@ export default function WhatIsYC() {
                 margin: "0 auto",
             }}>
 
-            <div className="absolute grid-svg !w-2/3 top-0 right-[-300px] !z-0">
+            {/* <div className="absolute grid-svg !w-2/3 top-0 right-[-300px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>
 
@@ -62,10 +62,10 @@ export default function WhatIsYC() {
                         </defs>
                     </svg>
 
-                </div>
+                </div> */}
                 <div className="relative z-1">
 
-                <h2 className="text-center pt-[226px]"> What is YC? </h2>
+                <h2 className="text-center"> What is YC? </h2>
 
                 <p className="py-12 text-center max-w-3xl mx-auto">
                     A 5-month creator program that gives you everything you need to succeed on social media. Learn how to make great content, grow your audience, and earn money doing what you love.        
