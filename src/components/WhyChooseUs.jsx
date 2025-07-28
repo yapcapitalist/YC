@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
 
             <div className="relative text-center max-w-6xl mx-auto z-10">
                 <h2 className="mb-2">We Reject More People Than We Accept.</h2>
-                <p className="!text-[#ABABAB] mb-[39px] mt-[8px]">This is not fro everyone</p>
+                <p className="!text-[#ABABAB] mb-[39px] mt-[8px]">This is not for everyone</p>
                 <p className="!text-[#ffff00]">We will not accept</p>
             </div>
 
