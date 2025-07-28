@@ -9,7 +9,7 @@ import WhyChooseUs from './components/WhyChooseUs.jsx'
 // import Extraordinary from './components/Extraordinary.jsx'
 import YCDifference from './components/TheYcDifference.jsx'
 import YCForm from './components/YcForm.jsx'
-// import Curriculumn from './components/Curriculumn.jsx'
+import Curriculumn from './components/Curriculumn.jsx'
 import YCContactFooter from './components/Footer.jsx'
 import WhatIsYC from './components/WhatIsYc.jsx'
 import StartCreatorCareer from './components/ReadytoStart.jsx'
@@ -24,7 +24,7 @@ createRoot(document.getElementById('root')).render(
     <WhyYc />
     <WhoThisIsFor />
     <WhyChooseUs />
-    {/* <Curriculumn /> */}
+    <Curriculumn />
     {/* <Extraordinary /> */}
     <WhatIsYC />
     <FormatStructure/>

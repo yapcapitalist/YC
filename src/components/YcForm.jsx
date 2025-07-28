@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import booksmockup from '../assets/Books.png';
+import dot from "../assets/Dot Background.svg";
+
 
 export default function YCForm() {
     const [formData, setFormData] = useState({
@@ -124,7 +126,9 @@ export default function YCForm() {
 
     return (
         <div className="relative pb-[158px]">
-
+            <div className="absolute grid-svg  top-0 left-[-320px] !z-0">
+                <img src={dot} alt="" width="" height="" />
+            </div>
             {/* Main Form Section */}
             <div className="relative container mx-auto px-4 ">
                 <div className="absolute bottom-128 left-[-86px]">

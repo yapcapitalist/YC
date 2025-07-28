@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import dot from "../assets/Dot Background.svg";
 
 const youtubeVideoIds = [
     "Yb5ieV98brs",
@@ -18,6 +19,11 @@ export default function WhatIsYC() {
                 maxWidth: 1200,
                 margin: "0 auto",
             }}>
+
+            <div className="absolute grid-svg !w-2/3 top-0 right-[-300px] !z-0">
+                <img src={dot} alt="" width="" height="" />
+            </div>
+
                 <div className="absolute top-0 left-0">
                     <svg width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.6">
@@ -57,6 +63,7 @@ export default function WhatIsYC() {
                     </svg>
 
                 </div>
+                <div className="relative z-1">
 
                 <h2 className="text-center pt-[226px]"> What is YC? </h2>
 
@@ -78,7 +85,7 @@ export default function WhatIsYC() {
                 }}>
                     <iframe
                         key={mainVideoId}
-                        src={`https://www.youtube.com/embed/${mainVideoId}?autoplay=1&mute=1&loop=1&controls=1&modestbranding=1&playlist=${mainVideoId}&showinfo=0&rel=0`}
+                        src={`https://www.youtube.com/embed/${mainVideoId}?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playlist=${mainVideoId}&showinfo=0&rel=0`}
                         title="YC Main Video"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
@@ -140,6 +147,7 @@ export default function WhatIsYC() {
                     </div>
                 </div>
 
+                </div>
                 </div>
 
                 {/* Animation Keyframes & Responsive Styles */}

@@ -72,6 +72,9 @@ const TheManBehindYc = () => {
           <p className=''>
             I built this cohort because I was tired of seeing smart people get overlooked just because they didn’t know how to express themselves. YC is for the top 1% — the ones who are done playing small and ready to become impossible to ignore.
           </p>
+          <p className=''>
+            I've worked with the biggest edtech companies in India, seeing highly skilled students spending lakhs after they had already spent that in their college education and still struggling to find their footing in the industry, a common issue among them all? None of them have sales, business, writing and content skills, all of which falls under their ability to communicate and influence. That is exactly why I started Yap capitalist, to solve the one issue that would directly solve their issue and remove all blockers they have in making substantial money.
+          </p>
         </div>
       </div>
     </section>
