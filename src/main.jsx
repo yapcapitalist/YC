@@ -17,9 +17,11 @@ import FAQSection from './components/Faq.jsx'
 import WhatYouWalkAwayWith from './components/WalkWith.jsx'
 import ProgramDetails from './components/Program-Details.jsx'
 import FormatStructure from './components/Format.jsx'
+import StickyHeader from './components/Head.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <StickyHeader />
     <Hero />
     <WhyYc />
     <WhoThisIsFor />

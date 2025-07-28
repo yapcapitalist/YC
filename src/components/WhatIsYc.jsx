@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import dot from "../assets/Dot Background.svg";
+// import dot from "../assets/Dot Background.svg";
 
 const youtubeVideoIds = [
     "Yb5ieV98brs",

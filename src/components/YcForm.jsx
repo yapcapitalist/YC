@@ -126,7 +126,7 @@ export default function YCForm() {
 
     return (
         <div className="relative pb-[158px]">
-            <div className="absolute grid-svg !w-2/3  top-0 left-[-320px] !z-0">
+            <div className="absolute grid-svg  top-0 left-[-320px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>
             {/* Main Form Section */}

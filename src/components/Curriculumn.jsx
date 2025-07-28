@@ -1,6 +1,12 @@
 import { Brain } from "lucide-react"
 import { useEffect, useState, useRef } from "react"
 import mainbrain from "../assets/Main brain.png"
+import trophyicon from "../assets/trophyicon.svg"
+import maskicon from "../assets/maskicon.svg"
+import discussiionicon from "../assets/discussiionicon.svg"
+import dot from "../assets/Dot Background.svg";
+
+
 
 export default function Component() {
   const [activeSection, setActiveSection] = useState(0)
@@ -30,7 +36,10 @@ export default function Component() {
   }, [])
 
   return (
-    <div className="bg-black text-white min-h-screen p-8 pb-[158px]">
+    <div className="relative text-white min-h-screen p-8 pb-[158px]">
+      <div className="absolute grid-svg !w-2/3 bottom-0 left-[-108px] !z-0">
+        <img src={dot} alt="" width="" height="" />
+      </div>
       {/* Header */}
       <div className="text-center mb-20">
         <h2 className="text-3xl font-bold mb-4">What You'll Learn - The Curriculum</h2>
@@ -45,10 +54,10 @@ export default function Component() {
       </div>
 
       {/* Timeline */}
-      <div className="max-w-4xl mx-auto relative" style={{ height: "fit-content" }}>
+      <div className="z-1 max-w-4xl mx-auto relative" style={{ height: "fit-content" }}>
         {/* Background image container - full width from first to last brain */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 inset-0 w-full">
-        <img src={mainbrain} alt="" />
+          <img src={mainbrain} alt="" />
         </div>
 
         {/* Vertical connecting line - only from first to last brain */}
@@ -195,7 +204,54 @@ export default function Component() {
 
           <div className="w-1/2 pl-8"></div>
         </div>
+
+
+
       </div>
+
+      <div className="relative z-1 max-w-3xl mx-auto mt-20">
+        {/* <div className="flex justify-center mb-10">
+          <div className="bg-[#1E1E1E] px-6 py-2 rounded-full border border-[#fefe00] text-[#fefe00] text-sm font-semibold flex items-center gap-2">
+            <span className="text-yellow-400">✨</span> Beyond the Curriculum
+          </div>
+        </div> */}
+
+        <div className="space-y-8">
+          {/* Item 1 */}
+          <div className="flex items-start gap-4 border-b border-[#fefe00] py-6">
+            <div className="w-[52] h-[52]">
+              <img src={discussiionicon} alt="" />
+            </div>
+            <div>
+              <h4 className="!font-semibold text-lg text-white">Live 1:1 Feedback</h4>
+              <p className="!text-gray-400 text-sm">Personal coaching with mentors who won’t let you hide.</p>
+            </div>
+          </div>
+
+          {/* Item 2 */}
+          <div className="flex items-start gap-4 border-b border-[#fefe00] pb-6">
+            <div className="w-[52] h-[52]">
+              <img src={maskicon} alt="" />
+            </div>
+            <div>
+              <h4 className="!font-semibold text-lg text-white">High-Stake Roleplays</h4>
+              <p className="!text-gray-400 text-sm">Simulate real-world scenarios. Build confidence under pressure.</p>
+            </div>
+          </div>
+
+          {/* Item 3 */}
+          <div className="flex items-start gap-4 border-b border-[#fefe00] pb-6">
+            <div className="w-[52] h-[52]">
+              <img src={trophyicon} alt="" />
+            </div>
+            <div>
+              <h4 className="!font-semibold text-lg text-white">Final Showcase</h4>
+              <p className="!text-gray-400 text-sm">Present your skills to elite judges. No scripts. Just you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   )
 }

@@ -2,7 +2,7 @@ import dot from "../assets/Dot Background.svg";
 
 export default function Extraordinary() {
     return (
-        <div className="relative  flex items-center justify-center pb-[152px] max-w-6xl mx-auto ">
+        <div className="relative flex items-center  justify-center pb-[152px] max-w-6xl mx-auto ">
             {/* <div className="absolute bottom-110 right-0 opacity-80">
                 <svg width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.6">

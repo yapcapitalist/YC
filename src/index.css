@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
- @import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.cdnfonts.com/css/satoshi');
 
 @import "tailwindcss";
 
@@ -19,7 +19,7 @@
   -moz-osx-font-smoothing: grayscale; */
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -51,7 +51,8 @@ p {
   color: #ffffff;
 }
 
-span, li {
+span,
+li {
   font-size: 14px;
 
 }
@@ -98,23 +99,23 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   cursor: pointer;
-padding: 12px 24px;
+  padding: 12px 24px;
   box-shadow:
-    0 -2px 4px rgba(255, 255, 0, 1),  /* bright yellow top glow */
-    0 1px 6px rgba(255, 255, 0, 0.2);   /* soft yellow bottom glow */
+    0 -2px 4px rgba(255, 255, 0, 1),
+    0 1px 6px rgba(255, 255, 0, 0.2);
   transition: box-shadow 0.3s ease;
 }
 
 .text-18 {
-  @apply text-base; /* closest: 16px */
+  @apply text-base;
   font-size: 18px;
 }
 
 
-.grid-svg{
-    width: 62%;
-    z-index: -1;
-    overflow: hidden;
+.grid-svg {
+  width: 62%;
+  z-index: -1;
+  overflow: hidden;
 }
 
 /* You can add this to your global CSS or Tailwind config via @layer utilities */
@@ -132,6 +133,7 @@ padding: 12px 24px;
   .stacked-card {
     @apply opacity-0 translate-y-8 transition-all duration-500;
   }
+
   .stacked-card.stacked {
     @apply opacity-100 translate-y-0;
   }
