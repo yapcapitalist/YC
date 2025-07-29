@@ -62,8 +62,8 @@ const WhyChooseUs = () => {
                 <p className="!text-[#ffff00]">We will not accept</p>
             </div>
 
-            <div className="relative max-w-6xl mx-auto mt-[88px] z-1 h-[340px]">
-                <div className="relative flex justify-center items-center">
+            <div className="relative max-w-6xl mx-auto mt-[88px] z-1 ">
+                <div className="relative flex justify-center items-center h-[340px]">
                     {/* Left column */}
                     <div className=" absolute left-24 space-y-12 flex flex-col gap-[118px]">
                         {items.slice(0, 2).map((item, idx) => (

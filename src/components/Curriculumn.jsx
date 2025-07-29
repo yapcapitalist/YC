@@ -148,7 +148,7 @@ export default function Component() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center bg-black w-18 h-16 rounded-full border-2 border-white-600 relative z-10">
+          <div className={`flex items-center justify-center bg-black w-18 h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`}>
             <Brain className={`w-8 h-8 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
@@ -159,7 +159,7 @@ export default function Component() {
         <div className="flex items-start mb-16" ref={sectionRefs[1]}>
           <div className="w-1/2 pr-8"></div>
 
-          <div className="flex items-center justify-center bg-black w-18 h-16 rounded-full bg-black/20 backdrop-blur-mdl border-2 border-white-600 relative z-10">
+          <div className={`flex items-center justify-center bg-black w-18 h-16 rounded-full bg-black/20 backdrop-blur-mdl border-2 border-white-600 relative z-10 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`}>
             <Brain className={`w-8 h-8 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
@@ -240,7 +240,7 @@ export default function Component() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center bg-black w-18 h-16 rounded-full border-2 border-white-600 relative z-10">
+          <div className={`flex items-center justify-center bg-black w-18 h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`}>
             <Brain className={`w-8 h-8 ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
