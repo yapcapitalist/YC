@@ -1,6 +1,8 @@
 import React, { use } from "react";
 import {useRef} from "react";
 import dot from "../assets/Dot Background.svg";
+import { Link } from 'react-router-dom';
+
 
 const ProgramDetails = () => {
     // const programDetails = useRef(null);
@@ -94,9 +96,11 @@ const ProgramDetails = () => {
                         <span className="text-gray-300 mb-20">
                             Submit An Early Application Below To Join The Waitlist. Your Application Will Get An Early Preference When Enrolments Begin Sometime In July 2025.
                         </span>
+                        <Link to="/apply" className="">
                         <button className="bg-transparent border border-yellow-400 transition">
                             Submit Application
                         </button>
+                        </Link>
                         <span className="text-gray-400 text-sm mt-5">
                             Please Take Some Time To Answer The Questions — We Use This To Assess Whether You’d Be A Good Fit
                         </span>

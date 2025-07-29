@@ -68,7 +68,8 @@ export default function WhatIsYC() {
                 <h2 className="text-center"> What is YC? </h2>
 
                 <p className="py-12 text-center max-w-3xl mx-auto">
-                    A 5-month creator program that gives you everything you need to succeed on social media. Learn how to make great content, grow your audience, and earn money doing what you love.        
+                    A 5-month creator program that gives you everything you need to succeed on social media. Learn how to make great content, grow your audience, and earn money doing what you love.
+                    YC is India’s most exclusive 3-month communication mastery program — built for professionals, founders, and creators who want to turn their voice into capital.        
                 </p>
 
 <div className="relative z-1">

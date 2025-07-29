@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import yclogo from '../assets/YAAP_CAPITAL.svg'
+import yclogo from '../assets/YAAP_CAPITAL.svg' // Assuming you have a logo image
 
 export default function StickyHeader() {
   const [scrolled, setScrolled] = useState(false);

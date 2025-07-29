@@ -24,17 +24,17 @@ export default function Hero() {
 
         <p className="">
           India’s Most Selective 12-Week Communication Cohort for Ambitious<br />
-          Founders, Professionals and Graduates.
+          Founders, Professionals and Freelancers.
         </p>
-<button
-  className="!px-17 py-3 rounded-full my-[36px]"
-  onClick={() => {
-    const el = document.getElementById("program-details");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  }}
->
-  JOIN WAITLIST
-</button>
+        <button
+          className="!px-17 py-3 rounded-full my-[36px]"
+          onClick={() => {
+            const el = document.getElementById("program-details");
+            if (el) el.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          JOIN WAITLIST
+        </button>
 
 
         <p className="text-sm text-white-600 font-semibold">

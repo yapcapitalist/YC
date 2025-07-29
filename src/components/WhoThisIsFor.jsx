@@ -23,7 +23,7 @@ const people = [
         ),
     },
     {
-        title: "GRADUATE",
+        title: "FREELANCERS",
         description:
             "Perfect your B-roll selection, editing flow, and visual storytelling to create scroll-stopping content that stands out.",
         svg: (
