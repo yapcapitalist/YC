@@ -17,7 +17,7 @@ const ProgramDetails = () => {
             <div className="relative flex gap-6 z-1">
                 <div className="flex flex-col gap-6">
                     {/* Left Box */}
-                    <div className="bg-[#1a1a1a] border border-gray-600 rounded-xl px-6 py-6 pb-16">
+                    <div className="bg-[#1a1a1a] border border-gray-600 rounded-xl px-6 py-6 pb-16 h-[452px]">
                         <p className="!text-[#fefe00] mb-4 !font-bold">Your Next Level Starts Here</p>
                         <ul className="space-y-4 text-gray-200">
                             <li className="flex items-start gap-2">
@@ -69,7 +69,7 @@ const ProgramDetails = () => {
 
                     {/* Right Box */}
 
-                    <div className="bg-[#1a1a1a] flex flex-col border border-gray-600 rounded-xl p-5">
+                    <div className="bg-[#1a1a1a] flex flex-col border border-gray-600 rounded-xl p-5 h-[158px]">
                         <p className="!text-[#fefe00] !font-bold mb-2">PAYMENT OPTIONS</p>
                         <span className="text-gray-300">
                             Upfront: Pay Via Razorpay Or Stripe As An Individual Or <a href="#" className="!text-[#fefe00] underline">Via Company</a> To Avail Invoice For GST Benefit After Payment.
@@ -80,7 +80,7 @@ const ProgramDetails = () => {
 
                 {/* Payment Options */}
                 <div className=" flex flex-col space-y-6">
-                    <div className="bg-[#1a1a1a] border border-gray-600 rounded-xl p-5 flex flex-col">
+                    <div className="bg-[#1a1a1a] border border-gray-600 rounded-xl p-5 flex flex-col h-[452px]">
                         <p className="!font-bold !text-[#fefe00] mb-4">INTERESTED?</p>
                         <span className="text-gray-300 mb-4">
                             We Offer This Cohort Only 20 Members And Every Application Is Assessed And Individually Handpicked Based On Our Internal Criteria.
@@ -99,7 +99,7 @@ const ProgramDetails = () => {
                         </span>
                     </div>
 
-                    <div className="grid bg-[#1a1a1a] md:grid-cols-2 gap-6 p-5 border border-gray-600 rounded-xl">
+                    <div className="grid bg-[#1a1a1a] md:grid-cols-2 gap-6 p-5 border border-gray-600 rounded-xl h-[158px]">
                         <div className="bg-black flex flex-col rounded-xl p-6 text-center">
                             <span className="text-sm text-gray-400 mb-2">PAY UPFRONT</span>
                             <span className="text-3xl font-bold !text-[#fefe00] ">₹69,000</span>

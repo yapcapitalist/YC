@@ -85,28 +85,28 @@ export default function Hero() {
   }
 
   .arrow-path-1 {
-    animation: brighten 2s ease-in-out infinite;
+    animation: brighten 4s ease-in-out infinite;
     animation-delay: 0s;
   }
 
   .arrow-path-2 {
-    animation: brighten 2s ease-in-out infinite;
-    animation-delay: 0.2s;
-  }
-
-  .arrow-path-3 {
-    animation: brighten 2s ease-in-out infinite;
+    animation: brighten 4s ease-in-out infinite;
     animation-delay: 0.4s;
   }
 
-  .arrow-path-4 {
-    animation: brighten 2s ease-in-out infinite;
+  .arrow-path-3 {
+    animation: brighten 4s ease-in-out infinite;
     animation-delay: 0.6s;
   }
 
-  .arrow-path-5 {
-    animation: brighten 2s ease-in-out infinite;
+  .arrow-path-4 {
+    animation: brighten 4s ease-in-out infinite;
     animation-delay: 0.8s;
+  }
+
+  .arrow-path-5 {
+    animation: brighten 4s ease-in-out infinite;
+    animation-delay: 0.10s;
   }
 `}</style>
       </div>

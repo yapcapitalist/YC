@@ -72,7 +72,7 @@ export default function Component() {
         {/* Month 1 - Essentials */}
         <div className="flex items-start mb-16" ref={sectionRefs[0]}>
           <div className="w-1/2 pr-8">
-            <div className="bg-[#131012] backdrop-blur-md p-6 rounded-lg">
+            <div className="bg-black/20 backdrop-blur-md p-6 rounded-lg border border-white/10">
               <p className="!font-semibold mb-2">MONTH 1</p>
               <h2 className="font-bold !text-[#fefe00] !text-[28px] mb-4">ESSENTIALS</h2>
               <p className="text-gray-400 text-sm mb-4">Mindset and Communication</p>
@@ -117,7 +117,7 @@ export default function Component() {
         <div className="flex items-start mb-16" ref={sectionRefs[1]}>
           <div className="w-1/2 pr-8"></div>
 
-          <div className="flex items-center justify-center bg-black w-18 h-16 rounded-full border-2 border-white-600 relative z-10">
+          <div className="flex items-center justify-center bg-black w-18 h-16 rounded-ful bg-black/20 backdrop-blur-mdl border-2 border-white-600 relative z-10">
             <Brain className={`w-8 h-8 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 

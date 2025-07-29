@@ -76,7 +76,7 @@ export default function FAQSection() {
                                 onClick={() => toggleFAQ(index)}
                                 className="w-full !normal-case text-left flex justify-between items-center !py-4 !px-0 focus:outline-none !shadow-none !rounded-none !bg-transparent"
                             >
-                                <span className="!text-white">{faq.question}</span>
+                                <span className="!text-white !font-extrabold">{faq.question}</span>
                                 <span className="!text-[30px] transform transition-transform duration-300">
                                     {openIndex === index ? "−" : "+"}
                                 </span>
