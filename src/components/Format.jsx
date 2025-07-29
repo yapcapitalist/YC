@@ -62,10 +62,10 @@ const StackingCards = ({
   }, [hasScrolled]);
 
   const cardStyles = [
-    { top: '3vh', zIndex: 1 },
-    { top: '18vh', zIndex: 2 },
-    { top: '32vh', zIndex: 3 },
-    { top: '38vh', zIndex: 4 }
+    { top: '12vh', zIndex: 1 },
+    { top: '24vh', zIndex: 2 },
+    { top: '36vh', zIndex: 3 },
+    { top: '52vh', zIndex: 4 }
   ];
 
   return (
@@ -123,12 +123,12 @@ const StackingCards = ({
             {cards.map((card, index) => (
               <div
                 key={card.id}
-                className={`stacking-card sticky w-full flex border border-[4px] border-[#4A4A00] items-center  rounded-2xl overflow-hidden shadow-2xl transition-transform duration-300 ${
+                className={`stacking-card sticky bg-[#131012] w-full flex border border-[4px] border-[#4A4A00] items-center  rounded-2xl overflow-hidden shadow-2xl transition-transform duration-300 ${
                   stackedCards.has(index) ? 'transform scale-98' : ''
                 }`}
                 style={{
                   // height: '20vh',
-                  backgroundColor: 'rgb(26, 26, 26)',
+                  // backgroundColor: 'rgb(26, 26, 26)',
                   // marginBottom: '5vh',
                   marginTop: '3vh',
                   top: cardStyles[index]?.top || '0vh',

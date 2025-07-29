@@ -23,12 +23,12 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <StickyHeader />
     <Hero />
+    <WhatIsYC />
     <WhyYc />
     <WhoThisIsFor />
     <WhyChooseUs />
     <Curriculumn />
     <Extraordinary />
-    <WhatIsYC />
     <FormatStructure/>
     <WhatYouWalkAwayWith/>
     <YCForm />

@@ -27,7 +27,7 @@ export default function FAQSection() {
                 <img src={dot} alt="" width="" height="" />
             </div>
 
-            <div className="absolute bottom-[-106px] right-20 !z-1">
+            <div className="absolute top-0 right-0 !z-1">
                 <svg width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.6">
                         <path opacity="0.5" d="M152.425 109.357V108.357H151.425V109.357H152.425ZM147.091 374.492C147.091 377.437 149.479 379.825 152.425 379.825C155.37 379.825 157.758 377.437 157.758 374.492C157.758 371.546 155.37 369.158 152.425 369.158C149.479 369.158 147.091 371.546 147.091 374.492ZM355.991 109.357V108.357H152.425V109.357V110.357H355.991V109.357ZM152.425 109.357H151.425V374.492H152.425H153.425V109.357H152.425Z" fill="url(#paint0_linear_313_3598)" />
@@ -71,7 +71,7 @@ export default function FAQSection() {
                 <h2 className="text-center pb-12">FAQs</h2>
                 <div className="space-y-6">
                     {faqs.map((faq, index) => (
-                        <div className="!border-b !border-white m-0" key={index}>
+                        <div className="!border-b !border-[#494949] m-0" key={index}>
                             <button
                                 onClick={() => toggleFAQ(index)}
                                 className="w-full !normal-case text-left flex justify-between items-center !py-4 !px-0 focus:outline-none !shadow-none !rounded-none !bg-transparent"

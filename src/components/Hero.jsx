@@ -5,13 +5,14 @@ import Illustration from '../assets/Header.png'
 
 
 
+
 export default function Hero() {
   return (
     <section className="relative bg-black text-white min-h-screen flex items-center justify-center px-4 py-20 pb-0 relative overflow-hidden">
 
       <img src={Illustration} alt="" className="object-fill absolute top-[0px] left-1/2 -translate-x-1/2  z-1" />
 
-      <div className="absolute grid-svg bottom-[-168px] right-[-534px] !z-1">
+      <div className="absolute grid-svg bottom-[-168px] right-[-534px] [@media(min-width:1600px)]:right-[-644px] !z-1">
         <img src={dot} alt="" width="" height="" />
       </div>
 
@@ -25,10 +26,16 @@ export default function Hero() {
           India’s Most Selective 12-Week Communication Cohort for Ambitious<br />
           Founders, Professionals and Graduates.
         </p>
+<button
+  className="!px-17 py-3 rounded-full my-[36px]"
+  onClick={() => {
+    const el = document.getElementById("program-details");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  }}
+>
+  JOIN WAITLIST
+</button>
 
-        <button className=" !px-17 py-3 rounded-full my-[36px]">
-          JOIN WAITLIST
-        </button>
 
         <p className="text-sm text-white-600 font-semibold">
           20 Seats | Handpicked | No Fluff

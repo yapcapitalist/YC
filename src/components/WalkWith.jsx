@@ -192,7 +192,7 @@ export default function WhatYouWalkAwayWith() {
                 {items.map((item, index) => (
                     <div
                         key={index}
-                        className="w-[300px] flex items-start gap-4 bg-[#1a1a1a]/70 p-4 rounded-xl border border-[#ABABAB] backdrop-blur w-[394px]"
+                        className="h-[145px] flex items-start gap-4 bg-[#1a1a1a]/70 p-4 rounded-xl border border-[#ABABAB] backdrop-blur w-[394px]"
                     >
                         <div>{item.svg}</div>
                         <div>
