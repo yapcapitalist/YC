@@ -26,7 +26,7 @@ export default function Hero() {
           India’s Most Selective 12-Week Communication Cohort for Ambitious<br />
           Founders, Professionals and Freelancers.
         </p>
-        <button
+        {/* <button
           className="!px-17 py-3 rounded-full my-[36px]"
           onClick={() => {
             const el = document.getElementById("program-details");
@@ -34,7 +34,7 @@ export default function Hero() {
           }}
         >
           JOIN WAITLIST
-        </button>
+        </button> */}
 
 
         <p className="text-sm text-white-600 font-semibold">
@@ -43,7 +43,11 @@ export default function Hero() {
 
         {/* Optional down arrow */}
         {/* Down arrow with sequential brightening effect */}
-        <div className="mt-6 flex justify-center items-center">
+        <div className="mt-6 flex justify-center items-center"
+          onClick={() => {
+            const el = document.getElementById("program-details");
+            if (el) el.scrollIntoView({ behavior: "smooth" });
+          }}>
           <svg width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M1 1L21 14L41 1"

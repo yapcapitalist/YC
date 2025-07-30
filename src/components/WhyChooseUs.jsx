@@ -78,7 +78,7 @@ const WhyChooseUs = () => {
                                         </svg>
 
                                     </div>
-                                    <p className="!text-[18px]">{item}</p>
+                                    <p className="!text-[16px]">{item}</p>
                                 </div>
                             </div>
                         ))}
@@ -113,7 +113,7 @@ const WhyChooseUs = () => {
                                         </svg>
 
                                     </div>
-                                    <p className="!text-[18px]">{item}</p>
+                                    <p className="!text-[16px]">{item}</p>
 
                                 </div>
                             </div>

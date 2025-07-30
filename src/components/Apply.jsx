@@ -8,9 +8,11 @@ export default function YCApplicationSection() {
         <section className="relative px-6">
 
             <div className="relative  rounded z-2 py-8 max-w-7xl mx-auto">
-                <div className='w-11'>
-                    <img src={yclogo} alt="" />
-                </div>
+                <Link to="/">
+                    <div className='w-11'>
+                        <img src={yclogo} alt="" />
+                    </div>
+                </Link>
             </div>
 
             <div className="absolute grid-svg top-[280px] left-[-400px] !z-0">

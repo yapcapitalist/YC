@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import yclogo from '../assets/YAAP_CAPITAL.svg'
 import dot from "../assets/Dot Background.svg";
 import BGillustrate from "../assets/BGillustrate.svg";
+import { Link } from "react-router-dom";
 
 const questions = [
     {
@@ -9,24 +10,24 @@ const questions = [
         options: ["YouTube", "Twitter", "LinkedIn", "Instagram", "From a friend or colleague", "Other"],
     },
     {
-        label: "Your public profiles (LinkedIn, Twitter etc.)",
+        label: "Your public profile Link (LinkedIn, Twitter etc.)",
         type: "text",
     },
     {
         label: "Which of these describes you best?",
+        type: ["Aspiring Creator","Working Professional","Student","Freelancer","Entrepreneur","Career Switcher"],
+    },
+    {
+        label: "How many years of work experience do you have?",
         type: "text",
     },
     {
-        label: "How many years of work experience are you bringing?",
-        type: "text",
-    },
-    {
-        label: "Tell us more about yourself! Feel free to drop links.",
+        label: "Tell us more about yourself!",
         type: "text",
     },
     {
         label: "On a scale of 1–5, how comfortable are you with communication?",
-        type: "text",
+        type: ["0","1","2","3","4","5","6","7","8","9","10"],
     },
     {
         label: "What are your current challenges when it comes to communication?",
@@ -112,9 +113,11 @@ export default function ApplicationForm() {
         <div className="relative min-h-screen text-white">
 
             <div className="relative  rounded z-2 py-8 max-w-7xl mx-auto">
+                <Link to="/">
                 <div className='w-11'>
                     <img src={yclogo} alt="" />
                 </div>
+                </Link>
             </div>
 
             <div className="absolute grid-svg top-[444px] right-[-424px]">

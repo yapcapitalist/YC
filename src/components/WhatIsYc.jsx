@@ -2,12 +2,12 @@ import React, { useState } from "react";
 // import dot from "../assets/Dot Background.svg";
 
 const youtubeVideoIds = [
-    "Yb5ieV98brs",
-    "fS8--o5n8os",
-    "Z0Mz798H5ho",
+    "pwfzmo6QT1A",
+    "Fx1LdidhY3A",
+    "4LBXXEhtv_8",
     "X3MG4fEJiF0",
-    "savwVzZh5go",
-    "sVemNllnNCA"
+    "HU7TMhkQHhA",
+    "k0QYSKLY4tE"
 ];
 
 export default function WhatIsYC() {
@@ -20,11 +20,11 @@ export default function WhatIsYC() {
                 margin: "0 auto",
             }}>
 
-            {/* <div className="absolute grid-svg !w-2/3 top-0 right-[-300px] !z-0">
+                {/* <div className="absolute grid-svg !w-2/3 top-0 right-[-300px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>
-
-                <div className="absolute top-0 left-0">
+*/}
+                <div className="absolute top-6 left-0">
                     <svg width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.6">
                             <path opacity="0.5" d="M203.586 109.357V108.357H204.586V109.357H203.586ZM208.919 374.492C208.919 377.437 206.531 379.825 203.586 379.825C200.64 379.825 198.253 377.437 198.253 374.492C198.253 371.546 200.64 369.158 203.586 369.158C206.531 369.158 208.919 371.546 208.919 374.492ZM0.0195465 109.357V108.357H203.586V109.357V110.357H0.0195465V109.357ZM203.586 109.357H204.586V374.492H203.586H202.586V109.357H203.586Z" fill="url(#paint0_linear_326_4023)" />
@@ -62,114 +62,36 @@ export default function WhatIsYC() {
                         </defs>
                     </svg>
 
-                </div> */}
+                </div> 
                 <div className="relative z-1">
 
-                <h2 className="text-center"> What is YC? </h2>
+                    <h2 className="text-center"> What is YC? </h2>
 
-                <p className="py-12 text-center max-w-3xl mx-auto">
-                    A 5-month creator program that gives you everything you need to succeed on social media. Learn how to make great content, grow your audience, and earn money doing what you love.
-                    YC is India’s most exclusive 3-month communication mastery program — built for professionals, founders, and creators who want to turn their voice into capital.        
-                </p>
+                    <p className="py-12 pb-4 text-center max-w-3xl mx-auto">YC is India’s most exclusive 3-month communication mastery program — built for professionals, founders, and creators who want to turn their voice into capital.</p>
 
-<div className="relative z-1">
-                {/* Main Video */}
-                <div className="main-video-container" style={{
-                    width: "100%",
-                    maxWidth: 850,
-                    aspectRatio: "14/7",
-                    borderRadius: 12,
-                    overflow: "hidden",
-                    border: "1px solid #444",
-                    margin: "0 auto 30px auto",
+                    <div className="py-4 text-center max-w-3xl mx-auto">
 
-                }}>
-                    <iframe
-                        key={mainVideoId}
-                        src={`https://www.youtube.com/embed/${mainVideoId}?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playlist=${mainVideoId}&showinfo=0&rel=0`}
-                        title="YC Main Video"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                        style={{ width: "100%", height: "100%", border: "none" }}
-                    />
-                </div>
+                        <p>Whether you want to speak with authority, create powerful content, or close high-ticket clients — YC gives you the tools, training, and systems to become impossible to ignore.Inside, you’ll learn how to:</p>
 
-                {/* Thumbnail Videos Slider */}
-                <div className="thumbnail-slider-container" style={{
-                    width: "100%",
-                    overflow: "hidden",
-                    margin: "0 auto",
-                    marginBottom: 40
-                }}>
-                    <div className="thumbnail-slider" style={{
-                        display: "flex",
-                        gap: 16,
-                        width: "fit-content",
-                        animation: "slideLeft 28s linear infinite"
-                    }}>
-                        {[...youtubeVideoIds, ...youtubeVideoIds].map((videoId, i) => (
-                            <div
-                                key={i}
-                                className="thumbnail-video-item"
-                                style={{
-                                    flexShrink: 0,
-                                    width: 240,
-                                    height: 140,
-                                    borderRadius: 12,
-                                    overflow: "hidden",
-                                    border: mainVideoId === videoId ? "2px solid #ffff00" : "1px solid #444", // <-- yellow on selected
-                                    position: "relative",
-                                    cursor: "pointer",
-                                    boxShadow: mainVideoId === videoId ? "0 0 18px #ffff0057" : "0 2px 16px #000c",
-                                    transition: "transform 0.3s, border-color 0.3s",
-                                    background: "#111",
-                                    opacity: i < youtubeVideoIds.length || mainVideoId !== videoId ? 1 : 0.7
-                                }}
-                                onClick={() => setMainVideoId(videoId)}
-                            >
-                                <iframe
-                                    src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&modestbranding=1&showinfo=0&rel=0`}
-                                    title={`YC Thumb ${i}`}
-                                    allow="autoplay; encrypted-media"
-                                    style={{
-                                        width: "100%",
-                                        height: "100%",
-                                        border: "none"
-                                    }}
-                                />
-                                <div style={{
-                                    position: "absolute",
-                                    inset: 0,
-                                    background: mainVideoId === videoId ? "rgba(255,255,0,0.11)" : "rgba(0,0,0,0.07)",
-                                    transition: "background 0.3s"
-                                }} />
-                            </div>
-                        ))}
+                        <ul className="text-center mb-8">
+
+                            <li>Communicate with clarity, confidence, and influence</li>
+
+                            <li>Build a magnetic online presence through content</li>
+
+                            <li>Monetize your skills through sales, strategy, and storytelling</li>
+                        </ul>
+                        <ul>
+                            <li>This isn’t just a course. It’s a transformation.</li>
+                            <li>By the end of 12 weeks, you won’t just sound different — you’ll be different.</li>
+
+                            <li>Only the sharpest minds get in.</li>
+                            <li>And once you're in, you never operate the same again.     </li>
+                        </ul>
+
                     </div>
                 </div>
 
-                </div>
-                </div>
-
-                {/* Animation Keyframes & Responsive Styles */}
-                <style>{`
-          @keyframes slideLeft {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-          @media (max-width: 900px) {
-            .main-video-container { max-width: 100vw !important; }
-          }
-          @media (max-width: 700px) {
-            .main-video-container { aspect-ratio: 16/9 !important; }
-            .thumbnail-video-item { width: 44vw !important; height: 22vw !important; min-width: 110px !important; }
-            .thumbnail-slider { gap: 8px !important; }
-          }
-          @media (max-width: 500px) {
-            .main-title { font-size: 1.3rem !important; }
-            .main-video-container { border-radius: 8px !important; }
-          }
-        `}</style>
             </section>
         </div>
     );

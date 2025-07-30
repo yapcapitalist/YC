@@ -10,6 +10,7 @@ import dot from "../assets/Dot Background.svg";
 
 export default function Component() {
   const [activeSection, setActiveSection] = useState(0)
+  const [scrollProgress, setScrollProgress] = useState(0)
   const sectionRefs = [useRef(null), useRef(null), useRef(null)]
 
   useEffect(() => {
@@ -30,10 +31,65 @@ export default function Component() {
       return observer
     })
 
+    // Scroll progress calculation for the dotted line
+    const handleScroll = () => {
+      const scrollY = window.scrollY
+      const windowHeight = window.innerHeight
+      
+      // Calculate progress based on center of screen position
+      const centerY = scrollY + windowHeight / 2
+      
+      // Get the line container element position
+      const lineElement = document.querySelector('.dotted-line-container')
+      if (lineElement) {
+        const rect = lineElement.getBoundingClientRect()
+        const lineTop = rect.top + scrollY
+        const lineHeight = rect.height
+        
+        // Calculate progress when center of screen passes through the line
+        const relativePosition = centerY - lineTop
+        const progress = Math.max(0, Math.min(1, relativePosition / lineHeight))
+        
+        setScrollProgress(progress)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    handleScroll() // Initial calculation
+
     return () => {
       observers.forEach((observer) => observer.disconnect())
+      window.removeEventListener('scroll', handleScroll)
     }
   }, [])
+
+  // Generate dots for the connecting line
+  const generateDots = () => {
+    const dots = []
+    const totalDots = 50 // Number of dots in the line
+    
+    for (let i = 0; i < totalDots; i++) {
+      const dotProgress = i / (totalDots - 1)
+      const isActive = scrollProgress >= dotProgress
+      
+      dots.push(
+        <div
+          key={i}
+          className={`w-1 h-1 rounded-full transition-colors duration-300 ${
+            isActive ? 'bg-[#fefe00]' : 'bg-gray-600'
+          }`}
+          style={{
+            position: 'absolute',
+            top: `${dotProgress * 100}%`,
+            left: '50%',
+            transform: 'translateX(-50%)',
+          }}
+        />
+      )
+    }
+    
+    return dots
+  }
 
   return (
     <div className="relative text-white min-h-screen p-8 pb-[158px]">
@@ -104,12 +160,15 @@ export default function Component() {
 
         {/* Vertical connecting line - only from first to last brain */}
         <div
-          className="absolute left-1/2 transform -translate-x-1/2 w-px border-l-2 border-dotted border-gray-600"
+          className="absolute left-1/2 transform -translate-x-1/2 dotted-line-container"
           style={{
             top: "2rem",
             bottom: "24rem",
+            width: "2px",
           }}
-        ></div>
+        >
+          {generateDots()}
+        </div>
 
         {/* Month 1 - Essentials */}
         <div className="flex items-start mb-16" ref={sectionRefs[0]}>
@@ -264,7 +323,7 @@ export default function Component() {
             </div>
             <div>
               <h4 className="!font-semibold text-lg text-white">Live 1:1 Feedback</h4>
-              <p className="!text-gray-400 text-sm">Personal coaching with mentors who won’t let you hide.</p>
+              <p className="!text-gray-400 text-sm">Personal coaching with mentors who won't let you hide.</p>
             </div>
           </div>
 

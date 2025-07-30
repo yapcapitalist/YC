@@ -1,8 +1,22 @@
 import dot from "../assets/Dot Background.svg";
+import { useState } from "react";
+const youtubeVideoIds = [
+    "pwfzmo6QT1A",
+    "Fx1LdidhY3A",
+    "4LBXXEhtv_8",
+    "X3MG4fEJiF0",
+    "HU7TMhkQHhA",
+    "k0QYSKLY4tE"
+];
 
 export default function Extraordinary() {
+    const [mainVideoId, setMainVideoId] = useState(youtubeVideoIds[0]);
+
     return (
-        <div className="relative flex items-center  justify-center pb-[152px] max-w-6xl mx-auto ">
+        <section className="relative maincon container flex items-center  justify-center pb-[152px] " style={{
+                maxWidth: 1200,
+                margin: "0 auto",
+            }}>
 
             <div className="absolute bottom-0 left-0 z-1">
                 <svg width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,6 +63,85 @@ export default function Extraordinary() {
                     Extraordinary claims require extraordinary evidence.
                 </h2>
 
+
+                <div className="relative z-1 py-16 text-center max-w-6xl mx-auto">
+                    {/* Main Video */}
+                    <div className="main-video-container" style={{
+                        width: "100%",
+                        maxWidth: 850,
+                        aspectRatio: "14/7",
+                        borderRadius: 12,
+                        overflow: "hidden",
+                        border: "1px solid #444",
+                        margin: "0 auto 30px auto",
+
+                    }}>
+                        <iframe
+                            key={mainVideoId}
+                            src={`https://www.youtube.com/embed/${mainVideoId}?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playlist=${mainVideoId}&showinfo=0&rel=0`}
+                            title="YC Main Video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            style={{ width: "100%", height: "100%", border: "none" }}
+                        />
+                    </div>
+
+                    {/* Thumbnail Videos Slider */}
+                    <div className="thumbnail-slider-container" style={{
+                        width: "100%",
+                        overflow: "hidden",
+                        margin: "0 auto",
+                        marginBottom: 40
+                    }}>
+                        <div className="thumbnail-slider" style={{
+                            display: "flex",
+                            gap: 16,
+                            width: "fit-content",
+                            animation: "slideLeft 28s linear infinite"
+                        }}>
+                            {[...youtubeVideoIds, ...youtubeVideoIds].map((videoId, i) => (
+                                <div
+                                    key={i}
+                                    className="thumbnail-video-item"
+                                    style={{
+                                        flexShrink: 0,
+                                        width: 240,
+                                        height: 140,
+                                        borderRadius: 12,
+                                        overflow: "hidden",
+                                        border: mainVideoId === videoId ? "2px solid #ffff00" : "1px solid #444", // <-- yellow on selected
+                                        position: "relative",
+                                        cursor: "pointer",
+                                        boxShadow: mainVideoId === videoId ? "0 0 18px #ffff0057" : "0 2px 16px #000c",
+                                        transition: "transform 0.3s, border-color 0.3s",
+                                        background: "#111",
+                                        opacity: i < youtubeVideoIds.length || mainVideoId !== videoId ? 1 : 0.7
+                                    }}
+                                    onClick={() => setMainVideoId(videoId)}
+                                >
+                                    <iframe
+                                        src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&modestbranding=1&showinfo=0&rel=0`}
+                                        title={`YC Thumb ${i}`}
+                                        allow="autoplay; encrypted-media"
+                                        style={{
+                                            width: "100%",
+                                            height: "100%",
+                                            border: "none"
+                                        }}
+                                    />
+                                    <div style={{
+                                        position: "absolute",
+                                        inset: 0,
+                                        background: mainVideoId === videoId ? "rgba(255,255,0,0.11)" : "rgba(0,0,0,0.07)",
+                                        transition: "background 0.3s"
+                                    }} />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                </div>
+
                 <div className="max-w-4xl mx-auto">
                     <p className="!text-[#ababab]">Only 2 - 3% of Indians are trained in vocal expression.Coincidentally, only 1 - 5% of Indians are actually rich. See the overlap?</p>
                 </div>
@@ -61,6 +154,28 @@ export default function Extraordinary() {
                     You master that, you print money.
                 </p>
             </div>
-        </div>
+
+            {/* Animation Keyframes & Responsive Styles */}
+            <style>
+                {`
+                        @keyframes slideLeft {
+                            0% { transform: translateX(0); }
+                            100% { transform: translateX(-50%); }
+                        }
+                        @media (max-width: 900px) {
+                            .main-video-container { max-width: 100vw !important; }
+                        }
+                        @media (max-width: 700px) {
+                            .main-video-container { aspect-ratio: 16/9 !important; }
+                            .thumbnail-video-item { width: 44vw !important; height: 22vw !important; min-width: 110px !important; }
+                            .thumbnail-slider { gap: 8px !important; }
+                        }
+                        @media (max-width: 500px) {
+                            .main-title { font-size: 1.3rem !important; }
+                            .main-video-container { border-radius: 8px !important; }
+                        }
+                    `}
+            </style>
+        </section>
     );
 }

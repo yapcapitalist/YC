@@ -96,8 +96,8 @@ const ProgramDetails = () => {
                         <span className="text-gray-300 mb-20">
                             Submit An Early Application Below To Join The Waitlist. Your Application Will Get An Early Preference When Enrolments Begin Sometime In July 2025.
                         </span>
-                        <Link to="/apply" className="">
-                        <button className="bg-transparent border border-yellow-400 transition">
+                        <Link to="/apply" className="w-full">
+                        <button className="bg-transparent border border-yellow-400 transition w-full">
                             Submit Application
                         </button>
                         </Link>
