@@ -118,9 +118,9 @@ const WhyChooseUs = () => {
         <p className="text-[12px] !text-[#ffff00] md:text-base">We will not accept</p>
       </div>
       <div className="relative max-w-6xl mx-auto mt-[88px] z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-16 items-center justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 items-center justify-center">
           {/* Left column */}
-          <div className="flex flex-col gap-y-8 md:gap-y-12 items-center lg:items-end">
+          <div className="flex flex-col gap-y-8 gap-y-12 sm:gap-y-38 items-center lg:items-end">
             {items.slice(0, 2).map((item, idx) => (
               <div
                 key={idx}
@@ -188,7 +188,7 @@ const WhyChooseUs = () => {
             </svg>
           </div>
           {/* Right column */}
-          <div className="flex flex-col gap-y-8 md:gap-y-12 items-center lg:items-start">
+          <div className="flex flex-col gap-y-8 gap-y-12 sm:gap-y-38 items-center lg:items-start">
             {items.slice(2).map((item, idx) => (
               <div
                 key={idx}
