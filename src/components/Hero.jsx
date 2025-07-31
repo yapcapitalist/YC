@@ -12,7 +12,7 @@ export default function Hero() {
 
       <img src={Illustration} alt="" className="object-fill absolute top-[0px] left-1/2 -translate-x-1/2  z-4" />
 
-      <div className="absolute grid-svg hero-gridsvg bottom-[-168px] right-[-534px] [@media(min-width:1600px)]:right-[-644px] !z-1">
+      <div className="absolute grid-svg hero-gridsvg bottom-[-168px] right-[-534px] [@media(min-width:1600px)]:right-[-644px] !z-6">
         <img src={dot} alt="" width="" height="" />
       </div>
 
@@ -27,9 +27,11 @@ export default function Hero() {
           Founders, Professionals and Freelancers.
         </p>
 
-        <p className="bar_prog">
-          <span className="inner_bar"></span>
-        </p>
+        <div className="w-full flex justify-center align-center">
+          <p className="w-[28%] h-2 bg-gray-700 rounded-full overflow-hidden my-4 sm:my-8">
+            <span className="block h-full bg-[#fefe00] w-[44%] rounded-full"></span>
+          </p>
+        </div>
 
         <p className="text-sm text-white-600 font-semibold">
           20 Seats | Handpicked | No Fluff

@@ -82,8 +82,8 @@ export default function Extraordinary() {
           </div>
 
           {/* Thumbnail Videos */}
-          <div className="thumbnail-slider-container mt-6 sm:mt-12 overflow-hidden">
-            <div className="thumbnail-slider flex gap-4 w-fit animate-[slideLeft_28s_linear_infinite] px-2 sm:px-0">
+          <div className="thumbnail-slider-container mt-6 sm:mt-12 overflow-hidden ">
+            <div className="thumbnail-slider flex gap-4 w-fit animate-[slideLeft_28s_linear_infinite]  shadow-[inset_80px_80px_10px_20px_#000000] px-2 sm:px-0">
               {[...youtubeVideoIds, ...youtubeVideoIds].map((videoId, i) => (
                 <div
                   key={i}

@@ -24,7 +24,7 @@ const benefits = [
     },
     { 
         title: "Command respect", 
-        className: "top-[52%] left-[10%] sm:top-[60%] sm:right-[71.8%]" 
+        className: "top-[52%] left-[10%] sm:top-[60%] sm:left-[-2%]" 
     },
     { 
         title: "Wins rooms", 

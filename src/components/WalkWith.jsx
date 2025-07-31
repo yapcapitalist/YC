@@ -188,20 +188,20 @@ export default function WhatYouWalkAwayWith() {
                 <img src={dot} alt="" width="" height="" />
             </div>
             <h2 className="relative text-center z-1 mb-7 sm:mb-12">What You Walk Away With</h2>
-<div className="flex flex-wrap justify-center sm:justify-start gap-x-2 gap-y-2 w-fit">
-  {items.map((item, index) => (
-    <div
-      key={index}
-      className="w-[calc(50%-4px)] sm:w-[394px] h-[78px] sm:h-[145px] flex items-start gap-2 sm:gap-4 bg-[#1a1a1a]/70 px-1 py-2 sm:px-4 sm:py-4 rounded-xl border-2 border-[#2b2b2b] backdrop-blur"
-    >
-      <div className="itemsvg">{item.svg}</div>
-      <div>
-        <p className="!text-[8px] sm:!text-[18px] mb-1 !font-bold">{item.title}</p>
-        <p className="!text-[8px] sm:!text-[18px] !text-[#ABABAB]">{item.description}</p>
-      </div>
-    </div>
-  ))}
-</div>
+            <div className="flex flex-wrap justify-center gap-x-2 gap-y-2 sm:gap-x-3 sm:gap-y-3 w-fit">
+                {items.map((item, index) => (
+                    <div
+                        key={index}
+                        className="w-[calc(50%-4px)] sm:w-[394px] h-[78px] sm:h-[145px] flex items-start gap-2 sm:gap-4 bg-[#1a1a1a]/70 px-1 py-2 sm:px-4 sm:py-4 rounded-xl border-2 border-[#2b2b2b] backdrop-blur"
+                    >
+                        <div className="itemsvg">{item.svg}</div>
+                        <div>
+                            <p className="!text-[8px] sm:!text-[18px] mb-1 !font-bold">{item.title}</p>
+                            <p className="!text-[8px] sm:!text-[18px] !text-[#ABABAB]">{item.description}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
 
 
         </section>

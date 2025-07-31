@@ -21,28 +21,28 @@ export default function YCApplicationSection() {
 
             {/* Header */}
             <div className="max-w-6xl mx-auto">
-                <div className="border-1 border-[#1f1f00] mb-16 flex flex-col justify-center p-2 lg:p-6 rounded-lg">
-                    <div className="flex flex-col lg:flex-row items-center gap-8 ">
+                <div className="border-1 border-[#1f1f00] mb-12 sm:mb-16 flex flex-col justify-center p-2 lg:p-6 rounded-lg">
+                    <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 ">
                         {/* Left section */}
-                        <div className="flex-1">
-                            <span className="mb-2">Hey there, you're applying for</span>
-                            <p className="!font-bold !text-[#fefe00]">The YC Cohort</p>
+                        <div className="flex-1 text-center">
+                            <span className="mb-2 !text-[14px]">Hey there, you're applying for</span>
+                            <p className="!font-bold !text-[#fefe00] !text-[20px] sm:!text-[22px]">The YC Cohort</p>
                         </div>
 
                         {/* Program duration */}
-                        <div className="rounded-xl p-3 bg-[#2b2b2b] flex gap-6 lg:gap-40">
+                        <div className="rounded-xl w-full justify-between sm:justify-start sm:w-auto p-3 bg-[#2b2b2b] flex gap-6 lg:gap-40">
                             <div className="flex flex-col gap-1">
                                 <span className="text-[#565656] mb-2">Program duration</span>
-                                <p className="!text-[#fefe00] text-2xl !font-bold">
-                                    12 <span className="!text-[20px] font-normal">weeks</span>
+                                <p className="!text-[#fefe00] !text-[20px] sm:!text-[22px] !font-bold">
+                                    12 <span className="!text-[12px] sm:!text-[20px]  font-normal">weeks</span>
                                 </p>
                             </div>
 
                             {/* Time commitment */}
                             <div className="flex flex-col gap-1">
                                 <span className="text-[#565656] mb-2">Time commitment</span>
-                                <p className="!text-[#fefe00] text-2xl !font-bold">
-                                    15-30 <span className="!text-[20px] font-normal">hrs/week</span>
+                                <p className="!text-[#fefe00] !text-[20px] sm:!text-[22px] !font-bold">
+                                    15-30 <span className="!text-[12px] sm:!text-[20px] font-normal">hrs/week</span>
                                 </p>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ export default function YCApplicationSection() {
                 </div>
 
                 {/* Stepper and Box */}
-                <div className="flex flex-col lg:flex-row justify-between gap-10 items-end">
+                <div className="flex flex-col-reverse sm:flex-col lg:flex-row justify-between gap-10 items-end">
                     {/* Left Steps */}
                     <div className="flex flex-col gap-6">
                         <Step
@@ -75,7 +75,7 @@ export default function YCApplicationSection() {
                     </div>
 
                     {/* Right Info Box */}
-                    <div className="bg-[#111105] border border-[#2a2a2a] rounded-xl p-7 w-full max-w-md mx-auto text-center flex flex-col items-center justify-between">
+                    <div className="bg-[#111105] border border-[#2a2a2a] rounded-xl p-7 w-full max-w-md mx-auto text-center flex flex-col items-center justify-between z-1">
                         {/* Icon (can replace with actual SVG later) */}
                         <div className="mb-6">
                             <img src={group} alt="" />
@@ -107,7 +107,7 @@ function Step({ step, title, desc, color, isLast }) {
         <div className="relative pl-6">
             {/* Connecting line */}
             {!isLast && (
-                <div className="absolute top-8 left-26 h-36 lg:h-22 border-l border-[#3a3a3a] z-0"></div>
+                <div className="absolute top-6 sm:top-8 left-26 h-20 sm:h-36 lg:h-22 border-l border-[#3a3a3a] z-0"></div>
             )}
 
             <div className="relative z-10 flex items-start gap-4">

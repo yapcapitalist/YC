@@ -208,7 +208,7 @@ export default function ApplicationForm() {
     };
 
     return (
-        <div className="relative min-h-screen text-white">
+        <div className="relative min-h-screen text-white px-8 sm:px-0">
             <div className="relative rounded z-2 py-8 max-w-7xl mx-auto">
                 <Link to="/">
                     <div className="w-11">
@@ -226,7 +226,7 @@ export default function ApplicationForm() {
             </div>
 
             <div className="flex flex-row p-6 gap-10 lg:gap-20 max-w-xl lg:max-w-6xl mx-auto">
-                <div className="w-full lg:w-1/2">
+                <div className="w-full lg:w-1/2 hidden sm:block">
                     <span className="!font-medium">Applying for</span>
                     <p className=" !font-bold !text-[#fefe00] !text-[30px] mb-4">The YC Communication Cohort</p>
                     

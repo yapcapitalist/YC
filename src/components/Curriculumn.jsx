@@ -226,7 +226,7 @@ export default function Component() {
             <div className="bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
               <p className="font-semibold mb-2">MONTH 2</p>
               <h2 className=" font-bold !text-[#fefe00] !text-[28px] mb-4">THE DEVELOPMENT</h2>
-              <p className="mb-4">Writing Genius</p>
+              <p className="mb-4">Writing And Content Mastery</p>
 
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
@@ -273,7 +273,7 @@ export default function Component() {
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>How to Start a Freelance/Service Business from Zero</span>
+                  <span>How to Start a Product and Freelance/Service Business from Zero</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
