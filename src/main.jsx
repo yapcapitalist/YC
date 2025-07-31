@@ -10,11 +10,11 @@ import WhyChooseUs from './components/WhyChooseUs.jsx';
 import WalkWith from './components/WalkWith.jsx';
 import ProgramDetails from './components/Program-Details.jsx';
 import FormatStructure from './components/Format.jsx';
-// import StickyHeader from './components/Head.jsx';
+import StickyHeader from './components/Head.jsx';
 import WhatIsYc from './components/WhatIsYc.jsx';
 import FAQSection from './components/Faq.jsx';
 import YCContactFooter from './components/Footer.jsx';
-import Curriculum from './components/Curriculumn.jsx';
+// import Curriculum from './components/Curriculumn.jsx';
 import Extraordinary from './components/Extraordinary.jsx';
 import YCDifference from './components/TheYcDifference.jsx';
 import YCForm from './components/YcForm.jsx';
@@ -30,13 +30,13 @@ createRoot(document.getElementById('root')).render(
           path="/"
           element={
             <>
-             {/* <StickyHeader /> */}
+             <StickyHeader />
               <Hero />
               <WhatIsYc />
               <WhyYc />
               <WhoThisIsFor />
               <WhyChooseUs />
-              <Curriculum />
+              {/* <Curriculum /> */}
               <Extraordinary />
               <FormatStructure />
               <WalkWith />
