@@ -139,6 +139,117 @@ button {
   }
 }
 
+.bar_prog {
+
+  width: 14px;
+
+  height: 4px;
+}
+
+
+@media (max-width:768px) {
+
+  h1,
+  h2 {
+    font-size: 22px;
+  }
+
+  p,
+  label {
+    font-size: 12px;
+  }
+
+  span,
+  button {
+    font-size: 8px;
+  }
+
+  button {
+    font-size: 8px;
+  }
+
+  h2 span {
+    font-size: 22px;
+  }
+
+  p span {
+    font-size: 12px;
+  }
+
+
+  .grid-svg {
+    width: auto;
+  }
+
+  .mobsvg {
+    width: 140px;
+    height: 140px;
+  }
+
+  .itemsvg svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .font-small {
+    font-size: 14px;
+  }
+
+  .spannum {
+    font-size: 12px;
+  }
+
+  .checksvg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .price-bold {
+    font-size: 22px;
+  }
+
+  .price-light {
+    font-size: 14px;
+  }
+
+  .size-diff {
+    font-size: 18px;
+  }
+
+  .homesvg,
+  .currsvg img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .currsvg img {
+    width: 34px;
+    height: 34px;
+  }
+
+  footer {
+    z-index: 2;
+    position: relative;
+  }
+
+  .hero-gridsvg {
+    height: 460px;
+    bottom: 100px;
+    width: 88%;
+    right: -100px;
+}
+
+footer a{
+  font-size: 8px;
+  margin: 0;
+}
+
+.checkyc{
+  width: 12px;
+  height: 12px;
+}
+
+}
 
 /* 
 

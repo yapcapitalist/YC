@@ -47,10 +47,10 @@ const TheManBehindYc = () => {
         The Mind Behind YC
       </h2>
 
-      <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-8 z-10">
+      <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center sm:items-start gap-8 z-10">
 
         {/* Left Image */}
-        <div className="w-[284px] h-[300px]">
+        <div className="w-[168px] sm:w-[284px] h-full sm:h-[300px]">
           <img
             src={Gurmeet}// Replace with your image path
             alt="Gurmeet Singh"
@@ -59,7 +59,7 @@ const TheManBehindYc = () => {
         </div>
 
         {/* Right Text Content */}
-        <div className="w-2/3 space-y-4">
+        <div className="w-fit sm:w-2/3 space-y-4">
 
           <p className=''>
             I’m <span className="text-[#ffff00]">Gurmeet Singh</span> — author of <em>The Articulate Mind</em> and founder of the YC Cohort.

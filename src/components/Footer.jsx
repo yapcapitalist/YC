@@ -11,9 +11,9 @@ const Footer = () => {
         </div>
         
       {/* Main Grid */}
-      <div className="max-w-6xl mx-auto flex justify-between items-start gap-6 pb-50">
+      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6 pb-12 sm:pb-50">
         {/* Left Contact Info */}
-        <div className="space-y-4">
+        <div className="space-y-4 flex sm:block items-center flex-col sm:flex-row">
           <div className="relative w-11 rounded z-2">
             <img src={yclogo} alt="" />
           </div>
@@ -24,7 +24,7 @@ const Footer = () => {
         {/* Center Title */}
 
         {/* Right Policy Buttons */}
-        <div className="flex flex-col items-end space-y-3 w-full md:w-auto">
+        <div className="flex flex-row sm:flex-col flex-wrap justify-center gap-2 sm:gap-0 items-end space-y-3 w-full md:w-auto">
           {[
             { label: 'PRIVACY POLICY', href: '#' },
             { label: 'REFUND POLICY', href: '#' },
@@ -33,7 +33,7 @@ const Footer = () => {
             <a
               key={i}
               href={item.href}
-              className="text-center text-sm font-bold uppercase border-2 rounded-md py-2 px-4 min-w-[240px]"
+              className="text-center text-sm font-bold uppercase border-2 rounded-md py-2 px-4 min-w-[124px] sm:min-w-[240px]"
               style={{
                 color: '#ffff00',
                 borderColor: '#ffff00',

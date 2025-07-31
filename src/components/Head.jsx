@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import yclogo from '../assets/YAAP_CAPITAL.svg' // Assuming you have a logo image
+import yclogo from '../assets/YAAP_CAPITAL.svg'; // Adjust path if needed
 
 export default function StickyHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -14,22 +14,27 @@ export default function StickyHeader() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-black/80 backdrop-blur-md shadow-md" : "bg-transparent"
-        }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-black/80 backdrop-blur-md shadow-md" : "bg-transparent"
+      }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 sm:py-4 flex items-center justify-between">
         {/* Logo */}
         <div
-          className={`transition-all duration-300 ${scrolled ? "opacity-0 -translate-y-4 pointer-events-none" : "opacity-100 translate-y-0"
-            }`}
+          className={`transition-all duration-300 ${
+            scrolled
+              ? "opacity-0 -translate-y-4 pointer-events-none"
+              : "opacity-100 translate-y-0"
+          }`}
         >
-          <div className="relative w-11 rounded z-2">
-            <img src={yclogo} alt="" />
+          <div className="w-8 sm:w-11">
+            <img src={yclogo} alt="Logo" className="w-full h-auto" />
           </div>
         </div>
 
+        {/* Button */}
         <button
-          className="!px-17 py-3 rounded-full my-[36px] !m-0"
+          className="text-xs sm:text-base px-4 sm:!px-17 py-2 sm:py-3 rounded-full my-3 sm:my-[36px] !m-0 bg-[#fefe00] text-black font-semibold"
           onClick={() => {
             const el = document.getElementById("program-details");
             if (el) el.scrollIntoView({ behavior: "smooth" });
@@ -41,3 +46,4 @@ export default function StickyHeader() {
     </header>
   );
 }
+  

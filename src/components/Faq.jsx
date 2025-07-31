@@ -22,13 +22,13 @@ export default function FAQSection() {
     };
 
     return (
-        <section className="relative max-w-6xl mx-auto pb-[158px]">
+        <section className="relative max-w-6xl mx-auto pb-16 sm:pb-[158px] px-8 sm:px-0">
             <div className="absolute grid-svg  bottom-[-162px] left-[-320px] !z-1">
                 <img src={dot} alt="" width="" height="" />
             </div>
 
             <div className="absolute top-0 right-0 !z-1">
-                <svg width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="mobsvg" width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.6">
                         <path opacity="0.5" d="M152.425 109.357V108.357H151.425V109.357H152.425ZM147.091 374.492C147.091 377.437 149.479 379.825 152.425 379.825C155.37 379.825 157.758 377.437 157.758 374.492C157.758 371.546 155.37 369.158 152.425 369.158C149.479 369.158 147.091 371.546 147.091 374.492ZM355.991 109.357V108.357H152.425V109.357V110.357H355.991V109.357ZM152.425 109.357H151.425V374.492H152.425H153.425V109.357H152.425Z" fill="url(#paint0_linear_313_3598)" />
                         <path opacity="0.5" d="M0.666667 191.744C0.666667 194.689 3.05448 197.077 6 197.077C8.94552 197.077 11.3333 194.689 11.3333 191.744C11.3333 188.798 8.94552 186.411 6 186.411C3.05448 186.411 0.666667 188.798 0.666667 191.744ZM355.991 191.744V190.744H191.71V191.744V192.744H355.991V191.744ZM191.71 191.744V190.744H6V191.744V192.744H191.71V191.744Z" fill="url(#paint1_linear_313_3598)" />
@@ -76,7 +76,7 @@ export default function FAQSection() {
                                 onClick={() => toggleFAQ(index)}
                                 className="w-full !normal-case text-left flex justify-between items-center !py-4 !px-0 focus:outline-none !shadow-none !rounded-none !bg-transparent"
                             >
-                                <span className="!text-white !font-extrabold">{faq.question}</span>
+                                <p className="!text-white !font-bold">{faq.question}</p>
                                 <span className="!text-[30px] transform transition-transform duration-300">
                                     {openIndex === index ? "−" : "+"}
                                 </span>
