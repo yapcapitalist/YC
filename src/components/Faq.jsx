@@ -77,7 +77,7 @@ export default function FAQSection() {
                                 className="w-full !normal-case text-left flex justify-between items-center !py-4 !px-0 focus:outline-none !shadow-none !rounded-none !bg-transparent"
                             >
                                 <p className="!text-white !font-bold">{faq.question}</p>
-                                <span className="!text-[30px] transform transition-transform duration-300">
+                                <span className="!text-[30px] text-[#fefe00] transform transition-transform duration-300">
                                     {openIndex === index ? "−" : "+"}
                                 </span>
                             </button>

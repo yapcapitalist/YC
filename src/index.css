@@ -11,13 +11,16 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #000000;
+  background-color: #000101;
 
   /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
 }
+/* *{
+  background-color: #000101;
+} */
 
 body {
   overflow-x: hidden;
@@ -238,7 +241,7 @@ button:hover{
   }
 
   footer {
-    z-index: 2;
+    /* z-index: 2; */
     position: relative;
   }
 

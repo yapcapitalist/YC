@@ -3,15 +3,15 @@ import yclogo from '../assets/YAAP_CAPITAL.svg'
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white px-6 md:px-12 pb-8">
-      <div className="text-center">
+    <footer className="text-white px-6 md:px-12 pb-8">
+      <div className="relative text-center z-8">
           <h2 className="pb-12">
             Contact Us
           </h2>
-        </div>
+      </div>
         
       {/* Main Grid */}
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6 pb-12 sm:pb-50">
+      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6 pb-12 sm:pb-50 z-0">
         {/* Left Contact Info */}
         <div className="space-y-4 flex sm:block items-center flex-col sm:flex-row">
           <div className="relative w-11 rounded z-2">
