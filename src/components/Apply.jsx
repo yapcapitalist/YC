@@ -9,7 +9,7 @@ export default function YCApplicationSection() {
 
             <div className="relative  rounded z-2 py-8 max-w-7xl mx-auto">
                 <Link to="/">
-                    <div className='w-11'>
+                    <div className='w-8 sm:w-11'>
                         <img src={yclogo} alt="" />
                     </div>
                 </Link>

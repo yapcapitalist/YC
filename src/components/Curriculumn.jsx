@@ -1,6 +1,8 @@
 import { Brain } from "lucide-react"
 import { useEffect, useState, useRef } from "react"
 import mainbrain from "../assets/Main brain.png"
+import halfbrain from "../assets/halfbrain.png"
+
 import trophyicon from "../assets/trophyicon.svg"
 import maskicon from "../assets/maskicon.svg"
 import discussiionicon from "../assets/discussiionicon.svg"
@@ -94,7 +96,7 @@ export default function Component() {
   return (
     <div className="relative text-white min-h-screen pb-16 sm:pb-[158px] px-8 sm:px-0">
 
-            <div className="absolute grid-svg bottom-[-200px] left-[-298px] !z-0">
+            <div className="absolute grid-svg bottom-[-80px] left-[-160px] sm:bottom-[-200px] sm:left-[-298px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>
 
@@ -150,8 +152,12 @@ export default function Component() {
         </div>
       </div>
 
-      <div className="absolute left-1/2 top-[44%] transform -translate-x-1/2 -translate-y-1/2 inset-0 w-full sm:w-[82%]">
+      <div className="absolute left-1/2 top-[44%] transform -translate-x-1/2 -translate-y-1/2 inset-0 w-full sm:w-[82%] hidden sm:block">
         <img src={mainbrain} alt="" />
+      </div>
+
+        <div className="absolute left-30 top-[36%] transform -translate-x-1/2 -translate-y-1/2 block sm:hidden">
+        <img src={halfbrain} alt="" />
       </div>
 
       {/* Timeline */}
@@ -160,7 +166,7 @@ export default function Component() {
 
         {/* Vertical connecting line - only from first to last brain */}
         <div
-          className="absolute left-0 sm:left-1/2 transform -translate-x-1/2 dotted-line-container"
+          className="absolute left-3 sm:left-1/2 transform -translate-x-1/2 dotted-line-container"
           style={{
             top: "2rem",
             bottom: "24rem",
@@ -171,7 +177,7 @@ export default function Component() {
         </div>
 
         {/* Month 1 - Essentials */}
-        <div className="flex flex-row-reverse sm:flex-row items-start mb-16" ref={sectionRefs[0]}>
+        <div className="flex flex-row-reverse w-fit sm:w-auto sm:flex-row items-start mb-16" ref={sectionRefs[0]}>
           <div className=" sm:w-1/2 w-full pr-0 sm:pr-8">
             <div className="w-[280px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg border border-white/10">
               <p className="!font-semibold mb-2">MONTH 1</p>
@@ -207,7 +213,7 @@ export default function Component() {
             </div>
           </div>
 
-          <div className={`flex items-center absolute left-[-22px] sm:relative justify-center bg-black w-11 h-11 sm:w-18 sm:h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`}>
+          <div className={`flex items-center absolute left-[-16px] sm:relative justify-center bg-black w-11 h-11 sm:w-18 sm:h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`}>
             <Brain className={`w-8 h-8 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
@@ -215,10 +221,10 @@ export default function Component() {
         </div>
 
         {/* Month 2 - The Development */}
-        <div className="flex items-start mb-16" ref={sectionRefs[1]}>
+        <div className="flex w-fit sm:w-auto items-start mb-16" ref={sectionRefs[1]}>
           <div className="w-1/2 pr-0 sm:pr-8"></div>
 
-          <div className={`flex items-center absolute left-[-18px] sm:relative justify-center bg-black w-11 h-11 sm:w-18 sm:h-16 rounded-full bg-black/20 backdrop-blur-mdl border-2 border-white-600 relative z-10 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`}>
+          <div className={`flex items-center ml-1 sm:ml-0 absolute left-[-18px] sm:relative justify-center !bg-black w-11 h-11 sm:w-18 sm:h-16 rounded-full bg-black/20 backdrop-blur-mdl border-2 border-white-600 relative z-10 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`}>
             <Brain className={`w-8 h-8 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
@@ -263,7 +269,7 @@ export default function Component() {
         </div>
 
         {/* Month 3 - Mastery */}
-        <div className="flex flex-row-reverse sm:flex-row items-start" ref={sectionRefs[2]}>
+        <div className="w-fit sm:w-auto flex flex-row-reverse sm:flex-row items-start" ref={sectionRefs[2]}>
           <div className="sm:w-1/2 w-full pr-0 sm:pr-8">
             <div className="w-[280px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
               <p className="font-semibold mb-2">MONTH 3</p>
@@ -299,7 +305,7 @@ export default function Component() {
             </div>
           </div>
 
-          <div className={`flex items-center absolute left-[-18px] sm:relative justify-center bg-black w-11 h-11 sm:w-18 sm:h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`}>
+          <div className={`flex items-center absolute ml-1 sm:ml-0 left-[-18px] sm:relative justify-center bg-black w-11 h-11 sm:w-18 sm:h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`}>
             <Brain className={`w-8 h-8 ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
@@ -309,11 +315,11 @@ export default function Component() {
       </div>
 
       <div className="relative z-1 max-w-3xl mx-auto mt-20">
-        {/* <div className="flex justify-center mb-10">
-          <div className="bg-[#1E1E1E] px-6 py-2 rounded-full border border-[#fefe00] text-[#fefe00] text-sm font-semibold flex items-center gap-2">
-            <span className="text-yellow-400">✨</span> Beyond the Curriculum
+        <div className="flex justify-center mb-10">
+          <div className="bg-[#191919] px-6 py-2 rounded-full border border-[#fefe00] text-[#fefe00] text-sm font-semibold flex items-center gap-2">
+            <span className="!text-[#fefe00] !font-bold">✨</span> Beyond the Curriculum
           </div>
-        </div> */}
+        </div>
 
         <div className="space-y-8">
           {/* Item 1 */}

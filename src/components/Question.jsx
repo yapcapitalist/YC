@@ -211,7 +211,7 @@ export default function ApplicationForm() {
         <div className="relative min-h-screen text-white px-8 sm:px-0">
             <div className="relative rounded z-2 py-8 max-w-7xl mx-auto">
                 <Link to="/">
-                    <div className="w-11">
+                    <div className="w-8 sm:w-11">
                         <img src={yclogo} alt="" />
                     </div>
                 </Link>

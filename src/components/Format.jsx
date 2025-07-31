@@ -113,7 +113,7 @@ const StackingCards = ({
                     </svg>
       </div>
       
-      <div className="relative z-1 max-w-6xl mx-auto px-5 ">
+      <div className="relative z-1 max-w-6xl mx-auto px-0 sm:px-5 ">
         <h2 className="text-center mb-6 sm:mb-12">
           {title}
         </h2>
@@ -123,7 +123,7 @@ const StackingCards = ({
             {cards.map((card, index) => (
               <div
                 key={card.id}
-                className={`stacking-card sticky bg-[#131012] w-full flex border border-[4px] border-[#4A4A00] items-center  rounded-2xl overflow-hidden shadow-2xl transition-transform duration-300 ${stackedCards.has(index) ? 'transform scale-98' : ''
+                className={`stacking-card sticky bg-[#131012] w-full flex border border-[4px] border-[#4A4A00] items-center  rounded-2xl overflow-hidden shadow-2xl transition-transform h-[110px] sm:h-auto duration-300 ${stackedCards.has(index) ? 'transform scale-98' : ''
                   }`}
                 style={{
                   // height: '20vh',
@@ -140,11 +140,11 @@ const StackingCards = ({
                 >
                   {card.number}
                 </div>
-                <div className=" text-white px-6 max-w-2xl pt-6 pb-12">
+                <div className=" text-white px-3 sm:px-6 max-w-2xl pt-2 pb-2 sm:pt-6 sm:pb-12">
                   <h2 className="text-2xl font-bold mb-2 !text-[#fefe00]">
                     {card.title}
                   </h2>
-                  <p className="text-base opacity-90 drop-shadow-sm !text-[#ababab]">
+                  <p className="text-base w-[280px] sm:w-auto  drop-shadow-sm !text-[#ababab]">
                     {card.description}
                   </p>
                 </div>
