@@ -10,7 +10,7 @@ import WhyChooseUs from './components/WhyChooseUs.jsx';
 import WalkWith from './components/WalkWith.jsx';
 import ProgramDetails from './components/Program-Details.jsx';
 import FormatStructure from './components/Format.jsx';
-import StickyHeader from './components/Head.jsx';
+// import StickyHeader from './components/Head.jsx';
 import WhatIsYc from './components/WhatIsYc.jsx';
 import FAQSection from './components/Faq.jsx';
 import YCContactFooter from './components/Footer.jsx';
@@ -30,7 +30,7 @@ createRoot(document.getElementById('root')).render(
           path="/"
           element={
             <>
-             <StickyHeader />
+             {/* <StickyHeader /> */}
               <Hero />
               <WhatIsYc />
               <WhyYc />
