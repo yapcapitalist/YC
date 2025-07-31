@@ -140,7 +140,7 @@ export default function ApplicationForm() {
         const q = questions[current];
         return (
             <div className="w-full max-w-md text-white">
-                <p className="text-lg mb-6 font-semibold">
+                <p className="text-lg !text-[18px] !text-[22px] mb-6 font-semibold">
                     {q.label} <span className="text-[#FFD700]">*</span>
                 </p>
 
@@ -156,9 +156,9 @@ export default function ApplicationForm() {
                                     onChange={() => handleSelect(opt)}
                                     className="appearance-none w-4 h-4 border-2 border-yellow-500 rounded-full checked:bg-yellow-500 relative"
                                 />
-                                <span className="relative">
+                                <span className="relative !text-[18px]">
                                     {answers[current] === opt && (
-                                        <span className="absolute -left-7 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-yellow-500 rounded-full"></span>
+                                        <span className="absolute -left-7 top-1/2 !text-[18px] transform -translate-y-1/2 w-2 h-2 bg-yellow-500 rounded-full"></span>
                                     )}
                                     {opt}
                                 </span>
@@ -246,7 +246,7 @@ export default function ApplicationForm() {
                         </div>
                     ))}
                 </div>
-                <div className="w-full lg:w-1/2">{renderRightSide()}</div>
+                <div className="w-full lg:w-1/2 z-10">{renderRightSide()}</div>
             </div>
         </div>
     );

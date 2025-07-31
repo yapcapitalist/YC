@@ -14,7 +14,7 @@ import StickyHeader from './components/Head.jsx';
 import WhatIsYc from './components/WhatIsYc.jsx';
 import FAQSection from './components/Faq.jsx';
 import YCContactFooter from './components/Footer.jsx';
-// import Curriculum from './components/Curriculumn.jsx';
+import Curriculum from './components/Curriculumn.jsx';
 import Extraordinary from './components/Extraordinary.jsx';
 import YCDifference from './components/TheYcDifference.jsx';
 import YCForm from './components/YcForm.jsx';
@@ -36,7 +36,7 @@ createRoot(document.getElementById('root')).render(
               <WhyYc />
               <WhoThisIsFor />
               <WhyChooseUs />
-              {/* <Curriculum /> */}
+              <Curriculum />
               <Extraordinary />
               <FormatStructure />
               <WalkWith />

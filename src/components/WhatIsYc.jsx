@@ -16,7 +16,7 @@ export default function WhatIsYC() {
   return (
     <div>
       <section
-        className="relative container pb-12 sm:pb-[158px] px-4 sm:px-6"
+        className="relative container pb-12 sm:pb-[158px] px-6 sm:px-6"
         style={{ maxWidth: 1200, margin: "0 auto" }}
       >
         {/* Background SVG */}

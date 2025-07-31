@@ -150,17 +150,17 @@ export default function Component() {
         </div>
       </div>
 
-      <div className="absolute left-1/2 top-[44%] transform -translate-x-1/2 -translate-y-1/2 inset-0 w-[82%]">
+      <div className="absolute left-1/2 top-[44%] transform -translate-x-1/2 -translate-y-1/2 inset-0 w-full sm:w-[82%]">
         <img src={mainbrain} alt="" />
       </div>
 
       {/* Timeline */}
-      <div className="z-1 max-w-4xl mx-auto relative" style={{ height: "fit-content" }}>
+      <div className="fontsizemockstyle z-1 max-w-4xl mx-auto relative" style={{ height: "fit-content" }}>
         {/* Background image container - full width from first to last brain */}
 
         {/* Vertical connecting line - only from first to last brain */}
         <div
-          className="absolute left-1/2 transform -translate-x-1/2 dotted-line-container"
+          className="absolute left-0 sm:left-1/2 transform -translate-x-1/2 dotted-line-container"
           style={{
             top: "2rem",
             bottom: "24rem",
@@ -171,11 +171,11 @@ export default function Component() {
         </div>
 
         {/* Month 1 - Essentials */}
-        <div className="flex items-start mb-16" ref={sectionRefs[0]}>
-          <div className="w-1/2 pr-8">
-            <div className="bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg border border-white/10">
+        <div className="flex flex-row-reverse sm:flex-row items-start mb-16" ref={sectionRefs[0]}>
+          <div className=" sm:w-1/2 w-full pr-0 sm:pr-8">
+            <div className="w-[280px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg border border-white/10">
               <p className="!font-semibold mb-2">MONTH 1</p>
-              <h2 className="font-bold !text-[#fefe00] !text-[28px] mb-4">ESSENTIALS</h2>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">ESSENTIALS</h2>
               <p className="text-gray-400 text-sm mb-4">Mindset and Communication</p>
 
               <ul className="space-y-2 text-sm">
@@ -207,25 +207,25 @@ export default function Component() {
             </div>
           </div>
 
-          <div className={`flex items-center justify-center bg-black w-18 h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`}>
+          <div className={`flex items-center absolute left-0 sm:relative justify-center bg-black w-18 h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`}>
             <Brain className={`w-8 h-8 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
-          <div className="w-1/2 pl-8"></div>
+          <div className="w-1/2 pl-0 sm:pl-8"></div>
         </div>
 
         {/* Month 2 - The Development */}
         <div className="flex items-start mb-16" ref={sectionRefs[1]}>
-          <div className="w-1/2 pr-8"></div>
+          <div className="w-1/2 pr-0 sm:pr-8"></div>
 
-          <div className={`flex items-center justify-center bg-black w-18 h-16 rounded-full bg-black/20 backdrop-blur-mdl border-2 border-white-600 relative z-10 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`}>
+          <div className={`flex items-center absolute left-0 sm:relative justify-center bg-black w-18 h-16 rounded-full bg-black/20 backdrop-blur-mdl border-2 border-white-600 relative z-10 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`}>
             <Brain className={`w-8 h-8 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
-          <div className="w-1/2 pl-8">
-            <div className="bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
+          <div className="sm:w-1/2 w-full pl-0 sm:pl-8">
+            <div className="w-[280px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
               <p className="font-semibold mb-2">MONTH 2</p>
-              <h2 className=" font-bold !text-[#fefe00] !text-[28px] mb-4">THE DEVELOPMENT</h2>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">THE DEVELOPMENT</h2>
               <p className="mb-4">Writing And Content Mastery</p>
 
               <ul className="space-y-2 text-sm">
@@ -263,11 +263,11 @@ export default function Component() {
         </div>
 
         {/* Month 3 - Mastery */}
-        <div className="flex items-start" ref={sectionRefs[2]}>
-          <div className="w-1/2 pr-8">
-            <div className="bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
+        <div className="flex flex-row-reverse sm:flex-row items-start" ref={sectionRefs[2]}>
+          <div className="sm:w-1/2 w-full pr-0 sm:pr-8">
+            <div className="w-[280px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
               <p className="font-semibold mb-2">MONTH 3</p>
-              <h2 className="font-bold !text-[#fefe00] !text-[28px] mb-4">MASTERY</h2>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">MASTERY</h2>
               <p className="mb-4">Sales and Business</p>
 
               <ul className="space-y-2 text-sm">
@@ -299,11 +299,11 @@ export default function Component() {
             </div>
           </div>
 
-          <div className={`flex items-center justify-center bg-black w-18 h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`}>
+          <div className={`flex items-center absolute left-0 sm:relative justify-center bg-black w-18 h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`}>
             <Brain className={`w-8 h-8 ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
-          <div className="w-1/2 pl-8"></div>
+          <div className="w-1/2 pl-0 sm:pl-8"></div>
         </div>
 
       </div>

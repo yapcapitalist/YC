@@ -8,7 +8,7 @@ import Illustration from '../assets/Header.png'
 
 export default function Hero() {
   return (
-    <section className="relative bg-black text-white min-h-screen flex items-center justify-center px-4 py-20 pb-0 relative overflow-hidden">
+    <section className="relative bg-black text-white min-h-[600px] sm:min-h-screen flex items-center justify-center px-4 py-20 pb-0 relative overflow-hidden">
 
       <img src={Illustration} alt="" className="object-fill absolute top-[0px] left-1/2 -translate-x-1/2  z-4" />
 
@@ -17,10 +17,7 @@ export default function Hero() {
       </div>
 
       <div className="max-w-6xl text-center z-10">
-        <h1 className="leading-tight mb-6">
-          You are only as good as you <br />
-          communicate
-        </h1>
+        <h1 className="leading-tight mb-8 sm:!mb-6">You are only as good as you <br />communicate</h1>
 
         <p className="">
           India’s Most Selective 12-Week Communication Cohort for Ambitious<br />

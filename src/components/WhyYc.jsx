@@ -81,7 +81,7 @@ const WhyYc = () => {
                 <h2 className="text-yellow-400 text-3xl font-bold mb-2">Why YC Cohort?</h2>
                 <p className="!text-[#ABABAB] my-2 leading-[57px]">Why YC? Because The Best Deserve The Better.</p>
                 <p className="text-gray-300">
-                    Most people learn English. You’ll learn <span className=" !text-[22px]  text-[#ffff00]">leadership communication</span>—the kind that closes deals, wins rooms, and commands respect. This isn’t a spoken English class. This is a career-defining experience that turns sharp minds into powerful communicators.
+                    Most people learn English. You’ll learn <span className=" !text-[12px] sm:!text-[22px] text-[#ffff00]">leadership communication</span>—the kind that closes deals, wins rooms, and commands respect. This isn’t a spoken English class. This is a career-defining experience that turns sharp minds into powerful communicators.
                 </p>
             </div>
             <div className="relative max-w-6xl mx-auto mt-0 sm:mt-[88px] h-[280px] sm:h-[600px] z-2">
