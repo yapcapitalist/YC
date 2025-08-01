@@ -22,7 +22,7 @@ export default function FAQSection() {
     };
 
     return (
-        <section className="relative max-w-[1600px] mx-auto pb-16 sm:pb-[158px] px-8 sm:px-4">
+        <section className="relative max-w-[1600px] mx-auto pb-16 sm:pb-[158px] px-8 sm:px-4 overflow-hidden">
             <div className="absolute grid-svg  bottom-[-162px] left-[-320px] !z-1">
                 <img src={dot} alt="" width="" height="" />
             </div>

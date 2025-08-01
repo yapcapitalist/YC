@@ -69,7 +69,7 @@ const StackingCards = ({
   ];
 
   return (
-    <div className="relative min-h-[550px] sm:min-h-screen pb-12 sm:pb-[158px] px-4 sm:px-0">
+    <div className="relative min-h-[550px] sm:min-h-screen pb-12 sm:pb-[158px] px-4 sm:px-0 flow-style">
       <div className="absolute grid-svg  top-[268px] left-[-320px] !z-0">
         <img src={dot} alt="" width="" height="" />
       </div>
@@ -113,7 +113,7 @@ const StackingCards = ({
                     </svg>
       </div>
       
-      <div className="relative z-1 max-w-[1600px] mx-auto px-0 sm:px-5 ">
+      <div className="relative z-1 max-w-6xl mx-auto px-0 sm:px-5 ">
         <h2 className="text-center mb-6 sm:mb-12">
           {title}
         </h2>

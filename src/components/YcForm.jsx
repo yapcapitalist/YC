@@ -125,7 +125,7 @@ export default function YCForm() {
     };
 
     return (
-        <div className="relative pb-16 sm:pb-[158px] px-4 sm:px-0">
+        <div className="relative pb-16 sm:pb-[158px] px-4 sm:px-0 overflow-hidden">
             <div className="absolute grid-svg  top-0 left-[-48px] sm:left-[-320px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>
@@ -178,8 +178,6 @@ export default function YCForm() {
                             src={booksmockup}
                             alt="Guide Cover"
                             className="relative w-full h-auto rounded-lg shadow-8xl z-10"
-
-                        //   className="max-w-sm w-full h-auto rounded-lg shadow-lg"
                         />
                     </div>
 

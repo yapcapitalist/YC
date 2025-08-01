@@ -8,7 +8,7 @@ const ProgramDetails = () => {
     // const programDetails = useRef(null);
 
     return (
-        <section className="relative pb-12 sm:pb-[158px] px-6 sm:px-4 max-w-[1600px] mx-auto">
+        <section className="relative pb-12 sm:pb-[158px] px-6 sm:px-4 max-w-[1600px] mx-auto overflow-hidden">
             <div className="absolute grid-svg top-[-268px] !w-2/3 left-[-320px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>
@@ -19,7 +19,7 @@ const ProgramDetails = () => {
                 </p>
             </div>
 
-            <div className="relative flex flex-col sm:flex-row gap-6 z-1">
+            <div className="relative flex flex-col sm:flex-row gap-6 z-1 max-w-6xl mx-auto">
                 <div className="flex flex-col gap-6">
                     {/* Left Box */}
                     <div className="bg-[#131012] border border-gray-600 rounded-xl p-4 sm:px-6 sm:py-6 sm:pb-16 sm:h-[452px]">
