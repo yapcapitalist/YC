@@ -22,7 +22,7 @@ export default function FAQSection() {
     };
 
     return (
-        <section className="relative max-w-6xl mx-auto pb-16 sm:pb-[158px] px-8 sm:px-0">
+        <section className="relative max-w-6xl mx-auto pb-16 sm:pb-[158px] px-4 sm:px-0">
             <div className="absolute grid-svg  bottom-[-162px] left-[-320px] !z-1">
                 <img src={dot} alt="" width="" height="" />
             </div>
@@ -83,7 +83,7 @@ export default function FAQSection() {
                             </button>
                             {openIndex === index && (
                                 <div className="mt-3 text-white/80 pb-7">
-                                    <span className="!text-white">{faq.answer}</span>
+                                    <span className="!text-[14px] !text-white">{faq.answer}</span>
                                 </div>
                             )}
                         </div>

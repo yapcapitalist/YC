@@ -173,23 +173,23 @@ button:hover{
     font-size: 12px;
   }
   p{
-    font-size: 14px;
+    font-size: 15px;
   }
 
   span{
-    font-size: 8px;
+    font-size: 12px;
   }
 
   button {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   h2 span {
-    font-size: 22px;
+    font-size: 28px;
   }
 
   p span {
-    font-size: 12px;
+    font-size: 15px;
   }
 
 
@@ -208,11 +208,11 @@ button:hover{
   }
 
   .font-small {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .spannum {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .checksvg {
@@ -229,7 +229,7 @@ button:hover{
   }
 
   .size-diff {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .homesvg,

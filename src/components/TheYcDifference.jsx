@@ -3,7 +3,7 @@ import dot from "../assets/Dot Background.svg";
 
 export default function YCDifference() {
   return (
-    <div className="relative min-h-screen bg-black pb-12 sm:pb-[158px] px-6 sm:px-0 max-w-6xl mx-auto">
+    <div className="relative min-h-screen bg-black pb-12 sm:pb-[158px] px-4 sm:px-0 max-w-6xl mx-auto">
 
       <div className="absolute grid-svg !w-2/3 top-0 right-[-300px] !z-0">
                       <img src={dot} alt="" width="" height="" />
@@ -22,7 +22,7 @@ export default function YCDifference() {
             <div className="bg-gray-800 rounded-lg mb-4 flex-1 flex items-center justify-center">
               <div className="text-gray-500 text-sm">Image Placeholder</div>
             </div>
-            <p className="mb-3 size-diff !text-[#ffff00] !font-extrabold">Real Results</p>
+            <p className="mb-3 sdiffize- !text-[#ffff00] !font-extrabold">Real Results</p>
             <p className="price-light">
               Build Real Channels With Millions Of Followers During The Program.
             </p>

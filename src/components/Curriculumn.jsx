@@ -94,7 +94,7 @@ export default function Component() {
   }
 
   return (
-    <div className="relative text-white min-h-screen pb-16 sm:pb-[158px] px-8 sm:px-0">
+    <div className="relative text-white min-h-screen pb-16 sm:pb-[158px] px-4 sm:px-0">
 
             <div className="absolute grid-svg bottom-[-80px] left-[-160px] sm:bottom-[-200px] sm:left-[-298px] !z-0">
                 <img src={dot} alt="" width="" height="" />
@@ -140,13 +140,13 @@ export default function Component() {
       </div>
 
       {/* Header */}
-      <div className="text-center mb-20">
+      <div className="text-center mb-10 sm:mb-20">
         <h2 className="text-3xl font-bold mb-4">What You'll Learn - The Curriculum</h2>
 
         <div className="max-w-2xl mx-auto">
           <p className="text-xl font-semibold mb-4">The "1%" Method: Built to Elevate You in 12 Weeks</p>
           <p className="text-gray-300 text-sm leading-relaxed">
-            We recommend allocating a minimum of 15-20 hours per week to create standard work & get the most out of the
+            We recommend allocating a minimum of <span className="!text[15px] sm:!text[22px] !text-[#fefe00]">15-20 hours </span>per week to create standard work & get the most out of the
             program experience.
           </p>
         </div>
@@ -161,7 +161,7 @@ export default function Component() {
       </div>
 
       {/* Timeline */}
-      <div className="fontsizemockstyle z-1 max-w-4xl mx-auto relative" style={{ height: "fit-content" }}>
+      <div className="fontsizemockstyle z-1 max-w-4xl mx-auto relative mx-4 sm:mx-0" style={{ height: "fit-content" }}>
         {/* Background image container - full width from first to last brain */}
 
         {/* Vertical connecting line - only from first to last brain */}
@@ -213,8 +213,8 @@ export default function Component() {
             </div>
           </div>
 
-          <div className={`flex items-center absolute left-[-16px] sm:relative justify-center bg-black w-11 h-11 sm:w-18 sm:h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`}>
-            <Brain className={`w-8 h-8 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`} />
+          <div className={`flex items-center absolute left-[-24px] sm:relative justify-center bg-black w-[54px] h-[34px] sm:w-18 sm:h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`}>
+            <Brain className={`w-8 h-6 sm:w-8 sm:h-8 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
           <div className="w-1/2 pl-0 sm:pl-8"></div>
@@ -224,8 +224,8 @@ export default function Component() {
         <div className="flex w-fit sm:w-auto items-start mb-16" ref={sectionRefs[1]}>
           <div className="w-1/2 pr-0 sm:pr-8"></div>
 
-          <div className={`flex items-center ml-1 sm:ml-0 absolute left-[-18px] sm:relative justify-center !bg-black w-11 h-11 sm:w-18 sm:h-16 rounded-full bg-black/20 backdrop-blur-mdl border-2 border-white-600 relative z-10 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`}>
-            <Brain className={`w-8 h-8 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`} />
+          <div className={`flex items-center ml-1 sm:ml-0 absolute left-[-28px] sm:relative justify-center !bg-black w-[54px] h-[34px] sm:w-18 sm:h-16 rounded-full bg-black/20 backdrop-blur-mdl border-2 border-white-600 relative z-10 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`}>
+            <Brain className={`w-8 h-6 sm:w-8 sm:h-8 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
           <div className="sm:w-1/2 w-full pl-0 sm:pl-8">
@@ -305,8 +305,8 @@ export default function Component() {
             </div>
           </div>
 
-          <div className={`flex items-center absolute ml-1 sm:ml-0 left-[-18px] sm:relative justify-center bg-black w-11 h-11 sm:w-18 sm:h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`}>
-            <Brain className={`w-8 h-8 ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`} />
+          <div className={`flex items-center absolute ml-1 sm:ml-0 left-[-28px] sm:relative justify-center bg-black w-[54px] h-[34px] sm:w-18 sm:h-16  rounded-full border-2 border-white-600 relative z-10 ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`}>
+            <Brain className={`w-8 h-6 sm:w-8 sm:h-8  ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
           <div className="w-1/2 pl-0 sm:pl-8"></div>
@@ -316,9 +316,9 @@ export default function Component() {
 
       <div className="relative z-1 max-w-3xl mx-auto mt-20">
         <div className="flex justify-center mb-10">
-          <div className="bg-[#191919] px-6 py-2 rounded-full border border-[#fefe00] text-[#fefe00] text-sm font-semibold flex items-center gap-2">
-            <span className="!text-[#fefe00] !font-bold">✨</span> Beyond the Curriculum
-          </div>
+          <h2 className="text-[#fefe00] flex items-center gap-2">
+           Beyond the Curriculum
+          </h2>
         </div>
 
         <div className="space-y-8">

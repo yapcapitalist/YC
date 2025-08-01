@@ -6,16 +6,16 @@ import { Link } from "react-router-dom";
 import emailjs from '@emailjs/browser';
 
 const questions = [
-    { label: "Where did you hear about this course?", options: ["YouTube", "Twitter", "LinkedIn", "Instagram", "From a friend or colleague", "Other"] },
+    { label: "Where did you hear about this YC?", options: ["YouTube", "Twitter", "LinkedIn", "Instagram", "From a friend or colleague", "Other"] },
     { label: "Your public profile Link (LinkedIn, Twitter etc.)", type: "text" },
-    { label: "Which of these describes you best?", options: ["Aspiring Creator", "Working Professional", "Student", "Freelancer", "Entrepreneur", "Career Switcher"] },
+    { label: "Which of these describes you best?", options: ["Aspiring Creator", "Working Professional", "Artist", "Freelancer", "Entrepreneur", "Other"] },
     { label: "How many years of work experience do you have?", type: "text" },
     { label: "Tell us more about yourself!", type: "text" },
     { label: "On a scale of 1–10, how comfortable are you with communication?", options: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] },
     { label: "What are your current challenges when it comes to communication?", type: "text" },
     { label: "Why are you applying to the YC Cohort?", type: "text" },
     { label: "What outcome would make these 12 weeks worth it for you?", type: "text" },
-    { label: "Are you ready to dedicate 15–30 hrs/week?", options: ["Yes", "No", "Maybe"] },
+    { label: "Are you ready to dedicate 15–30 hrs/week?", options: ["Yes", "No"] },
 ];
 
 export default function ApplicationForm() {

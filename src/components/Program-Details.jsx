@@ -8,7 +8,7 @@ const ProgramDetails = () => {
     // const programDetails = useRef(null);
 
     return (
-        <section className="relative pb-12 sm:pb-[158px] px-6 sm:px-0 max-w-6xl mx-auto">
+        <section className="relative pb-12 sm:pb-[158px] px-4 sm:px-0 max-w-6xl mx-auto">
             <div className="absolute grid-svg top-[-268px] !w-2/3 left-[-320px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>
@@ -26,7 +26,7 @@ const ProgramDetails = () => {
                         <p className="!text-[#fefe00] font-small mb-4 !font-bold">Your Next Level Starts Here</p>
                         <ul className="space-y-2 sm:space-y-4 text-gray-200">
                             <li className="flex items-start gap-2">
-                                <span className="text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <span className="mt-2 sm:mt-0 text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.25 8.7498L11.25 23.7498L4.375 16.8748L6.1375 15.1123L11.25 20.2123L24.4875 6.9873L26.25 8.7498Z" fill="#FEFE00" />
                                 </svg>
                                 </span>
@@ -35,21 +35,21 @@ const ProgramDetails = () => {
                                 </span>
                             </li>
                             <li className="flex items-start gap-2">
-                                <span className="text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <span className="mt-2 sm:mt-0 text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.25 8.7498L11.25 23.7498L4.375 16.8748L6.1375 15.1123L11.25 20.2123L24.4875 6.9873L26.25 8.7498Z" fill="#FEFE00" />
                                 </svg>
                                 </span>
                                 <span className="spannum ">Personalized Mentorship And Guidance On Building A Fulfilling Career</span>
                             </li>
                             <li className="flex items-start gap-2">
-                                <span className="text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <span className="mt-2 sm:mt-0 text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.25 8.7498L11.25 23.7498L4.375 16.8748L6.1375 15.1123L11.25 20.2123L24.4875 6.9873L26.25 8.7498Z" fill="#FEFE00" />
                                 </svg>
                                 </span>
                                 <span className="spannum ">Application-Based Admission Only</span>
                             </li>
                             <li className="flex items-start gap-2">
-                                <span className="text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <span className="mt-2 sm:mt-0 text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.25 8.7498L11.25 23.7498L4.375 16.8748L6.1375 15.1123L11.25 20.2123L24.4875 6.9873L26.25 8.7498Z" fill="#FEFE00" />
                                 </svg>
                                 </span>
@@ -63,7 +63,7 @@ const ProgramDetails = () => {
                                 <span className="spannum ">* Only 20 Seats Per Cohort</span>
                             </li>
                             <li className="flex items-start gap-2">
-                                <span className="text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <span className="mt-2 sm:mt-0 text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.25 8.7498L11.25 23.7498L4.375 16.8748L6.1375 15.1123L11.25 20.2123L24.4875 6.9873L26.25 8.7498Z" fill="#FEFE00" />
                                 </svg>
                                 </span>

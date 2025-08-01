@@ -28,7 +28,7 @@ const benefits = [
     },
     { 
         title: "Wins rooms", 
-        className: "top-[36%] left-[12.5%] sm:top-[28%] sm:left-[6.2%]" 
+        className: "top-[35.4%] left-[12%] sm:top-[28%] sm:left-[6.2%]" 
     },
 ];
 
@@ -78,10 +78,10 @@ const WhyYc = () => {
                 </svg>
             </div>
             <div className="text-center max-w-6xl mx-auto">
-                <h2 className="text-yellow-400 text-3xl font-bold mb-2">Why YC Cohort?</h2>
-                <p className="!text-[#ABABAB] my-2 leading-[57px]">Why YC? Because The Best Deserve The Better.</p>
+                <h2 className="text-yellow-400 text-3xl font-bold mb-0">Why YC Cohort?</h2>
+                <p className="!text-[#ABABAB] mt-2 mb-4 sm:mt-2 sm:mb-2 ">Why YC? Because The Best Deserve The Better.</p>
                 <p className="text-gray-300">
-                    Most people learn English. You’ll learn <span className=" !text-[12px] sm:!text-[22px] text-[#ffff00]">leadership communication</span>—the kind that closes deals, wins rooms, and commands respect. This isn’t a spoken English class. This is a career-defining experience that turns sharp minds into powerful communicators.
+                    Most people learn English. You’ll learn <span className=" !text-[15px] sm:!text-[22px] text-[#ffff00]">leadership communication</span>—the kind that closes deals, wins rooms, and commands respect. This isn’t a spoken English class. This is a career-defining experience that turns sharp minds into powerful communicators.
                 </p>
             </div>
             <div className="relative max-w-6xl mx-auto mt-0 sm:mt-[88px] h-[280px] sm:h-[600px] z-2">
@@ -119,7 +119,6 @@ const WhyYc = () => {
                         <path d="M77.6667 104C77.6667 105.473 76.4728 106.667 75 106.667C73.5272 106.667 72.3333 105.473 72.3333 104C72.3333 102.527 73.5272 101.333 75 101.333C76.4728 101.333 77.6667 102.527 77.6667 104ZM50.6667 77C50.6667 78.4728 49.4728 79.6667 48 79.6667C46.5272 79.6667 45.3333 78.4728 45.3333 77C45.3333 75.5272 46.5272 74.3333 48 74.3333C49.4728 74.3333 50.6667 75.5272 50.6667 77ZM75 104L74.6464 104.354L47.6464 77.3536L48 77L48.3536 76.6464L75.3536 103.646L75 104Z" fill="#FEFE00" />
                         <path d="M7.33333 104C7.33333 105.473 8.52724 106.667 10 106.667C11.4728 106.667 12.6667 105.473 12.6667 104C12.6667 102.527 11.4728 101.333 10 101.333C8.52724 101.333 7.33333 102.527 7.33333 104ZM34.3333 77C34.3333 78.4728 35.5272 79.6667 37 79.6667C38.4728 79.6667 39.6667 78.4728 39.6667 77C39.6667 75.5272 38.4728 74.3333 37 74.3333C35.5272 74.3333 34.3333 75.5272 34.3333 77ZM10 104L10.3536 104.354L37.3536 77.3536L37 77L36.6464 76.6464L9.64645 103.646L10 104Z" fill="#FEFE00" />
                     </svg>
-
                 </div>
 
                 {/* Cards */}
@@ -137,7 +136,7 @@ const WhyYc = () => {
                                         <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z" />
                                     </svg>
                                 </div>
-                                <p className="text-white !text-[8px] sm:!text-[18px]">{item.title}</p>
+                                <p className="text-white !text-[12px] sm:!text-[18px]">{item.title}</p>
                             </div>
                         </div>
                     </div>
