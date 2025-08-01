@@ -225,7 +225,7 @@ export default function ApplicationForm() {
                 <img src={BGillustrate} alt="" />
             </div>
 
-            <div className="flex flex-row p-6 gap-10 lg:gap-20 max-w-xl lg:max-w-6xl mx-auto">
+            <div className="flex flex-row p-6 gap-10 lg:gap-20 max-w-xl lg:max-w-6xl mx-auto min-h-screen items-center justify-center">
                 <div className="w-full lg:w-1/2 hidden sm:block">
                     <span className="!font-medium">Applying for</span>
                     <p className=" !font-bold !text-[#fefe00] !text-[30px] mb-4">The YC Communication Cohort</p>
@@ -246,7 +246,7 @@ export default function ApplicationForm() {
                         </div>
                     ))}
                 </div>
-                <div className="w-full lg:w-1/2 z-10">{renderRightSide()}</div>
+                <div className="w-full lg:w-1/2 z-10 flex justify-center">{renderRightSide()}</div>
             </div>
         </div>
     );
