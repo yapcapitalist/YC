@@ -74,7 +74,7 @@ export default function ApplicationForm() {
             console.log("Google Sheets response:", response);
 
             // Prepare EmailJS data
-            const emailFormData = questions.map((q, i) => 
+            const emailFormData = questions.map((q, i) =>
                 `${i + 1}. ${q.label}\n→ ${answers[i] || "(No answer)"}\n`
             ).join("\n\n");
 
@@ -94,7 +94,7 @@ export default function ApplicationForm() {
 
             console.log("Email sent successfully");
             alert("Application submitted successfully!");
-            
+
             // Reset form
             setEmail("");
             setAnswers(Array(questions.length).fill(""));
@@ -184,7 +184,7 @@ export default function ApplicationForm() {
                             ← Back
                         </button>
                     )}
-                    
+
                     {current === questions.length - 1 ? (
                         <button
                             onClick={handleSubmit}
@@ -225,20 +225,25 @@ export default function ApplicationForm() {
                 <img src={BGillustrate} alt="" />
             </div>
 
-            <div className=" flex flex-row p-6 gap-10 lg:gap-20 max-w-xl lg:max-w-6xl mx-auto
-  sm:min-h-screen sm:items-start sm:justify-start
-  min-h-[100dvh] items-center justify-center">
+            <div className=" flex flex-row p-6 gap-10 lg:gap-20 max-w-xl lg:max-w-6xl mx-auto sm:min-h-screen sm:items-start sm:justify-start min-h-[100dvh] items-center justify-center">
                 <div className="w-full lg:w-1/2 hidden sm:block">
                     <span className="!font-medium">Applying for</span>
                     <p className=" !font-bold !text-[#fefe00] !text-[30px] mb-4">The YC Communication Cohort</p>
-                    
+
+                    <span className="spannum text-gray-300 mb-4">
+                            Submit An Early Application Below To Join The Waitlist. Your Application Will Get An Early Preference When Enrolments Begin Sometime In September 2025.
+                        </span>
+                        <span className="spannum text-gray-300 mb-4 sm:mb-20">
+                            The tentative date to start cohort is 1st of November
+                        </span>
+
                     <div className="py-2 border-b border-[#fefe00]">
                         <label className="text-sm text-white">Email <span className="text-yellow-400">*</span></label>
                         <div className="mt-1 bg-[#141414] rounded-xl py-2 px-3 min-h-[40px] flex items-center">
                             {email || <span className="text-gray-500">Not entered yet</span>}
                         </div>
                     </div>
-                    
+
                     {questions.map((q, i) => (
                         <div className="py-2 border-b border-[#fefe00]" key={i}>
                             <label className="text-sm text-white">{q.label} <span className="text-yellow-400">*</span></label>

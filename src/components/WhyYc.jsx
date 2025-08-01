@@ -19,7 +19,7 @@ const benefits = [
         className: "bottom-[14%] right-[10%] sm:bottom-[-11.8%] sm:right-[4.5%]"
     },
     {
-        title: "Build bussiness 1% enterenupr",
+        title: "Build bussiness 1% entrepreneur",
         className: "bottom-[14%] left-[28%] -translate-x-1/2 sm:bottom-[-11.6%] sm:left-[21.4%]"
     },
     {
