@@ -34,7 +34,7 @@ const benefits = [
 
 const WhyYc = () => {
     return (
-        <div className="relative pb-12 sm:pb-[248px] px-4 sm:px-0">
+        <div className="relative pb-12 sm:pb-[248px] px-4 sm:px-4 max-w-[1600px] mx-auto">
 
             <div className="absolute grid-svg top-[100px] left-[-100px]">
                 <img src={dot} alt="" width="" height="" />
@@ -77,7 +77,7 @@ const WhyYc = () => {
                     </defs>
                 </svg>
             </div>
-            <div className="text-center max-w-6xl mx-auto">
+            <div className="text-center">
                 <h2 className="text-yellow-400 text-3xl font-bold mb-0">Why YC Cohort?</h2>
                 <p className="!text-[#ABABAB] mt-2 mb-4 sm:mt-2 sm:mb-2 ">Why YC? Because The Best Deserve The Better.</p>
                 <p className="text-gray-300">
