@@ -93,7 +93,7 @@ const ProgramDetails = () => {
                         <span className="spannum text-gray-300 mb-4">
                             Applications For Cohort Are Now Open.
                         </span>
-                        <span className="spannum text-gray-300 mb-4 sm:mb-20">
+                        <span className="spannum text-gray-300 mb-4">
                             Submit An Early Application Below To Join The Waitlist. Your Application Will Get An Early Preference When Enrolments Begin Sometime In September 2025.
                         </span>
                         <span className="spannum text-gray-300 mb-4 sm:mb-20">
