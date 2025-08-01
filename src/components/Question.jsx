@@ -111,17 +111,8 @@ export default function ApplicationForm() {
     const renderRightSide = () => {
         if (current === -1) {
             return (
+                <div className="">
                 <div className="w-full max-w-md text-white">
-
-                    <div className="">
-                        <span className="spannum text-gray-300 mb-4">
-                            Submit An Early Application Below To Join The Waitlist. Your Application Will Get An Early Preference When Enrolments Begin Sometime In September 2025.
-                        </span>
-                        <span className="spannum text-gray-300 mb-4 sm:mb-20">
-                            The tentative date to start cohort is 1st of November
-                        </span>
-                    </div>
-
                     <p className="text-lg mb-6 font-semibold">Your Email <span className="text-[#FFD700]">*</span></p>
                     <input
                         type="email"
@@ -143,6 +134,15 @@ export default function ApplicationForm() {
                     >
                         Next →
                     </button>
+                </div>
+                 <div className="flex flex-col text-medium mt-12">
+                        <span className="spannum text-gray-300 mb-4">
+                            <span className="text-red-400 pr-1">*</span>Submit An Early Application Below To Join The Waitlist. Your Application Will Get An Early Preference When Enrolments Begin Sometime In September 2025.
+                        </span>
+                        <span className="spannum text-gray-300 mb-4 sm:mb-20">
+                            <span className="text-red-400 pr-1">*</span>The tentative date to start cohort is 1st of November
+                        </span>
+                    </div>
                 </div>
             );
         }
@@ -213,12 +213,21 @@ export default function ApplicationForm() {
                         </button>
                     )}
                 </div>
+
+                 <div className="flex flex-col text-medium mt-12">
+                        <span className="spannum text-gray-300 mb-4">
+                            <span className="text-red-400 pr-1">*</span>Submit An Early Application Below To Join The Waitlist. Your Application Will Get An Early Preference When Enrolments Begin Sometime In September 2025.
+                        </span>
+                        <span className="spannum text-gray-300 mb-4 sm:mb-20">
+                           <span className="text-red-400 pr-1">*</span> The tentative date to start cohort is 1st of November
+                        </span>
+                    </div>
             </div>
         );
     };
 
     return (
-        <div className="relative min-h-screen text-white px-8 sm:px-0">
+        <div className="relative min-h-screen text-white px-8 sm:px-0 overflow-hidden">
             <div className="relative rounded z-2 py-8 max-w-7xl mx-auto">
                 <Link to="/">
                     <div className="w-8 sm:w-11">
