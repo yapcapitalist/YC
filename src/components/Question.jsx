@@ -112,6 +112,16 @@ export default function ApplicationForm() {
         if (current === -1) {
             return (
                 <div className="w-full max-w-md text-white">
+
+                    <div className="">
+                        <span className="spannum text-gray-300 mb-4">
+                            Submit An Early Application Below To Join The Waitlist. Your Application Will Get An Early Preference When Enrolments Begin Sometime In September 2025.
+                        </span>
+                        <span className="spannum text-gray-300 mb-4 sm:mb-20">
+                            The tentative date to start cohort is 1st of November
+                        </span>
+                    </div>
+
                     <p className="text-lg mb-6 font-semibold">Your Email <span className="text-[#FFD700]">*</span></p>
                     <input
                         type="email"
@@ -229,13 +239,6 @@ export default function ApplicationForm() {
                 <div className="w-full lg:w-1/2 hidden sm:block">
                     <span className="!font-medium">Applying for</span>
                     <p className=" !font-bold !text-[#fefe00] !text-[30px] mb-4">The YC Communication Cohort</p>
-
-                    <span className="spannum text-gray-300 mb-4">
-                            Submit An Early Application Below To Join The Waitlist. Your Application Will Get An Early Preference When Enrolments Begin Sometime In September 2025.
-                        </span>
-                        <span className="spannum text-gray-300 mb-4 sm:mb-20">
-                            The tentative date to start cohort is 1st of November
-                        </span>
 
                     <div className="py-2 border-b border-[#fefe00]">
                         <label className="text-sm text-white">Email <span className="text-yellow-400">*</span></label>
