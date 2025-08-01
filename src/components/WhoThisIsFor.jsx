@@ -34,7 +34,7 @@ const people = [
         ),
     },
     {
-        title: "CREATOR",
+        title: "CREATORS",
         description: "You’re a creator whose ideas are smart—but don’t sound sharp.",
         svg: (
             <svg className="w-[30px] h-[30px] sm:w-[74px] sm:h-[73px]" viewBox="0 0 74 73" fill="none" xmlns="http://www.w3.org/2000/svg">

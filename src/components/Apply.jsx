@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function YCApplicationSection() {
     return (
-        <section className="relative px-6">
+        <section className="relative px-6 overflow-hidden h-[100vh]">
 
             <div className="relative  rounded z-2 py-8 max-w-7xl mx-auto">
                 <Link to="/">
