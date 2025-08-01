@@ -3,7 +3,7 @@ import Gurmeet from '../assets/Gurmeet.png'
 
 const TheManBehindYc = () => {
   return (
-    <section className="relative bg-black text-white px-6 md:px-16 pb-16 sm:pb-[158px]">
+    <section className="relative bg-black text-white px-4 md:px-16 pb-16 sm:pb-[158px]">
       <div className="absolute bottom-[256px] left-0">
         <svg width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g opacity="0.6">
@@ -53,7 +53,7 @@ const TheManBehindYc = () => {
         <div className="w-[168px] sm:w-[284px] h-full sm:h-[300px]">
           <img
             src={Gurmeet}// Replace with your image path
-            alt="Gurmeet Singh"
+            alt="Gurmeet Oberoi"
             className="rounded-xl w-full h-auto object-cover"
           />
         </div>
@@ -62,7 +62,7 @@ const TheManBehindYc = () => {
         <div className="w-fit sm:w-2/3 space-y-4">
 
           <p className=''>
-            I’m <span className="text-[#ffff00]">Gurmeet Singh</span> — author of <em>The Articulate Mind</em> and founder of the YC Cohort.
+            I’m <span className="text-[#ffff00]">Gurmeet Oberoi</span> — author of <em>The Articulate Mind</em> and founder of the YC Cohort.
           </p>
 
           <p className=''>

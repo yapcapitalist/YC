@@ -22,7 +22,7 @@ export default function YCDifference() {
             <div className="bg-gray-800 rounded-lg mb-4 flex-1 flex items-center justify-center">
               <div className="text-gray-500 text-sm">Image Placeholder</div>
             </div>
-            <p className="mb-3 size-diff !text-[#ffff00] !font-extrabold">Real Results</p>
+            <p className="mb-3 sdiffize- !text-[#ffff00] !font-extrabold">Real Results</p>
             <p className="price-light">
               Build Real Channels With Millions Of Followers During The Program.
             </p>

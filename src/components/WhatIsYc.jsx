@@ -16,7 +16,7 @@ export default function WhatIsYC() {
   return (
     <div>
       <section
-        className="relative container pb-12 sm:pb-[158px] px-6 sm:px-6"
+        className="relative container pb-12 sm:pb-[158px] px-4 sm:px-6"
         style={{ maxWidth: 1200, margin: "0 auto" }}
       >
         {/* Background SVG */}
@@ -103,14 +103,14 @@ export default function WhatIsYC() {
             What is YC?
           </h2>
 
-          <p className="py-6 text-center max-w-3xl mx-auto text-sm sm:text-base">
+          <p className="py-4 sm:py-6 text-center max-w-3xl mx-auto text-sm sm:text-base">
             YC is India’s most exclusive 3-month communication mastery program —
             built for professionals, founders, and creators who want to turn
             their voice into capital.
           </p>
 
           <div className="py-6 mt-6 text-center max-w-6xl mx-auto border-2 border-[#4A4A00] bg-[#131012] flex flex-col items-center gap-6 rounded-lg px-4 sm:px-8">
-            <p className="pt-6 text-sm sm:text-base max-w-3xl">
+            <p className="pt-1 sm:pt-6 text-sm sm:text-base max-w-3xl">
               Whether you want to speak with authority, create powerful content,
               or close high-ticket clients — YC gives you the tools, training,
               and systems to become impossible to ignore. Inside, you’ll learn

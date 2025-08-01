@@ -13,8 +13,8 @@ const Footer = () => {
       {/* Main Grid */}
       <div className="max-w-[1600px] mx-auto flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6 pb-12 sm:pb-50 z-0">
         {/* Left Contact Info */}
-        <div className="space-y-4 flex sm:block items-center flex-col sm:flex-row">
-          <div className="relative w-11 rounded z-2">
+        <div className="space-y-4 flex sm:block items-center flex-col sm:flex-row  z-2">
+          <div className="relative w-11 rounded">
             <img src={yclogo} alt="" />
           </div>
           <p className="">info@yapcapitalist.com</p>

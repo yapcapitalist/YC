@@ -125,12 +125,12 @@ export default function YCForm() {
     };
 
     return (
-        <div className="relative pb-16 sm:pb-[158px] px-6 sm:px-0">
+        <div className="relative pb-16 sm:pb-[158px] px-4 sm:px-0">
             <div className="absolute grid-svg  top-0 left-[-48px] sm:left-[-320px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>
             {/* Main Form Section */}
-            <div className="relative container mx-auto px-4 ">
+            <div className="relative container">
                 <div className="absolute bottom-128 left-[-86px]">
                     <svg width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.6">

@@ -28,7 +28,7 @@ const benefits = [
     },
     { 
         title: "Wins rooms", 
-        className: "top-[36%] left-[12.5%] sm:top-[28%] sm:left-[6.2%]" 
+        className: "top-[35.4%] left-[12%] sm:top-[28%] sm:left-[6.2%]" 
     },
 ];
 
@@ -77,11 +77,11 @@ const WhyYc = () => {
                     </defs>
                 </svg>
             </div>
-            <div className="text-center">
-                <h2 className="text-yellow-400 text-3xl font-bold mb-2">Why YC Cohort?</h2>
-                <p className="!text-[#ABABAB] my-2 leading-[57px]">Why YC? Because The Best Deserve The Better.</p>
+            <div className="text-center max-w-6xl mx-auto">
+                <h2 className="text-yellow-400 text-3xl font-bold mb-0">Why YC Cohort?</h2>
+                <p className="!text-[#ABABAB] mt-2 mb-4 sm:mt-2 sm:mb-2 ">Why YC? Because The Best Deserve The Better.</p>
                 <p className="text-gray-300">
-                    Most people learn English. You’ll learn <span className=" !text-[12px] sm:!text-[22px] text-[#ffff00]">leadership communication</span>—the kind that closes deals, wins rooms, and commands respect. This isn’t a spoken English class. This is a career-defining experience that turns sharp minds into powerful communicators.
+                    Most people learn English. You’ll learn <span className=" !text-[15px] sm:!text-[22px] text-[#ffff00]">leadership communication</span>—the kind that closes deals, wins rooms, and commands respect. This isn’t a spoken English class. This is a career-defining experience that turns sharp minds into powerful communicators.
                 </p>
             </div>
             <div className="relative max-w-6xl mx-auto mt-0 sm:mt-[88px] h-[280px] sm:h-[600px] z-2">
@@ -138,7 +138,7 @@ const WhyYc = () => {
                                         <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z" />
                                     </svg>
                                 </div>
-                                <p className="text-white !text-[8px] sm:!text-[18px]">{item.title}</p>
+                                <p className="text-white !text-[12px] sm:!text-[18px]">{item.title}</p>
                             </div>
                         </div>
                     </div>

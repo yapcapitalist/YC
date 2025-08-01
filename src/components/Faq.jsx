@@ -83,7 +83,7 @@ export default function FAQSection() {
                             </button>
                             {openIndex === index && (
                                 <div className="mt-3 text-white/80 pb-7">
-                                    <span className="!text-white">{faq.answer}</span>
+                                    <span className="!text-[14px] !text-white">{faq.answer}</span>
                                 </div>
                             )}
                         </div>
