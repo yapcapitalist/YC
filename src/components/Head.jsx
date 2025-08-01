@@ -14,11 +14,11 @@ export default function StickyHeader() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 transition-all overflow-hidden duration-300 ${
         scrolled ? "bg-black/80 backdrop-blur-md shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-7 sm:py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-4 sm:pt-4 pb-4 sm:pb-4 flex items-center justify-between">
         {/* Logo */}
         <div
           className={`transition-all duration-300 ${

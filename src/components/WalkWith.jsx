@@ -4,7 +4,7 @@ import dot from "../assets/Dot Background.svg";
 
 const items = [
     {
-        title: "30 High-Converting Reels",
+        title: "50 High-Converting Reels",
         description: "Shot and posted, with confident on-camera delivery",
         svg: (
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -183,7 +183,7 @@ const items = [
 
 export default function WhatYouWalkAwayWith() {
     return (
-        <section className="relative flex flex-col items-center pb-12 sm:pb-[158px] px-4 sm:px-4 max-w-[1600px] mx-auto">
+        <section className="relative flex flex-col items-center pb-12 sm:pb-[158px] px-4 sm:px-4 max-w-[1600px] mx-auto overflow-hidden">
             <div className="absolute grid-svg top-[-180px] right-[-300px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>

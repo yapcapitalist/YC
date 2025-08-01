@@ -25,9 +25,15 @@
 body {
   overflow-x: hidden;
 }
- #root{
-  overflow: hidden;
- }
+
+ 
+ /* #root{
+  overflow-x: hidden;
+ } */
+
+  /* .flow-style{
+  overflow: scroll !important;
+ } */
 
 h1 {
   font-size: 3.5rem;

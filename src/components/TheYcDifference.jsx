@@ -3,7 +3,7 @@ import dot from "../assets/Dot Background.svg";
 
 export default function YCDifference() {
   return (
-    <div className="relative min-h-screen bg-black pb-12 sm:pb-[158px] px-6 sm:px-4 max-w-[1600px] mx-auto">
+    <div className="relative min-h-screen bg-black pb-12 sm:pb-[158px] px-6 sm:px-4 max-w-[1600px] mx-auto overflow-hidden">
 
       <div className="absolute grid-svg !w-2/3 top-0 right-[-300px] !z-0">
                       <img src={dot} alt="" width="" height="" />
@@ -16,7 +16,7 @@ export default function YCDifference() {
         </h2>
         
         {/* Grid Layout - 3 columns with equal height cards */}
-        <div className="grid  grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="grid  grid-cols-1 sm:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {/* Real Results - card with image first */}
           <div className="custom-border rounded-xl p-5 flex flex-col h-80">
             <div className="bg-gray-800 rounded-lg mb-4 flex-1 flex items-center justify-center">

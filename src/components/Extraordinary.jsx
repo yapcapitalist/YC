@@ -14,7 +14,7 @@ export default function Extraordinary() {
   const [mainVideoId, setMainVideoId] = useState(youtubeVideoIds[0]);
 
   return (
-    <section className="relative maincon container flex items-center justify-center pb-12 sm:pb-[158px] px-4 max-w-[1600px] mx-auto">
+    <section className="relative maincon container flex items-center justify-center pb-12 sm:pb-[158px] px-4 max-w-[1600px] mx-auto overflow-hidden">
 
       <div className="absolute bottom-0 left-0 z-1">
         {/* MobSVG remains unchanged */}

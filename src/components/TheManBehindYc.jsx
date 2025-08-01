@@ -3,8 +3,8 @@ import Gurmeet from '../assets/Gurmeet.png'
 
 const TheManBehindYc = () => {
   return (
-    <section className="relative bg-black text-white px-4 md:px-16 pb-16 sm:pb-[158px]">
-      <div className="absolute bottom-[256px] left-0">
+    <section className="relative bg-black text-white px-4 md:px-16 pb-16 sm:pb-[158px] max-w-[1600px] mx-autooverflow-hidden">
+      <div className="absolute top-0 left-0">
         <svg width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g opacity="0.6">
             <path opacity="0.5" d="M203.586 109.357V108.357H204.586V109.357H203.586ZM208.919 374.492C208.919 377.437 206.531 379.825 203.586 379.825C200.64 379.825 198.253 377.437 198.253 374.492C198.253 371.546 200.64 369.158 203.586 369.158C206.531 369.158 208.919 371.546 208.919 374.492ZM0.0195465 109.357V108.357H203.586V109.357V110.357H0.0195465V109.357ZM203.586 109.357H204.586V374.492H203.586H202.586V109.357H203.586Z" fill="url(#paint0_linear_326_4023)" />
@@ -43,11 +43,12 @@ const TheManBehindYc = () => {
         </svg>
 
       </div>
+
       <h2 className="text-center mb-6">
         The Mind Behind YC
       </h2>
 
-      <div className="relative max-w-[1600px] mx-auto flex flex-col md:flex-row items-center sm:items-start gap-8 z-10">
+      <div className="relative flex flex-col md:flex-row items-center gap-8 z-10 justify-center">
 
         {/* Left Image */}
         <div className="w-[168px] sm:w-[284px] h-full sm:h-[300px]">
@@ -76,6 +77,7 @@ const TheManBehindYc = () => {
             I've worked with the biggest edtech companies in India, seeing highly skilled students spending lakhs after they had already spent that in their college education and still struggling to find their footing in the industry, a common issue among them all? None of them have sales, business, writing and content skills, all of which falls under their ability to communicate and influence. That is exactly why I started Yap capitalist, to solve the one issue that would directly remove all blockers they have in making substantial money.
           </p>
         </div>
+
       </div>
     </section>
   )

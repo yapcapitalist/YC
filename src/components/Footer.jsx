@@ -11,7 +11,7 @@ const Footer = () => {
       </div>
         
       {/* Main Grid */}
-      <div className="max-w-[1600px] mx-auto flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6 pb-12 sm:pb-50 z-0">
+      <div className="max-w-[1600px] mx-auto flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6 pb-12 sm:pb-50 z-0 overflow-hidden">
         {/* Left Contact Info */}
         <div className="space-y-4 flex sm:block items-center flex-col sm:flex-row  z-2">
           <div className="relative w-11 rounded">

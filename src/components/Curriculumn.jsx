@@ -94,7 +94,7 @@ export default function Component() {
   }
 
   return (
-    <div className="relative text-white min-h-screen pb-16 sm:pb-[158px] px-8 sm:px-4 max-w-[1600px] mx-auto">
+    <div className="relative text-white min-h-screen pb-16 sm:pb-[158px] px-8 sm:px-4 max-w-[1600px] mx-auto overflow-hidden">
 
             <div className="absolute grid-svg bottom-[-80px] left-[-160px] sm:bottom-[-200px] sm:left-[-298px] !z-0">
                 <img src={dot} alt="" width="" height="" />
@@ -161,7 +161,7 @@ export default function Component() {
       </div>
 
       {/* Timeline */}
-      <div className="fontsizemockstyle z-1 max-w-4xl mx-auto relative mx-4 sm:mx-0" style={{ height: "fit-content" }}>
+      <div className="fontsizemockstyle z-1 max-w-4xl mx-auto relative mx-4" style={{ height: "fit-content" }}>
         {/* Background image container - full width from first to last brain */}
 
         {/* Vertical connecting line - only from first to last brain */}
@@ -179,7 +179,7 @@ export default function Component() {
         {/* Month 1 - Essentials */}
         <div className="flex flex-row-reverse w-fit sm:w-auto sm:flex-row items-start mb-16" ref={sectionRefs[0]}>
           <div className=" sm:w-1/2 w-full pr-0 sm:pr-8">
-            <div className="w-[280px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg border border-white/10">
+            <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg border border-white/10">
               <p className="!font-semibold mb-2">MONTH 1</p>
               <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">ESSENTIALS</h2>
               <p className="text-gray-400 text-sm mb-4">Mindset and Communication</p>
@@ -213,7 +213,7 @@ export default function Component() {
             </div>
           </div>
 
-          <div className={`flex items-center absolute left-[-24px] sm:relative justify-center bg-black w-[54px] h-[34px] sm:w-18 sm:h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`}>
+          <div className={`flex items-center absolute left-[-24px] sm:left-[0px] sm:relative justify-center bg-black w-[54px] h-[34px] sm:w-18 sm:h-16 rounded-full border-2 border-white-600 relative z-10 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`}>
             <Brain className={`w-8 h-6 sm:w-8 sm:h-8 ${activeSection === 0 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
@@ -224,12 +224,12 @@ export default function Component() {
         <div className="flex w-fit sm:w-auto items-start mb-16" ref={sectionRefs[1]}>
           <div className="w-1/2 pr-0 sm:pr-8"></div>
 
-          <div className={`flex items-center ml-1 sm:ml-0 absolute left-[-28px] sm:relative justify-center !bg-black w-[54px] h-[34px] sm:w-18 sm:h-16 rounded-full bg-black/20 backdrop-blur-mdl border-2 border-white-600 relative z-10 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`}>
+          <div className={`flex items-center ml-1 sm:ml-0 absolute left-[-28px] sm:left-[0px] sm:relative justify-center !bg-black w-[54px] h-[34px] sm:w-18 sm:h-16 rounded-full bg-black/20 backdrop-blur-mdl border-2 border-white-600 relative z-10 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`}>
             <Brain className={`w-8 h-6 sm:w-8 sm:h-8 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
           <div className="sm:w-1/2 w-full pl-0 sm:pl-8">
-            <div className="w-[280px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
+            <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
               <p className="font-semibold mb-2">MONTH 2</p>
               <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">THE DEVELOPMENT</h2>
               <p className="mb-4">Writing And Content Mastery</p>
@@ -271,7 +271,7 @@ export default function Component() {
         {/* Month 3 - Mastery */}
         <div className="w-fit sm:w-auto flex flex-row-reverse sm:flex-row items-start" ref={sectionRefs[2]}>
           <div className="sm:w-1/2 w-full pr-0 sm:pr-8">
-            <div className="w-[280px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
+            <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
               <p className="font-semibold mb-2">MONTH 3</p>
               <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">MASTERY</h2>
               <p className="mb-4">Sales and Business</p>
@@ -305,7 +305,7 @@ export default function Component() {
             </div>
           </div>
 
-          <div className={`flex items-center absolute ml-1 sm:ml-0 left-[-28px] sm:relative justify-center bg-black w-[54px] h-[34px] sm:w-18 sm:h-16  rounded-full border-2 border-white-600 relative z-10 ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`}>
+          <div className={`flex items-center absolute ml-1 sm:ml-0 left-[-28px] sm:left-[0px] sm:relative justify-center bg-black w-[54px] h-[34px] sm:w-18 sm:h-16  rounded-full border-2 border-white-600 relative z-10 ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`}>
             <Brain className={`w-8 h-6 sm:w-8 sm:h-8  ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
 
