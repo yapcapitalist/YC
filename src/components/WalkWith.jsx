@@ -183,7 +183,7 @@ const items = [
 
 export default function WhatYouWalkAwayWith() {
     return (
-        <section className="relative flex flex-col items-center pb-12 sm:pb-[158px] px-4 sm:px-0 max-w-8xl mx-auto">
+        <section className="relative flex flex-col items-center pb-12 sm:pb-[158px] px-4 sm:px-4 max-w-[1600px] mx-auto">
             <div className="absolute grid-svg top-[-180px] right-[-300px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>

@@ -8,7 +8,7 @@ const ProgramDetails = () => {
     // const programDetails = useRef(null);
 
     return (
-        <section className="relative pb-12 sm:pb-[158px] px-6 sm:px-0 max-w-6xl mx-auto">
+        <section className="relative pb-12 sm:pb-[158px] px-6 sm:px-4 max-w-[1600px] mx-auto">
             <div className="absolute grid-svg top-[-268px] !w-2/3 left-[-320px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>

@@ -112,19 +112,19 @@ const WhyChooseUs = () => {
           </defs>
         </svg>
       </div>
-      <div className="relative text-center max-w-6xl mx-auto z-10">
+      <div className="relative text-center max-w-[1600px] mx-auto z-10">
         <h2 className="mb-2 text-[22px] md:text-4xl lg:text-5xl">We Reject More People Than We Accept.</h2>
         <p className="text-[12px] !text-[#ABABAB] mb-[15px] sm:mb-[39px] mt-[8px] md:text-base">This is not for everyone</p>
         <p className="text-[12px] !text-[#ffff00] md:text-base">We will not accept</p>
       </div>
-      <div className="relative max-w-6xl mx-auto mt-[15px] sm:mt-[88px] z-10">
+      <div className="relative max-w-[1600px] mx-auto mt-[15px] sm:mt-[88px] z-10">
         <div className="flex sm:grid grid-cols-1 lg:grid-cols-3 gap-0 items-center justify-center">
           {/* Left column */}
           <div className="flex flex-col gap-y-4 sm:gap-y-12 sm:gap-y-38 items-center lg:items-end">
             {items.slice(0, 2).map((item, idx) => (
               <div
                 key={idx}
-                className="bg-gradient-to-br from-[#FEFE00] to-[#464600] p-[1px] rounded-[10px] w-full max-w-[106px] sm:max-w-[292px]"
+                className="bg-gradient-to-br from-[#FEFE00] to-[#464600] p-[1px] rounded-[10px] w-full"
               >
                 <div className="bg-[#131313] flex items-center rounded-[9px] p-1 sm:p-4">
                   <div className="rounded-full border-1 sm:border-2 border-[#FEFE00] p-[4px] sm:p-[10px] mr-1 sm:mr-4">

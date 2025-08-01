@@ -171,7 +171,7 @@ export default function YCForm() {
 
                 </div>
                 <h2 className='!text-white text-center pb-8'>Get My 800 Rs. Book For <span className='!text-[#ffff00]'>Free</span></h2>
-                <div className="grid md:grid-cols-2 sm:gap-20 gap-7 items-center max-w-6xl mx-auto">
+                <div className="grid md:grid-cols-2 sm:gap-20 gap-7 items-center max-w-[1600px] mx-auto">
                     {/* Left - Book Cover */}
                     <div className="flex justify-center">
                         <img

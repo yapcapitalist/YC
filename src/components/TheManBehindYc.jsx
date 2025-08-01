@@ -47,7 +47,7 @@ const TheManBehindYc = () => {
         The Mind Behind YC
       </h2>
 
-      <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center sm:items-start gap-8 z-10">
+      <div className="relative max-w-[1600px] mx-auto flex flex-col md:flex-row items-center sm:items-start gap-8 z-10">
 
         {/* Left Image */}
         <div className="w-[168px] sm:w-[284px] h-full sm:h-[300px]">

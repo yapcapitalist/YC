@@ -3,13 +3,13 @@ import dot from "../assets/Dot Background.svg";
 
 export default function YCDifference() {
   return (
-    <div className="relative min-h-screen bg-black pb-12 sm:pb-[158px] px-6 sm:px-0 max-w-6xl mx-auto">
+    <div className="relative min-h-screen bg-black pb-12 sm:pb-[158px] px-6 sm:px-4 max-w-[1600px] mx-auto">
 
       <div className="absolute grid-svg !w-2/3 top-0 right-[-300px] !z-0">
                       <img src={dot} alt="" width="" height="" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto z-10">
+      <div className="relative z-10">
         {/* Title */}
         <h2 className="mb-12 text-center">
           The YC Difference

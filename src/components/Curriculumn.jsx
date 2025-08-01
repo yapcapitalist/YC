@@ -94,7 +94,7 @@ export default function Component() {
   }
 
   return (
-    <div className="relative text-white min-h-screen pb-16 sm:pb-[158px] px-8 sm:px-0">
+    <div className="relative text-white min-h-screen pb-16 sm:pb-[158px] px-8 sm:px-4 max-w-[1600px] mx-auto">
 
             <div className="absolute grid-svg bottom-[-80px] left-[-160px] sm:bottom-[-200px] sm:left-[-298px] !z-0">
                 <img src={dot} alt="" width="" height="" />
