@@ -4,27 +4,43 @@ import yclogo from '../assets/YAAP_CAPITAL.svg'
 const Footer = () => {
   return (
     <footer className="text-white px-6 md:px-12 pb-8">
-      <div className="relative text-center z-8">
-          <h2 className="pb-12">
-            Contact Us
-          </h2>
-      </div>
+
         
       {/* Main Grid */}
-      <div className="max-w-[1600px] mx-auto flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6 pb-12 sm:pb-50 z-0 overflow-hidden">
+      <div className="max-w-[1600px] mx-auto flex flex-col sm:flex-row justify-center items-center gap-6 pb-12 sm:pb-50 z-0 overflow-hidden">
         {/* Left Contact Info */}
-        <div className="space-y-4 flex sm:block items-center flex-col sm:flex-row  z-2">
-          <div className="relative w-11 rounded">
+        <div className="space-y-4 flex  items-center flex-col justify-center items-center sm:items-center  z-2">
+          <div className="relative w-28 rounded">
             <img src={yclogo} alt="" />
           </div>
-          <p className="">info@yapcapitalist.com</p>
-          <p className="">+91 99520 34731</p>
+                {/* <div className="relative text-center z-8"> */}
+          <h2 className="pb-0 m-0">
+            Contact Us
+          </h2>
+      {/* </div> */}
+          <p className="!text-[18px] mb-2">info@yapcapitalist.com</p>
+          <a
+                href="https://www.instagram.com/yapcapitalist/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#fefe00] !mb-2 hover:underline font-medium !text-[18px]"
+              >
+                @yapcapitalist
+              </a>
+              <a
+                href="https://www.instagram.com/gurmeet__oberoi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#fefe00] !mb-2 hover:underline font-medium !text-[18px]"
+              >
+                @gurmeet__oberoi
+              </a>
         </div>
 
         {/* Center Title */}
 
         {/* Right Policy Buttons */}
-        <div className="flex flex-row sm:flex-col flex-wrap justify-center gap-2 sm:gap-0 items-end space-y-3 w-full md:w-auto">
+        {/* <div className="flex flex-row sm:flex-col flex-wrap justify-center gap-2 sm:gap-0 items-end space-y-3 w-full md:w-auto">
           {[
             { label: 'PRIVACY POLICY', href: '#' },
             { label: 'REFUND POLICY', href: '#' },
@@ -51,7 +67,7 @@ const Footer = () => {
               {item.label}
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
 
       {/* Divider */}

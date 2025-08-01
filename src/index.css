@@ -166,6 +166,10 @@ button:hover{
   height: 4px;
 }
 
+.price-light{
+  font-size: 18px;
+}
+
 
 @media (max-width:768px) {
 

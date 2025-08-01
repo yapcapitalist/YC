@@ -5,13 +5,13 @@ const faqs = [
     { question: "Who is this cohort for?", answer: "This cohort is for ambitious individuals looking to master communication for leadership and influence." },
     { question: "What makes YC different from other public speaking or communication courses?", answer: "YC focuses on real-world leadership communication—not just English or public speaking." },
     { question: "I’m not very confident on camera or in English. Can I still join?", answer: "Absolutely. YC is built to transform your confidence step-by-step." },
-    { question: "How much time do I need to commit each week?", answer: "3-4 hours, including sessions and assignments." },
+    { question: "How much time do I need to commit each week?", answer: "15-30 hours, including sessions and assignments." },
     { question: "What happens if I miss a session?", answer: "You’ll get access to replays. Live participation is encouraged but not mandatory." },
     { question: "Will I get personal feedback on my content, voice, or business?", answer: "Yes. We offer personalized coaching during the cohort." },
     { question: "Is this only for people who want to start a business?", answer: "Not at all. It’s for anyone looking to lead, present, or influence better." },
     { question: "What’s the price and refund policy?", answer: "Pricing is transparent. If you’re not satisfied after two sessions, we offer a full refund." },
-    { question: "Can I speak to someone before joining?", answer: "Yes. You can book a call with our team before joining." },
-    { question: "Will I get a certificate after completing YC?", answer: "Yes. But what matters more is how the world responds when you speak." }
+    { question: "Can I speak to someone before joining?", answer: "Yes. You can email us your questions at info@yapcapitalist.com" },
+    { question: "Will I get a certificate after completing YC?", answer: "Yes. You will get an industry recoginised certificate which can also be displayed on your linkedin" }
 ];
 
 export default function FAQSection() {
@@ -22,7 +22,7 @@ export default function FAQSection() {
     };
 
     return (
-        <section className="relative max-w-[1600px] mx-auto pb-16 sm:pb-[158px] px-8 sm:px-4 overflow-hidden">
+        <section className="relative max-w-[1600px] mx-auto pb-16 sm:pb-[158px] px-8 sm:px-4 ">
             <div className="absolute grid-svg  bottom-[-162px] left-[-320px] !z-1">
                 <img src={dot} alt="" width="" height="" />
             </div>

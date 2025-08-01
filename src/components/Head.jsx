@@ -23,7 +23,7 @@ export default function StickyHeader() {
         <div
           className={`transition-all duration-300 ${
             scrolled
-              ? "opacity-0 -translate-y-4 pointer-events-none"
+              ? "opacity-100 -translate-y-4 pointer-events-none mt-4"
               : "opacity-100 translate-y-0"
           }`}
         >

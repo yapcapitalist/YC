@@ -223,8 +223,8 @@ const WhyChooseUs = () => {
           </div>
         </div>
         <p className="text-center pt-[15px] sm:pt-[49px] text-[12px] md:text-base">
-          “ This is a cohort for <span className="text-[8px] !text-[#fefe00] md:text-sm">winners</span>. We don't
-          entertain <span className="text-[8px] !text-[#8D8D8D] md:text-sm">passengers</span>. ”
+          This is a cohort for <span className="text-[8px] !text-[#fefe00] md:text-sm">winners</span>. We don't
+          entertain <span className="text-[8px] !text-[#8D8D8D] md:text-sm">passengers</span>.
         </p>
       </div>
       {/* Bottom-left background SVG */}

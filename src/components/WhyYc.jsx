@@ -34,12 +34,12 @@ const benefits = [
 
 const WhyYc = () => {
     return (
-        <div className="relative pb-12 sm:pb-[248px] px-0 sm:px-4 max-w-[1600px] mx-auto overflow-hidden">
+        <div className="relative pb-12 sm:pb-[248px] px-0 sm:px-4 max-w-[1600px] mx-auto ">
 
             <div className="absolute grid-svg top-[100px] left-[-100px]">
                 <img src={dot} alt="" width="" height="" />
             </div>
-            <div className="absolute top-[-40px] right-[-40px] sm:top-[240px] sm:right-8">
+            <div className="absolute top-[-40px] right-[0px] sm:top-[240px] sm:right-8">
                 <svg class="mobsvg" width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.6">
                         <path opacity="0.5" d="M152.425 109.357V108.357H151.425V109.357H152.425ZM147.091 374.492C147.091 377.437 149.479 379.825 152.425 379.825C155.37 379.825 157.758 377.437 157.758 374.492C157.758 371.546 155.37 369.158 152.425 369.158C149.479 369.158 147.091 371.546 147.091 374.492ZM355.991 109.357V108.357H152.425V109.357V110.357H355.991V109.357ZM152.425 109.357H151.425V374.492H152.425H153.425V109.357H152.425Z" fill="url(#paint0_linear_313_3598)" />

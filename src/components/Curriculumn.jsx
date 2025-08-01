@@ -94,9 +94,9 @@ export default function Component() {
   }
 
   return (
-    <div className="relative text-white min-h-screen pb-16 sm:pb-[158px] px-8 sm:px-4 max-w-[1600px] mx-auto overflow-hidden">
+    <div className="relative text-white min-h-screen pb-16 sm:pb-[158px] px-4 sm:px-4 max-w-[1600px] mx-auto overflow-hidden">
 
-            <div className="absolute grid-svg bottom-[-80px] left-[-160px] sm:bottom-[-200px] sm:left-[-298px] !z-0">
+            <div className="absolute grid-svg bottom-[20px] left-[-160px] sm:bottom-[-30px] sm:left-[-298px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>
 
@@ -339,7 +339,7 @@ export default function Component() {
               <img src={maskicon} alt="" />
             </div>
             <div>
-              <h4 className="!font-semibold text-lg text-white">High-Stake Roleplays</h4>
+              <h4 className="!font-semibold text-lg text-white">High-Stake Projects</h4>
               <p className="!text-gray-400 text-sm">Simulate real-world scenarios. Build confidence under pressure.</p>
             </div>
           </div>

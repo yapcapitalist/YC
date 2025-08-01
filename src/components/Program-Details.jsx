@@ -9,7 +9,7 @@ const ProgramDetails = () => {
 
     return (
         <section className="relative pb-12 sm:pb-[158px] px-6 sm:px-4 max-w-[1600px] mx-auto overflow-hidden">
-            <div className="absolute grid-svg top-[-268px] !w-2/3 left-[-320px] !z-0">
+            <div className="absolute grid-svg top-[-268px] h-[100vh ] left-[-320px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>
             <div className="relative text-center mb-7 sm:mb-20 z-1">
@@ -60,7 +60,7 @@ const ProgramDetails = () => {
                                     <path d="M26.25 8.7498L11.25 23.7498L4.375 16.8748L6.1375 15.1123L11.25 20.2123L24.4875 6.9873L26.25 8.7498Z" fill="#FEFE00" />
                                 </svg>
                                 </span>
-                                <span className="spannum ">* Only 20 Seats Per Cohort</span>
+                                <span className="spannum ">* We will accept only 20 applicants</span>
                             </li>
                             <li className="flex items-start gap-2">
                                 <span className="mt-2 sm:mt-0 text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,13 +74,13 @@ const ProgramDetails = () => {
 
                     {/* Right Box */}
 
-                    <div className="bg-[#131012] flex flex-col border border-gray-600 rounded-xl p-5 h-[158px]">
+                    {/* <div className="bg-[#131012] flex flex-col border border-gray-600 rounded-xl p-5 h-[158px]">
                         <p className="!text-[#fefe00] font-small !font-bold mb-2">PAYMENT OPTIONS</p>
                         <span className="spannum text-gray-300">
                             Upfront: Pay Via Razorpay Or Stripe As An Individual Or <a href="#" className="!text-[#fefe00] underline">Via Company</a> To Avail Invoice For GST Benefit After Payment.
                         </span>
                         <span className="spannum text-gray-300 mt-2">EMI: Available For 3—24mo Duration</span>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Payment Options */}
@@ -94,7 +94,10 @@ const ProgramDetails = () => {
                             Applications For Cohort Are Now Open.
                         </span>
                         <span className="spannum text-gray-300 mb-4 sm:mb-20">
-                            Submit An Early Application Below To Join The Waitlist. Your Application Will Get An Early Preference When Enrolments Begin Sometime In July 2025.
+                            Submit An Early Application Below To Join The Waitlist. Your Application Will Get An Early Preference When Enrolments Begin Sometime In September 2025.
+                        </span>
+                        <span className="spannum text-gray-300 mb-4 sm:mb-20">
+                            The tentative date to start cohort is 1st of November
                         </span>
                         <Link to="/apply" className="w-full">
                         <button className="bg-transparent border border-yellow-400 transition w-full">
@@ -106,7 +109,10 @@ const ProgramDetails = () => {
                         </span>
                     </div>
 
-                    <div className="grid bg-[#131012] md:grid-cols-2 gap-6 p-5 border border-gray-600 rounded-xl h-auto sm:h-[158px]">
+                   
+                </div>
+            </div>
+             <div className=" relative grid bg-[#131012] md:grid-cols-2 gap-6 p-5 border border-gray-600 rounded-xl h-auto sm:h-[158px] z-10 w-full  max-w-6xl mx-auto mt-8">
                         <div className="bg-black flex flex-col gap-2 sm:gap-0 rounded-xl p-6 sm:p-0 h-full justify-center text-center">
                             <span className="price-light text-sm !font-bold sm:!text-base mb-2">PAY UPFRONT</span>
                             <span className="price-bold text-3xl font-bold !text-[#fefe00] ">₹69,000</span>
@@ -119,8 +125,6 @@ const ProgramDetails = () => {
                             <span className="price-light text-gray-400 mt-1 text-sm">For International Payments</span>
                         </div>
                     </div>
-                </div>
-            </div>
         </section>
     );
 };

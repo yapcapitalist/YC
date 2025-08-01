@@ -20,6 +20,7 @@ import YCDifference from './components/TheYcDifference.jsx';
 import YCForm from './components/YcForm.jsx';
 import Apply from './components/Apply.jsx'; // <== New application page
 import ApplicationForm from './components/Question.jsx';
+// import SocialLinks from './components/Social.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -44,6 +45,7 @@ createRoot(document.getElementById('root')).render(
               <YCDifference />
               <ProgramDetails />
               <TheManBehindYc />
+              {/* <SocialLinks/> */}
               <FAQSection />
               <YCContactFooter />
             </>
