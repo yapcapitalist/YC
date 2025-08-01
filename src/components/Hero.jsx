@@ -8,7 +8,7 @@ import Illustration from '../assets/Header.png'
 
 export default function Hero() {
   return (
-    <section className="relative bg-black text-white min-h-[600px] sm:min-h-screen flex items-center justify-center px-4 py-20 pb-0 relative overflow-hidden">
+    <section className="relative bg-black text-white min-h-[550px] sm:min-h-screen flex items-center justify-center px-1 py-0 sm:py-20 pb-0 relative overflow-hidden">
 
       <img src={Illustration} alt="" className="object-fill absolute top-[0px] left-1/2 -translate-x-1/2  z-4" />
 
@@ -17,22 +17,23 @@ export default function Hero() {
       </div>
 
       <div className="max-w-6xl text-center z-10">
-        <h1 className="leading-tight mb-8 sm:!mb-6">You are only as good as you <br />communicate</h1>
+        <h1 className="leading-tight mb-6">You are only as good as you communicate</h1>
 
-        <p className="">
-          India’s Most Selective 12-Week Communication Cohort for Ambitious<br />
+        <p className="px-2 sm:py-0">
+          India’s Most Selective 12-Week Communication Cohort for Ambitious 
           Founders, Professionals and Freelancers.
         </p>
 
+        <p className="text-sm text-white-600 font-semibold mt-2">
+          20 Seats | Handpicked | No Fluff
+        </p>
+
+        
         <div className="w-full flex justify-center align-center">
           <p className="w-[28%] h-2 bg-gray-700 rounded-full overflow-hidden my-4 sm:my-8">
             <span className="block h-full bg-[#fefe00] w-[44%] rounded-full"></span>
           </p>
         </div>
-
-        <p className="text-sm text-white-600 font-semibold">
-          20 Seats | Handpicked | No Fluff
-        </p>
 
         {/* Optional down arrow */}
         {/* Down arrow with sequential brightening effect */}
