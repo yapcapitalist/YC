@@ -135,14 +135,6 @@ export default function ApplicationForm() {
                         Next →
                     </button>
                 </div>
-                 <div className="flex flex-col text-medium mt-12">
-                        <span className="spannum text-gray-300 mb-4">
-                            <span className="text-red-400 pr-1">*</span>Submit An Early Application Below To Join The Waitlist. Your Application Will Get An Early Preference When Enrolments Begin Sometime In September 2025.
-                        </span>
-                        <span className="spannum text-gray-300 mb-4 sm:mb-20">
-                            <span className="text-red-400 pr-1">*</span>The tentative date to start cohort is 1st of November
-                        </span>
-                    </div>
                 </div>
             );
         }
@@ -213,15 +205,6 @@ export default function ApplicationForm() {
                         </button>
                     )}
                 </div>
-
-                 <div className="flex flex-col text-medium mt-12">
-                        <span className="spannum text-gray-300 mb-4">
-                            <span className="text-red-400 pr-1">*</span>Submit An Early Application Below To Join The Waitlist. Your Application Will Get An Early Preference When Enrolments Begin Sometime In September 2025.
-                        </span>
-                        <span className="spannum text-gray-300 mb-4 sm:mb-20">
-                           <span className="text-red-400 pr-1">*</span> The tentative date to start cohort is 1st of November
-                        </span>
-                    </div>
             </div>
         );
     };
@@ -244,7 +227,7 @@ export default function ApplicationForm() {
                 <img src={BGillustrate} alt="" />
             </div>
 
-            <div className=" flex flex-row p-6 gap-10 lg:gap-20 max-w-xl lg:max-w-6xl mx-auto sm:min-h-screen sm:items-start sm:justify-start min-h-[100dvh] items-center justify-center">
+            <div className=" flex flex-row p-6 gap-10 lg:gap-20 max-w-xl lg:max-w-6xl mx-auto sm:min-h-screen items-start justify-start min-h-[100dvh]">
                 <div className="w-full lg:w-1/2 hidden sm:block">
                     <span className="!font-medium">Applying for</span>
                     <p className=" !font-bold !text-[#fefe00] !text-[30px] mb-4">The YC Communication Cohort</p>
@@ -265,7 +248,7 @@ export default function ApplicationForm() {
                         </div>
                     ))}
                 </div>
-                <div className="w-full lg:w-1/2 z-10 flex justify-center">{renderRightSide()}</div>
+                <div className="w-full lg:w-1/2 z-10 flex">{renderRightSide()}</div>
             </div>
         </div>
     );

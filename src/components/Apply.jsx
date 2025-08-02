@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function YCApplicationSection() {
     return (
-        <section className="relative px-6 overflow-hidden h-[100vh]">
+        <section className="relative px-6 overflow-hidden h-[120vh]">
 
             <div className="relative  rounded z-2 py-8 max-w-7xl mx-auto">
                 <Link to="/">
@@ -30,7 +30,7 @@ export default function YCApplicationSection() {
                         </div>
 
                         {/* Program duration */}
-                        <div className="rounded-xl w-full justify-between sm:justify-start sm:w-auto p-3 bg-[#2b2b2b] flex gap-6 lg:gap-40">
+                        <div className="rounded-xl w-full justify-between sm:justify-start sm:w-auto p-3 border-1 border-[#fefe00] bg-[#ffffff]/5 flex gap-6 lg:gap-40">
                             <div className="flex flex-col gap-1">
                                 <span className="text-[#565656] mb-2">Program duration</span>
                                 <p className="!text-[#fefe00] !text-[20px] sm:!text-[22px] !font-bold">
@@ -48,6 +48,15 @@ export default function YCApplicationSection() {
                         </div>
                     </div>
                 </div>
+
+                <div className="relative flex flex-col text-medium mt-12 z-10 p-3 border-1 border-[#fefe00] bg-[#ffffff]/5 rounded-xl mb-16">
+                        <span className="spannum !text-[#B3B3B3] mb-4">
+                            <span className="text-red-400 pr-1">*</span>Submit An Early Application Below To Join The Waitlist. Your Application Will Get An Early Preference When Enrolments Begin Sometime In September 2025.
+                        </span>
+                        <span className="spannum !text-[#B3B3B3] mb-2">
+                            <span className="text-red-400 pr-1">*</span>The tentative date to start cohort is 1st of November
+                        </span>
+                    </div>
 
                 {/* Stepper and Box */}
                 <div className="flex flex-col-reverse sm:flex-col lg:flex-row justify-between gap-10 items-end">

@@ -1,5 +1,6 @@
 import React from 'react';
 import yclogo from '../assets/YAAP_CAPITAL.svg'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
             Contact Us
           </h2>
       {/* </div> */}
-          <p className="!text-[18px] mb-2">info@yapcapitalist.com</p>
+          <a href="mailto:info@yapcapitalist.com"  className="!text-[18px] mb-2">info@yapcapitalist.com</a>
           <a
                 href="https://www.instagram.com/yapcapitalist/"
                 target="_blank"
@@ -35,6 +36,9 @@ const Footer = () => {
               >
                 @gurmeet__oberoi
               </a>
+            <Link to="/termsandconditions">
+            <p className=''>Terms And Conditions</p>
+            </Link>
         </div>
 
         {/* Center Title */}
