@@ -12,7 +12,7 @@ export default function GradientButton({ children, onClick, className = "" }) {
     let animationFrameId;
 
     const rotate = () => {
-      angle = (angle + 1) % 360;
+      angle = (angle + 4) % 360;
       element.style.setProperty("--gradient-angle", `${angle}deg`);
       animationFrameId = requestAnimationFrame(rotate);
     };
