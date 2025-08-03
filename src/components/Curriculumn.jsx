@@ -2,7 +2,6 @@ import { Brain } from "lucide-react"
 import { useEffect, useState, useRef } from "react"
 import mainbrain from "../assets/Main brain.png"
 import halfbrain from "../assets/halfbrain.png"
-
 import trophyicon from "../assets/trophyicon.svg"
 import maskicon from "../assets/maskicon.svg"
 import discussiionicon from "../assets/discussiionicon.svg"

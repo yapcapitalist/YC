@@ -46,7 +46,7 @@ const TermsandCondition = () => {
                 <h3 className="font-semibold mt-6 mb-2 !text-white">7. Refund Policy</h3>
                 <p><strong>7-Day Refund Guarantee:</strong> If you’re not satisfied with Yapcapitalist for any reason, you may request a full refund within 7 days from the cohort start date.</p>
                 <p>To request a refund, email <a href="mailto:info@yapcapitalist.com" className="underline !text-white">info@yapcapitalist.com</a> with your registration details and reason for your request.</p>
-                <p>No refund requests will be accepted after 7 days from the cohort start date, under any circumstances.</p>
+                <p>We shall process the refunds regardless of your reason</p>
                 <p>Refunds will be processed to your original payment method within 7–10 business days.</p>
 
                 <h3 className="font-semibold mt-6 mb-2 !text-white">8. Program Changes & Cancellations</h3>

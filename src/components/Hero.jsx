@@ -4,8 +4,6 @@ import dot from "../assets/Dot Background.svg";
 import Illustration from '../assets/Header.png'
 
 
-
-
 export default function Hero() {
   return (
     <section className="relative bg-black overflow-hidden text-white min-h-[550px] sm:min-h-screen flex items-center justify-center px-1 py-0 sm:py-20 pb-0 relative overflow-hidden">

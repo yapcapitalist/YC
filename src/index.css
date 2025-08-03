@@ -105,18 +105,32 @@ textarea {
 
 button {
   color: #ffff00;
-  background-color: #000;
-  border: none;
+  /* background-color: #000; */
+  /* border: none; */
   border-radius: 20px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   cursor: pointer;
   padding: 12px 24px;
-  box-shadow:
+  /* box-shadow:
     0 -2px 4px rgba(255, 255, 0, 1),
-    0 1px 6px rgba(255, 255, 0, 0.2);
+    0 1px 6px rgba(255, 255, 0, 0.2); */
   transition: box-shadow 0.3s ease;
+}
+
+.border-gradient {
+  --c: #171717;
+  --p: 10%;
+  background: linear-gradient(var(--c), var(--c)) padding-box,
+    conic-gradient(
+        from var(--gradient-angle, 0deg),
+        transparent,
+        #fefe00 var(--p),
+        transparent calc(var(--p) * 2)
+      )
+      border-box;
+  border: 2px solid transparent;
 }
 
 button:hover{

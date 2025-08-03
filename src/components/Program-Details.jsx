@@ -1,11 +1,33 @@
 import React, { use } from "react";
-import {useRef} from "react";
+import { useRef } from "react";
 import dot from "../assets/Dot Background.svg";
 import { Link } from 'react-router-dom';
+import { useEffect } from "react";
 
 
 const ProgramDetails = () => {
     // const programDetails = useRef(null);
+
+useEffect(() => {
+  const elements = document.querySelectorAll(".border-gradient");
+  if (!elements.length) return;
+
+  let angle = 0;
+  let animationFrameId;
+
+  const rotate = () => {
+    angle = (angle + 1) % 360;
+    elements.forEach(el => {
+      el.style.setProperty("--gradient-angle", `${angle}deg`);
+    });
+    animationFrameId = requestAnimationFrame(rotate);
+  };
+
+  rotate();
+
+  return () => cancelAnimationFrame(animationFrameId);
+}, []);
+
 
     return (
         <section className="relative pb-12 sm:pb-[158px] px-6 sm:px-4 max-w-[1600px] mx-auto overflow-hidden">
@@ -20,7 +42,7 @@ const ProgramDetails = () => {
             </div>
 
             <div className="relative flex flex-col sm:flex-row gap-6 z-1 max-w-6xl mx-auto">
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col w-[100%] sm:w-[50%] gap-6">
                     {/* Left Box */}
                     <div className="bg-[#131012] border border-gray-600 rounded-xl p-4 sm:px-6 sm:py-6 sm:pb-16 sm:h-[452px]">
                         <p className="!text-[#fefe00] font-small mb-4 !font-bold">Your Next Level Starts Here</p>
@@ -84,7 +106,7 @@ const ProgramDetails = () => {
                 </div>
 
                 {/* Payment Options */}
-                <div className=" flex flex-col space-y-6" id="program-details">
+                <div className=" flex flex-col w-[100%] sm:w-[50%] space-y-6" id="program-details">
                     <div className="bg-[#131012] border border-gray-600 rounded-xl p-5 flex flex-col h-auto sm:h-[452px]">
                         <p className="!font-bold font-small !text-[#fefe00] mb-4">INTERESTED?</p>
                         <span className="spannum text-gray-300 mb-4">
@@ -100,31 +122,32 @@ const ProgramDetails = () => {
                             The tentative date to start cohort is 1st of November
                         </span>
                         <Link to="/apply" className="w-full">
-                        <button className="bg-transparent border border-yellow-400 transition w-full">
-                            Submit Application
-                        </button>
+                            <button className="border-gradient w-full bg-[#fefe00] text-black font-semibold py-3 px-6 rounded-full">
+                                Submit Application
+                            </button>
+
                         </Link>
                         <span className="spannum text-gray-400 text-sm mt-5">
                             Please Take Some Time To Answer The Questions — We Use This To Assess Whether You’d Be A Good Fit
                         </span>
                     </div>
 
-                   
+
                 </div>
             </div>
-             <div className=" relative grid bg-[#131012] md:grid-cols-2 gap-6 p-5 border border-gray-600 rounded-xl h-auto sm:h-[158px] z-10 w-full  max-w-6xl mx-auto mt-8">
-                        <div className="bg-black flex flex-col gap-2 sm:gap-0 rounded-xl p-6 sm:p-0 h-full justify-center text-center">
-                            <span className="price-light text-sm !font-bold sm:!text-base mb-2">PAY UPFRONT</span>
-                            <span className="price-bold text-3xl font-bold !text-[#fefe00] ">₹69,000</span>
-                            <span className="price-light text-gray-400 mt-1 text-sm">₹58,474 + 18% GST Via Razorpay</span>
-                        </div>
+            <div className=" relative grid bg-[#131012] md:grid-cols-2 gap-6 p-5 border border-gray-600 rounded-xl h-auto sm:h-[158px] z-10 w-full  max-w-6xl mx-auto mt-8">
+                <div className="bg-black flex flex-col gap-2 sm:gap-0 rounded-xl p-6 sm:p-0 h-full justify-center text-center">
+                    <span className="price-light text-sm !font-bold sm:!text-base mb-2">PAY UPFRONT</span>
+                    <span className="price-bold text-3xl font-bold !text-[#fefe00] ">₹69,000</span>
+                    <span className="price-light text-gray-400 mt-1 text-sm">₹58,474 + 18% GST Via Razorpay</span>
+                </div>
 
-                        <div className="bg-black flex flex-col rounded-xl gap-2 sm:gap-0 p-6 sm:p-0 h-full justify-center text-center">
-                            <span className="price-light text-sm !font-bold sm:!text-base mb-2">PAY VIA STRIPE</span>
-                            <span className="price-bold text-3xl font-bold !text-[#fefe00] ">$800</span>
-                            <span className="price-light text-gray-400 mt-1 text-sm">For International Payments</span>
-                        </div>
-                    </div>
+                <div className="bg-black flex flex-col rounded-xl gap-2 sm:gap-0 p-6 sm:p-0 h-full justify-center text-center">
+                    <span className="price-light text-sm !font-bold sm:!text-base mb-2">PAY VIA STRIPE</span>
+                    <span className="price-bold text-3xl font-bold !text-[#fefe00] ">$800</span>
+                    <span className="price-light text-gray-400 mt-1 text-sm">For International Payments</span>
+                </div>
+            </div>
         </section>
     );
 };
