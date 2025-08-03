@@ -4,6 +4,7 @@ import dot from "../assets/Dot Background.svg";
 import BGillustrate from "../assets/BGillustrate.svg";
 import { Link } from "react-router-dom";
 import emailjs from '@emailjs/browser';
+import GradientButton from "./GradientButton";
 
 const questions = [
     { label: "Where did you hear about this YC?", options: ["YouTube", "Twitter", "LinkedIn", "Instagram", "From a friend or colleague", "Other"] },
@@ -112,29 +113,29 @@ export default function ApplicationForm() {
         if (current === -1) {
             return (
                 <div className="">
-                <div className="w-full max-w-md text-white">
-                    <p className="text-lg mb-6 font-semibold">Your Email <span className="text-[#FFD700]">*</span></p>
-                    <input
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        className="w-full mt-2 p-2 rounded-md bg-transparent border-b border-yellow-600 outline-none text-white placeholder-gray-400"
-                        placeholder="Enter your email"
-                        required
-                    />
-                    <button
-                        onClick={() => {
-                            if (email && email.includes('@')) {
-                                setCurrent(0);
-                            } else {
-                                alert("Please enter a valid email address.");
-                            }
-                        }}
-                        className="mt-8 px-5 py-2 border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black transition rounded-md"
-                    >
-                        Next →
-                    </button>
-                </div>
+                    <div className="w-full max-w-md text-white">
+                        <p className="text-lg mb-6 font-semibold">Your Email <span className="text-[#FFD700]">*</span></p>
+                        <input
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            className="w-full mt-2 p-2 rounded-md bg-transparent border-b border-yellow-600 outline-none text-white placeholder-gray-400"
+                            placeholder="Enter your email"
+                            required
+                        />
+                        <GradientButton
+                            onClick={() => {
+                                if (email && email.includes('@')) {
+                                    setCurrent(0);
+                                } else {
+                                    alert("Please enter a valid email address.");
+                                }
+                            }}
+                            className="mt-8 px-5 py-2 border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black transition rounded-md"
+                        >
+                            Next →
+                        </GradientButton>
+                    </div>
                 </div>
             );
         }
@@ -179,30 +180,31 @@ export default function ApplicationForm() {
 
                 <div className="flex gap-4 mt-8">
                     {current > 0 && (
-                        <button
+                        <GradientButton
                             onClick={() => setCurrent(current - 1)}
-                            className="px-5 py-2 border border-gray-500 text-gray-300 hover:bg-gray-500 hover:text-white transition rounded-md"
+                            className="px-5 py-2"
                         >
                             ← Back
-                        </button>
+                        </GradientButton>
                     )}
 
                     {current === questions.length - 1 ? (
-                        <button
+
+                        <GradientButton
                             onClick={handleSubmit}
                             disabled={isSubmitting || !answers[current]}
-                            className="px-5 py-2 border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black transition rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="px-5 py-2 transition rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                             {isSubmitting ? "Submitting..." : "Submit Application"}
-                        </button>
+                        </GradientButton>
                     ) : (
-                        <button
+                        <GradientButton
                             onClick={next}
                             disabled={!answers[current]}
-                            className="px-5 py-2 border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black transition rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="px-5 py-2"
                         >
                             Next →
-                        </button>
+                        </GradientButton>
                     )}
                 </div>
             </div>

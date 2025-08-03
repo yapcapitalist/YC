@@ -1,9 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 
 export default function GradientButton({ children, onClick, className = "" }) {
+  const buttonRef = useRef(null);
+
   useEffect(() => {
-    const element = document.querySelector(".border-gradient");
+    const element = buttonRef.current;
     if (!element) return;
 
     let angle = 0;
@@ -22,6 +24,7 @@ export default function GradientButton({ children, onClick, className = "" }) {
 
   return (
     <button
+      ref={buttonRef}
       className={`text-xs sm:text-base px-4 sm:px-17 py-2 sm:py-3 rounded-full my-3 sm:my-[36px] bg-[#fefe00] text-black font-semibold border-gradient ${className}`}
       onClick={onClick}
     >

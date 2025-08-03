@@ -2,10 +2,15 @@ import group from '../assets/Group.svg'
 import yclogo from '../assets/YAAP_CAPITAL.svg'
 import dot from "../assets/Dot Background.svg";
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import GradientButton from './GradientButton';
 
 export default function YCApplicationSection() {
+    useEffect(() => {
+  window.scrollTo(0, 0); // scrolls to top
+}, []);
     return (
-        <section className="relative px-6 overflow-hidden h-[120vh]">
+        <section className="relative px-6 overflow-hidden h-[140vh]">
 
             <div className="relative  rounded z-2 py-8 max-w-7xl mx-auto">
                 <Link to="/">
@@ -100,9 +105,9 @@ export default function YCApplicationSection() {
                             Give us the real you. The better we understand your intent, the better we can decide if this cohort is for you.
                         </span>
                         <Link to="/application-form" className="w-full">
-                            <button className="bg-transparent border border-[#F9F871] text-[#F9F871] px-6 py-2 rounded-full hover:bg-[#F9F8711a] transition">
+                            <GradientButton className="bg-transparent border border-[#F9F871] text-[#F9F871] px-6 py-2 rounded-full hover:bg-[#F9F8711a] transition">
                                 Start Application
-                            </button>
+                            </GradientButton>
                         </Link>
                     </div>
                 </div>

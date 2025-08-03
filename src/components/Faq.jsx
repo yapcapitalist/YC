@@ -15,11 +15,16 @@ const faqs = [
 ];
 
 export default function FAQSection() {
-    const [openIndex, setOpenIndex] = useState(null);
+    const [openIndexes, setOpenIndexes] = useState(Array(faqs.length).fill(false));
 
     const toggleFAQ = (index) => {
-        setOpenIndex(openIndex === index ? null : index);
+        setOpenIndexes(prev => {
+            const newState = [...prev];
+            newState[index] = !newState[index];
+            return newState;
+        });
     };
+
 
     return (
         <section className="relative max-w-[1600px] mx-auto pb-16 sm:pb-[158px] px-8 sm:px-4 ">
@@ -78,10 +83,12 @@ export default function FAQSection() {
                             >
                                 <p className="!text-white !font-bold">{faq.question}</p>
                                 <span className="!text-[30px] text-[#fefe00] transform transition-transform duration-300">
-                                    {openIndex === index ? "−" : "+"}
+                                    {openIndexes[index] ? "−" : "+"}
                                 </span>
+
                             </button>
-                            {openIndex === index && (
+
+                            {openIndexes[index] && (
                                 <div className="mt-3 text-white/80 pb-7">
                                     <span className="!text-[14px] !text-white">{faq.answer}</span>
                                 </div>
