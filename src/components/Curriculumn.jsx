@@ -180,7 +180,7 @@ export default function Component() {
           <div className=" sm:w-1/2 w-full pr-0 sm:pr-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg border border-white/10">
               <p className="!font-semibold mb-2">MONTH 1</p>
-              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">ESSENTIALSMindset and Communication</h2>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Mindset and Communication</h2>
               <p className="text-gray-400 text-sm mb-4">ESSENTIALS</p>
 
               <ul className="space-y-2 text-sm">
