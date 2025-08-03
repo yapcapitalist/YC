@@ -180,8 +180,8 @@ export default function Component() {
           <div className=" sm:w-1/2 w-full pr-0 sm:pr-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg border border-white/10">
               <p className="!font-semibold mb-2">MONTH 1</p>
-              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">ESSENTIALS</h2>
-              <p className="text-gray-400 text-sm mb-4">Mindset and Communication</p>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">ESSENTIALSMindset and Communication</h2>
+              <p className="text-gray-400 text-sm mb-4">ESSENTIALS</p>
 
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
@@ -230,8 +230,8 @@ export default function Component() {
           <div className="sm:w-1/2 w-full pl-0 sm:pl-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
               <p className="font-semibold mb-2">MONTH 2</p>
-              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">THE DEVELOPMENT</h2>
-              <p className="mb-4">Writing And Content Mastery</p>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Writing And Content Mastery</h2>
+              <p className="mb-4">THE DEVELOPMENT</p>
 
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
@@ -272,8 +272,8 @@ export default function Component() {
           <div className="sm:w-1/2 w-full pr-0 sm:pr-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
               <p className="font-semibold mb-2">MONTH 3</p>
-              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">MASTERY</h2>
-              <p className="mb-4">Sales and Business</p>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Sales and Business</h2>
+              <p className="mb-4">MASTERY</p>
 
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
