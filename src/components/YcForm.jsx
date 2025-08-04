@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import booksmockup from '../assets/Books.png';
 import dot from "../assets/Dot Background.svg";
+import GradientButton from "./GradientButton.jsx";
+
 
 
 export default function YCForm() {
