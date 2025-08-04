@@ -367,12 +367,12 @@ export default function YCForm() {
                             className="mb-4"
                             dangerouslySetInnerHTML={{ __html: popup.message }}
                         />
-                        <button
+                        <GradientButton
                             onClick={closePopup}
                             className="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded font-medium"
                         >
                             Close
-                        </button>
+                        </GradientButton>
                     </div>
                 </div>
             )}
