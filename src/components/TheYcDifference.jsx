@@ -1,13 +1,14 @@
 import React from 'react';
 import dot from "../assets/Dot Background.svg";
 import realresult from "../assets/realresult.png"
+import lines from "../assets/lines.svg"
 
 export default function YCDifference() {
   return (
     <div className="relative min-h-screen bg-black pb-12 sm:pb-[158px] px-6 sm:px-4 max-w-[1600px] mx-auto overflow-hidden">
 
-      <div className="absolute grid-svg !w-2/3 top-0 right-[-300px] !z-0">
-        <img src={dot} alt="" width="" height="" />
+      <div className="absolute top-0 right-[0px] !z-12">
+        <img src={lines} alt="" width="" height="" />
       </div>
 
       <div className="relative z-10">

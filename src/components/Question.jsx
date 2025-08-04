@@ -4,7 +4,8 @@ import dot from "../assets/Dot Background.svg";
 import BGillustrate from "../assets/BGillustrate.svg";
 import { Link } from "react-router-dom";
 import emailjs from '@emailjs/browser';
-import GradientButton from "./GradientButton";
+import GradientButton from "./ui/GradientButton";
+import Popup from "./ui/popup";
 
 const questions = [
     { label: "Where did you hear about this YC?", options: ["YouTube", "Twitter", "LinkedIn", "Instagram", "From a friend or colleague", "Other"] },
@@ -21,6 +22,8 @@ const questions = [
 
 export default function ApplicationForm() {
     const [current, setCurrent] = useState(-1); // Start with email collection
+    const [popupMessage, setPopupMessage] = useState("");
+
     const [answers, setAnswers] = useState(Array(questions.length).fill(""));
     const [email, setEmail] = useState("");
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -40,14 +43,14 @@ export default function ApplicationForm() {
     const handleSubmit = async () => {
         // Validate email and answers
         if (!email || !email.includes('@')) {
-            alert("Please enter a valid email address.");
+            setPopupMessage("Please enter a valid email address.");
             return;
         }
 
         // Check if all questions are answered
         const unanswered = answers.some((answer, index) => !answer.trim());
         if (unanswered) {
-            alert("Please answer all questions before submitting.");
+            setPopupMessage("Please answer all questions before submitting.");
             return;
         }
 
@@ -94,7 +97,7 @@ export default function ApplicationForm() {
             );
 
             console.log("Email sent successfully");
-            alert("Application submitted successfully!");
+            setPopupMessage("Application submitted successfully!");
 
             // Reset form
             setEmail("");
@@ -103,7 +106,7 @@ export default function ApplicationForm() {
 
         } catch (error) {
             console.error("Submission error:", error);
-            alert("There was an error submitting the form. Please try again.");
+            setPopupMessage("There was an error submitting the form. Please try again.");
         } finally {
             setIsSubmitting(false);
         }
@@ -252,6 +255,18 @@ export default function ApplicationForm() {
                 </div>
                 <div className="w-full lg:w-1/2 z-10 flex">{renderRightSide()}</div>
             </div>
+
+            {popupMessage && (
+    <Popup
+        message={popupMessage}
+        onClose={() => {setPopupMessage("");  
+              window.location.href = "/";
+        }
+        }
+        
+    />
+)}
+
         </div>
     );
 }

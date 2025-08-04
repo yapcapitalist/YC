@@ -31,7 +31,7 @@ useEffect(() => {
 
     return (
         <section className="relative pb-12 sm:pb-[158px] px-6 sm:px-4 max-w-[1600px] mx-auto overflow-hidden">
-            <div className="absolute grid-svg top-[-268px] h-[100vh ] left-[-320px] !z-0">
+            <div className="absolute grid-svg h-[100vh ] left-[-320px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>
             <div className="relative text-center mb-7 sm:mb-20 z-1">

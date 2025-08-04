@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import yclogo from '../assets/YAAP_CAPITAL.svg';
-import GradientButton from "./GradientButton.jsx";
+import GradientButton from "./ui/GradientButton";
 
 export default function StickyHeader() {
   const [scrolled, setScrolled] = useState(false);

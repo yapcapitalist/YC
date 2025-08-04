@@ -3,7 +3,7 @@ import yclogo from '../assets/YAAP_CAPITAL.svg'
 import dot from "../assets/Dot Background.svg";
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
-import GradientButton from './GradientButton';
+import GradientButton from "./ui/GradientButton";
 
 export default function YCApplicationSection() {
     useEffect(() => {
