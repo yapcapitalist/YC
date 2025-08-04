@@ -20,7 +20,7 @@ const CardContent = ({ children, className = "" }) => {
 
 export default function SocialLinks() {
   return (
-    <section className="relative pb-12 sm:pb-[158px] px-6 sm:px-4 max-w-[1600px] w-full">
+    <section className="relative pb-12 sm:pb-[158px] px-6 sm:px-4 max-w-8xl mx-auto w-full">
       
             <div className="absolute top-0 right-[0px] !z-0 w-[140px] sm:w-auto">
               <img src={lines} alt="" width="" height="" />
@@ -35,12 +35,12 @@ export default function SocialLinks() {
               <h2 className="!text-white sm:!text-[28px] font-semibold mb-2">Founder Page</h2>
               <p className="text-muted-foreground mb-4">Connect with the founder on Instagram.</p>
               <a
-                href="https://www.instagram.com/yapcapitalist/"
+                href="https://www.instagram.com/gurmeet__oberoi/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#fefe00] hover:underline font-medium"
               >
-                @yapcapitalist
+                @gurmeet__oberoi
               </a>
             </CardContent>
           </Card>
@@ -52,12 +52,12 @@ export default function SocialLinks() {
               <h2 className="!text-white sm:!text-[28px] font-semibold mb-2">Cohort Page</h2>
               <p className="text-muted-foreground mb-4">Explore the cohort's journey on Instagram.</p>
               <a
-                href="https://www.instagram.com/gurmeet__oberoi/"
+                href="https://www.instagram.com/yapcapitalist/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#fefe00] hover:underline font-medium"
               >
-                @gurmeet__oberoi
+                @yapcapitalist
               </a>
             </CardContent>
           </Card>

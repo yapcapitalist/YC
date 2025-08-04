@@ -3,7 +3,7 @@ import Gurmeet from '../assets/Gurmeet.png'
 
 const TheManBehindYc = () => {
   return (
-    <section className="relative bg-black text-white px-4 md:px-16 pb-16 sm:pb-[158px] max-w-[1600px] mx-autooverflow-hidden">
+    <section className="relative bg-black text-white px-4 md:px-16 pb-16 sm:pb-[158px] max-w-[1600px] mx-auto overflow-hidden">
       <div className="absolute top-0 left-0">
         <svg width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g opacity="0.6">
@@ -44,7 +44,7 @@ const TheManBehindYc = () => {
 
       </div>
 
-      <h2 className="text-center mb-6">
+      <h2 className="text-center mb-6 max-w-6xl mx-auto">
         The Mind Behind YC
       </h2>
 

@@ -8,6 +8,7 @@ import GradientButton from "./ui/GradientButton";
 import Popup from "./ui/popup";
 
 const questions = [
+    { label: "Your Name", type: "text" },
     { label: "Where did you hear about this YC?", options: ["YouTube", "Twitter", "LinkedIn", "Instagram", "From a friend or colleague", "Other"] },
     { label: "Your public profile Link (LinkedIn, Twitter etc.)", type: "text" },
     { label: "Which of these describes you best?", options: ["Aspiring Creator", "Working Professional", "Artist", "Freelancer", "Entrepreneur", "Other"] },
@@ -66,7 +67,7 @@ export default function ApplicationForm() {
             console.log("Submitting data:", formData);
 
             // Send to Google Sheets
-            const response = await fetch('https://script.google.com/macros/s/AKfycbyQnEdcgJlIKX5mwS9HgUKYUwAlCcIQv94WD0p8JybgxEcFeBcnxQyZZJd4EgGKKOpAnA/exec?action=done', {
+            const response = await fetch('https://script.google.com/macros/s/AKfycby-mBdNXDcae4cPBUz9NRiUI9ZCXCfHJn4pmuTgS8ZQ-FKyEAaEaKeOd4EMiLZv53YW7A/exec?action=done', {
                 method: 'POST',
                 mode: 'no-cors', // Important for Google Apps Script
                 headers: {
