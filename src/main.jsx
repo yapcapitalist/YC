@@ -22,6 +22,7 @@ import Apply from './components/Apply.jsx'; // <== New application page
 import ApplicationForm from './components/Question.jsx';
 import TermsandCondition from './components/TermsandCondition.jsx';
 import SocialLinks from './components/Social.jsx';
+import BonusTracks from './components/BonusTracks.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -39,6 +40,7 @@ createRoot(document.getElementById('root')).render(
               <WhoThisIsFor />
               <WhyChooseUs />
               <Curriculum />
+              <BonusTracks/>
               <Extraordinary />
               <FormatStructure />
               <WalkWith />

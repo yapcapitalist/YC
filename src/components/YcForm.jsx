@@ -132,7 +132,7 @@ export default function YCForm() {
                 <img src={dot} alt="" width="" height="" />
             </div>
             {/* Main Form Section */}
-            <div className="relative container">
+            <div className="relative container max-w-6xl mx-auto">
                 <div className="absolute bottom-128 left-[-86px]">
                     <svg width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.6">
