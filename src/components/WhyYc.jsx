@@ -7,15 +7,15 @@ const benefits = [
         className: "top-[19.4%] left-1/2 -translate-x-1/2 sm:top-[10%] sm:left-1/2 sm:-translate-x-1/2"
     },
     {
-        title: "More leads than you can handle",
+        title: "On camera fluency",
         className: "top-[30.8%] right-[7%] sm:top-[28%] sm:right-[4.4%]"
     },
     {
-        title: "Hire and fire like an expert",
+        title: "Public Speaking",
         className: "top-[50%] right-[3.2%] sm:top-[61%] sm:right-[-3%]"
     },
     {
-        title: "Dedicated recruiting support",
+        title: "Confidence",
         className: "bottom-[14%] right-[10%] sm:bottom-[-11.8%] sm:right-[4.5%]"
     },
     {

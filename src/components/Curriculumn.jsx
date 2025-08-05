@@ -180,34 +180,34 @@ export default function Component() {
           <div className=" sm:w-1/2 w-full pr-0 sm:pr-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg border border-white/10">
               <p className="!font-semibold mb-2">MONTH 1</p>
-              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Mindset and Communication</h2>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">The Unshakeable Communicator</h2>
               <p className="text-gray-400 text-sm mb-4">ESSENTIALS</p>
 
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className=" mr-2">•</span>
-                  <span>Lifestyle Building: Crafting Who You Are & What You Offer</span>
+                  <span>Presence Engineering: Build a voice, face, and posture that signals credibility instantly</span>
                 </li>
                 <li className="flex items-start">
                   <span className=" mr-2">•</span>
-                  <span>Breaking Mental Loops, Overthinking, Brain Mist, Self-Doubt</span>
+                  <span>Instant Speech Tactics: Speak on command, without notes or prep — with clarity and authority</span>
                 </li>
                 <li className="flex items-start">
                   <span className=" mr-2">•</span>
-                  <span>How to Build Confident Presence Through Your Voice</span>
+                  <span>Accent Precision: Reduce unnecessary mother-tongue influence with daily drills</span>
                 </li>
                 <li className="flex items-start">
                   <span className=" mr-2">•</span>
-                  <span>Instant Communication Tactic: Humility, Hesitation, and Assertiveness</span>
+                  <span>Tone Command: Calibrate tone, pacing, and volume based on audience psychology</span>
                 </li>
                 <li className="flex items-start">
                   <span className=" mr-2">•</span>
-                  <span>Accent Drills & Speaking Fluently Without Preparing</span>
+                  <span>Verbal Aikido: Stay composed in pressure, interruptions, or conflict</span>
                 </li>
-                <li className="flex items-start">
+                {/* <li className="flex items-start">
                   <span className=" mr-2">•</span>
                   <span>Gestures & Body Language That Signal Authority</span>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -230,38 +230,38 @@ export default function Component() {
           <div className="sm:w-1/2 w-full pl-0 sm:pl-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
               <p className="font-semibold mb-2">MONTH 2</p>
-              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Writing And Content Mastery</h2>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Tactical Content Communication</h2>
               <p className="mb-4">THE DEVELOPMENT</p>
 
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Daily Email Writing: Building Your Online Presence</span>
+                  <span>Insight Structuring: Speak and write like a category expert — structure that elevates status</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Storytelling + Live Examples</span>
+                  <span>Hook Thinking: Instantly recognize and create high-retention hooks for any idea</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Headlines, Hooks, and Curiosity Writing for LinkedIn & Instagram</span>
+                  <span>Camera Leadership: Deliver single-take videos without sounding robotic or scripted</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>One-Take Video Confidence, Authenticity, Ideas Delivery</span>
+                  <span>Language of Authority: Eliminate filler language, sound sharper and more decisive</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Rapid Structures: 5 Types (Story, Insight, Call to Action)</span>
+                  <span>Mental Models for Clarity: Frame thoughts like a strategist, not a rambler</span>
                 </li>
-                <li className="flex items-start">
+                {/* <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span>Vlog & Film Video Frameworks (Personal Story + Offer)</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span>Speaking Prompts to Practice for High-Stakes Scenarios</span>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -272,21 +272,21 @@ export default function Component() {
           <div className="sm:w-1/2 w-full pr-0 sm:pr-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
               <p className="font-semibold mb-2">MONTH 3</p>
-              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Sales and Business</h2>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Performance Communication in Business</h2>
               <p className="mb-4">MASTERY</p>
 
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>How to Start a Product and Freelance/Service Business from Zero</span>
+                  <span>Dominating High-Stakes Rooms: Sales, investors, hiring, conflict — lead every situation</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Sales Call Frameworks + Outreach, Referrals, Content Funnels</span>
+                  <span>Commanding Group Energy: Influence not just individuals but entire rooms or calls</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Negotiation Tactics + Handling Objection</span>
+                  <span>Objection Destruction: Defuse resistance using calibrated questions and presence</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
@@ -294,11 +294,11 @@ export default function Component() {
                 </li>
                 <li className="flex items-start">
                   <span className=" mr-2">•</span>
-                  <span>Sales Call Breakdown: Intro, Problem, Solution, Close</span>
+                  <span>Framework Delivery: Build mental slides for any topic and deliver without rambling</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Offer Design: Build Irresistible Packages (Market, Bonuses, Scarcity)</span>
+                  <span>Decision Driving: Use voice and narrative to move people to take action</span>
                 </li>
               </ul>
             </div>

@@ -122,15 +122,19 @@ export default function WhatIsYC() {
               <ul className="space-y-3 text-sm text-left p-4 border-2 border-[#4A4A00] bg-black rounded-lg flex-1">
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Communicate with clarity, confidence, and influence</span>
+                  <span>Speak with authority in rooms that matter</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Build a magnetic online presence through content</span>
+                  <span>Build a magnetic online presence</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Monetize your skills through sales, strategy, and storytelling</span>
+                  <span>Express yourself with power and precision</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>YC gives you the tools to become impossible to ignore.</span>
                 </li>
               </ul>
 

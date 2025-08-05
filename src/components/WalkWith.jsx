@@ -4,8 +4,8 @@ import dot from "../assets/Dot Background.svg";
 
 const items = [
     {
-        title: "50 High-Converting Reels",
-        description: "Shot and posted, with confident on-camera delivery",
+        title: "A Trained Voice",
+        description: " One that projects clarity, conviction, and calm power — across rooms, calls, and content",
         svg: (
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="22.5" cy="22.5" r="22" fill="#131012" stroke="#2B2B2B" />
@@ -24,8 +24,8 @@ const items = [
         ),
     },
     {
-        title: "A Complete Online Presence",
-        description: "Bio, pitch video, positioning, and authority-building content",
+        title: "Fluency Under Pressure",
+        description: "You’ll be able to speak without preparation, even in high-stakes or combative environments",
         svg: (
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="22.5" cy="22.5" r="22" fill="#131012" stroke="#2B2B2B" />
@@ -35,8 +35,8 @@ const items = [
         ),
     },
     {
-        title: "A Proven Lead Generation System",
-        description: "Outreach scripts, funnels, and weekly pipeline tracking",
+        title: "100+ Drills and Projects Completed",
+        description: "Real-world scripts, video takes, articulation tests, negotiation mock sessions, etc.",
         svg: (
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="22.5" cy="22.5" r="22" fill="#131012" stroke="#2B2B2B" />
@@ -53,8 +53,8 @@ const items = [
         ),
     },
     {
-        title: "A Sales Engine",
-        description: "Pricing, objection handling, offer positioning, and sales call frameworks",
+        title: "Situational Confidence",
+        description: "Whether it’s firing a team member, pitching a VC, or hosting a workshop — you’ll walk in sharp",
         svg: (
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="22.5" cy="22.5" r="22" fill="#131012" stroke="#2B2B2B" />
@@ -64,8 +64,8 @@ const items = [
         ),
     },
     {
-        title: "A Repeatable Content System",
-        description: "1-Month calendar, 10+ writing hooks, reel scripts, and templates",
+        title: "Camera Performance Muscle",
+        description: "50+ high-clarity videos recorded with confident delivery and zero second-guessing",
         svg: (<svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="22.5" cy="22.5" r="22" fill="#131012" stroke="#2B2B2B" />
             <g clip-path="url(#clip0_311_4215)">
@@ -81,8 +81,8 @@ const items = [
         ),
     },
     {
-        title: "Top-Tier Communication Skills",
-        description: "Across writing, video, calls, DMs, meetings, and networking",
+        title: "Writing That Sounds Like You",
+        description: "Scripts, DMs, sales pages, and emails — trained to sound powerful and precise",
         svg: (
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="22.5" cy="22.5" r="22" fill="#131012" stroke="#2B2B2B" />
@@ -99,8 +99,8 @@ const items = [
         ),
     },
     {
-        title: "Your Personal Monetization Plan",
-        description: "Tailored roadmap to land your first 5—10 clients or high-paying job",
+        title: "Vocal Range Mastery",
+        description: "Speed, tone, silence, inflection — all under your control",
         svg: (
 
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -111,8 +111,8 @@ const items = [
         ),
     },
     {
-        title: "Business Building Skills",
-        description: "How to start, position, and scale a solo or service-based business",
+        title: "Sales and Negotiation Voice",
+        description: "Persuasive structure, objection defusal, offer delivery",
         svg: (
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="22.5" cy="22.5" r="22" fill="#131012" stroke="#2B2B2B" />
@@ -129,8 +129,8 @@ const items = [
         ),
     },
     {
-        title: "Client Delivery Systems",
-        description: "SOPs, Notion dashboards, onboarding flows, and retention strategies",
+        title: "Weekly Performance Reviews",
+        description: "Not vague advice — actual analysis of your speaking and writing",
         svg: (
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="22.5" cy="22.5" r="22" fill="#131012" stroke="#2B2B2B" />
@@ -146,8 +146,8 @@ const items = [
         ),
     },
     {
-        title: "Hiring & Delegation Basics",
-        description: "How to find, filter, and manage your first few team members",
+        title: "A System to Stay Sharp Forever",
+        description: "Post-cohort drills, prompts, and feedback cycles to keep improving",
         svg: (
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="22.5" cy="22.5" r="22" fill="#131012" stroke="#2B2B2B" />
@@ -188,6 +188,7 @@ export default function WhatYouWalkAwayWith() {
                 <img src={dot} alt="" width="" height="" />
             </div>
             <h2 className="relative text-center z-1 mb-7 sm:mb-12">What You Walk Away With</h2>
+            <p className="relative text-center mb-7 sm:mb-12">Outcomes Only 1% Ever Reach — Built Through Reps, Feedback, and Fire</p>
             <div className="flex flex-wrap justify-center gap-x-2 gap-y-2 sm:gap-x-3 sm:gap-y-3 w-fit">
                 {items.map((item, index) => (
                     <div

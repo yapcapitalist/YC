@@ -9,7 +9,7 @@ const StackingCards = ({
       id: 1,
       number: "01",
       title: "12 Weeks",
-      description: "12 Weeks | 2 Live Session Weekly | Assignments & Drills."
+      description: "12 Weeks | 1 Live Session Weekly | Assignments & Drills."
     },
     {
       id: 2,

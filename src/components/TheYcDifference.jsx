@@ -28,17 +28,15 @@ export default function YCDifference() {
             </div> */}
             <p className="mb-3 sizediff !text-[#ffff00] !font-extrabold">Real Results</p>
             <p className="price-light">
-              Build your digital footprint while you're learning.
-              Work on your own content, communication, and business strategy — not just theory. By the end of the cohort, you’ll have a real online presence, refined communication skills, and a monetizable personal brand.
+You’ll improve how you speak, write, and communicate in real situations — not just in theory. By the end of the cohort, you’ll notice the difference every time you talk, pitch, explain, or present.
             </p>
           </div>
 
           {/* Hands-On Training - card with text first */}
           <div className="custom-border rounded-xl p-5 flex flex-col h-60 sm:h-74">
-            <p className=" mb-3 size-diff !text-[#ffff00] !font-extrabold">Hands-On Training</p>
+            <p className=" mb-3 size-diff !text-[#ffff00] !font-extrabold">Hands-On Communication Training</p>
             <p className="mb-4 price-light">
-              Create 100+ videos, emails, and scripts — with expert feedback.
-              From voice drills to camera presence, cold emails to content hooks — every skill is built through projects, tasks, and weekly assignments. No fluff. Just execution.
+              Each week, you’ll complete practical tasks — voice drills, camera work, negotiation roleplays, and live feedback. Over 100 reps across formats, designed to build skill through action.
             </p>
             {/* <div className="bg-gray-800 rounded-lg flex-1 flex items-center justify-center">
               <div className="text-gray-500 text-sm">Image Placeholder</div>
@@ -50,20 +48,18 @@ export default function YCDifference() {
             {/* <div className="bg-gray-800 rounded-lg mb-4 flex-1 flex items-center justify-center">
               <div className="text-gray-500 text-sm">Image Placeholder</div>
             </div> */}
-            <p className=" mb-3 size-diff !text-[#ffff00] !font-extrabold">Work With Real Channels</p>
+            <p className=" mb-3 size-diff !text-[#ffff00] !font-extrabold">Learn From Real Leaders</p>
             <p className="price-light">
-              Work alongside our team managing channels with millions of views.
-              Get behind-the-scenes access to how high-performing content is planned, shot, edited, and scaled — and apply those systems to your own page.
+             Throughout the cohort, you’ll learn directly from founders, operators, and communication experts. Guest sessions include top entrepreneurs and business leaders sharing how they use communication every day.
 
             </p>
           </div>
 
           {/* Business accurate - card with text first */}
           <div className="custom-border rounded-xl p-5 flex flex-col h-60 sm:h-74">
-            <p className="mb-3 size-diff !text-[#ffff00] !font-extrabold">Business by Builders</p>
+            <p className="mb-3 size-diff !text-[#ffff00] !font-extrabold">Built by Practitioners</p>
             <p className="mb-4 price-light">
-              Learn business from real founders — not theorists.
-              Understand client acquisition, offer positioning, and how to close deals. Execute projects like a real business owner, not a passive learner.
+              The systems taught in YC come from real business experience — not classrooms. You’ll learn what works in sales calls, hiring interviews, team meetings, and public speaking — from people who do it themselves.
             </p>
             {/* <div className="bg-gray-800 rounded-lg flex-1 flex items-center justify-center">
               <div className="text-gray-500 text-sm">Image Placeholder</div>
@@ -75,18 +71,17 @@ export default function YCDifference() {
             {/* <div className="bg-gray-800 rounded-lg flex-1 flex items-center justify-center">
               <div className="text-gray-500 text-sm">Image Placeholder</div>
             </div> */}
-            <p className="!text-[#ffff00] size-diff !font-extrabold mb-3">The Mindset That Pays</p>
+            <p className="!text-[#ffff00] size-diff !font-extrabold mb-3">Confidence Through Practice</p>
             <p className="price-light text-gray-300 text-sm leading-relaxed mb-4">
-              Confidence, clarity, and composure — practiced, not preached.
-              From rejection training to cold pitching, from high-stakes speaking to personal branding — every week you’ll sharpen a mindset that commands respect and earns revenue.
+              You’ll build a more confident and clear version of yourself — not by theory, but through repetition, feedback, and real-world speaking tasks. One step at a time, week by week.
             </p>
           </div>
 
           {/* Community - card with text first */}
           <div className="custom-border rounded-xl p-5 flex flex-col h-60 sm:h-74">
-            <p className="!text-[#ffff00] size-diff !font-extrabold mb-3">Community</p>
+            <p className="!text-[#ffff00] size-diff !font-extrabold mb-3">Supportive Peer Group</p>
             <p className="price-light text-gray-300 text-sm leading-relaxed mb-4">
-              Access India's Best Network Of Communicators And Founders.
+             You’ll be part of a small group of ambitious, sharp people — each improving their communication alongside you. The environment is encouraging, focused, and designed for growth.
             </p>
             {/* <div className="bg-gray-800 rounded-lg flex-1 flex items-center justify-center">
               <div className="price-light text-gray-500 text-sm">Image Placeholder</div>
