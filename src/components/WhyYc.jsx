@@ -8,15 +8,15 @@ const benefits = [
     },
     {
         title: "On camera fluency",
-        className: "top-[30.8%] right-[7%] sm:top-[28%] sm:right-[4.4%]"
+        className: "top-[34%] right-[7%] sm:top-[28%] sm:right-[4.4%]"
     },
     {
         title: "Public Speaking",
-        className: "top-[50%] right-[3.2%] sm:top-[61%] sm:right-[-3%]"
+        className: "top-[53.4%] right-[3.2%] sm:top-[60%] sm:right-[-3%]"
     },
     {
         title: "Confidence",
-        className: "bottom-[14%] right-[10%] sm:bottom-[-11.8%] sm:right-[4.5%]"
+        className: "bottom-[19.2%] right-[10%] sm:bottom-[-9.8%] sm:right-[4.5%]"
     },
     {
         title: "Build bussiness 1% entrepreneur",
