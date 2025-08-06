@@ -46,7 +46,7 @@ const BonusTracks = () => {
             <div className="text-center bg-transparent backdrop-blur-md border border-gray-600 rounded-xl p-6 sm:p-4 ">
 
                 <h2 className="mb-6 text-[#fefe00]">
-                    Bonus Class (Chosen By You)
+                    Bonus Class
                 </h2>
 
                 <p className="mb-8">
@@ -55,26 +55,26 @@ const BonusTracks = () => {
 
                 <div className='flex flex-col sm:flex-row'>
                     <ul className="text-left text-white flex justify-center items-center flex-col space-y-4 mb-8  list-inside max-w-3xl mx-auto gap-4">
-                        <li className='flex !text-[18px] items-center gap-2  border border-[#fefe00] rounded-[8px] w-[280px] p-4'>
+                        <li className='flex !text-[18px] items-center gap-2  border border-[#fefe00] rounded-[8px] w-[320px] p-4'>
                             <span className="text-yellow-400">
                                 <svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.25 8.7498L11.25 23.7498L4.375 16.8748L6.1375 15.1123L11.25 20.2123L24.4875 6.9873L26.25 8.7498Z" fill="#FEFE00" />
                                 </svg>
                             </span>Sales & Business
                         </li>
-                        <li className='flex !text-[18px] items-center gap-2 border border-[#fefe00] rounded-[8px] w-[280px] p-4'><span className="text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li className='flex !text-[18px] items-center gap-2 border border-[#fefe00] rounded-[8px] w-[320px] p-4'><span className="text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M26.25 8.7498L11.25 23.7498L4.375 16.8748L6.1375 15.1123L11.25 20.2123L24.4875 6.9873L26.25 8.7498Z" fill="#FEFE00" />
                         </svg>
                         </span>Content Systems & Strategy</li>
                     </ul>
                     <ul className="text-left text-white flex justify-center items-center flex-col space-y-4 mb-8  list-inside max-w-3xl mx-auto gap-4">
 
-                        <li className='flex !text-[18px] items-center gap-2 border border-[#fefe00] rounded-[8px] w-[280px] p-4'><span className="text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li className='flex !text-[18px] items-center gap-2 border border-[#fefe00] rounded-[8px] w-[320px] p-4'><span className="text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M26.25 8.7498L11.25 23.7498L4.375 16.8748L6.1375 15.1123L11.25 20.2123L24.4875 6.9873L26.25 8.7498Z" fill="#FEFE00" />
                         </svg>
                         </span>Monetization Frameworks
                         </li>
-                        <li className='flex !text-[18px] items-center gap-2 border border-[#fefe00] rounded-[8px] w-[280px] p-4'><span className="text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li className='flex !text-[18px] items-center gap-2 border border-[#fefe00] rounded-[8px] w-[320px] p-4'><span className="text-yellow-400"><svg className="checksvg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M26.25 8.7498L11.25 23.7498L4.375 16.8748L6.1375 15.1123L11.25 20.2123L24.4875 6.9873L26.25 8.7498Z" fill="#FEFE00" />
                         </svg>
                         </span>Personal Branding
