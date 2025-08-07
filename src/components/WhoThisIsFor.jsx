@@ -91,7 +91,7 @@ export default function WhoThisIsFor() {
 
             </div>
             
-            <h2 className="relative text-[#FFFF00] mb-2 !z-10">
+            <h2 className="relative text-[#FFFF00] mb-1 !z-10">
                 Who This Is For?
             </h2>
             <p className=" relative !text-[#ABABAB] max-w-xl mx-auto mb-8 sm:mb-16 z-10">
