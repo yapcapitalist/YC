@@ -10,7 +10,7 @@ const benefits = [
     },
     {
         title: "On camera fluency",
-        className: "top-[27.6%] right-[4%] sm:top-[28%] sm:right-[5.2%]"
+        className: "top-[27.6%] right-[4%] sm:top-[27%] sm:right-[5.2%]"
     },
     {
         title: "Public Speaking",
@@ -18,7 +18,7 @@ const benefits = [
     },
     {
         title: "Confidence",
-        className: "bottom-[26.8%] right-[2.8%] sm:bottom-[-2.8%] sm:right-[3.6%]"
+        className: "bottom-[26.8%] right-[1.8%] sm:bottom-[-2.8%] sm:right-[3.6%]"
     },
     {
         title: "Articulate Mind",
@@ -26,7 +26,7 @@ const benefits = [
     },
     {
         title: "1% entrepreneur",
-        className: "bottom-[27%] left-[20%] -translate-x-1/2 sm:bottom-[-2.8%] sm:left-[19.4%]"
+        className: "bottom-[27%] left-[20%] -translate-x-1/2 sm:bottom-[-1.8%] sm:left-[19.4%]"
     },
     {
         title: "Command respect",
@@ -34,7 +34,7 @@ const benefits = [
     },
     {
         title: "Wins rooms",
-        className: "top-[27.6%] left-[4%] sm:top-[28%] sm:left-[6.2%]"
+        className: "top-[27.6%] left-[4%] sm:top-[27%] sm:left-[6.2%]"
     },
 ];
 
