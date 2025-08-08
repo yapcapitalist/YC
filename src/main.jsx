@@ -23,6 +23,7 @@ import ApplicationForm from './components/Question.jsx';
 import TermsandCondition from './components/TermsandCondition.jsx';
 import SocialLinks from './components/Social.jsx';
 import BonusTracks from './components/BonusTracks.jsx';
+import Webinar from './components/webinar.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -59,6 +60,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/apply" element={<Apply />} />
         <Route path="/application-form" element={<ApplicationForm />} />
         <Route path='/termsandconditions' element={<TermsandCondition/>}/>
+        <Route path='/webinar' element={<Webinar/>}/>
       </Routes>
     </BrowserRouter>
   </StrictMode>
