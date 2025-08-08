@@ -85,7 +85,7 @@ export default function YCForm() {
                 consent: formData.consent,
             };
 
-            const sheetResponse = fetch("https://script.google.com/macros/s/AKfycbylgr4S4vxBRVwkCkzLuIaGmrMA1OwPKGYdGbuw-9rBefmWi9Wngk8BIqe9TFG7xaQMEg/exec?action=done", {
+            const sheetResponse = fetch("https://script.google.com/macros/s/AKfycbwRq8-4svkvmizJogeTRAyXBQUVjZJzkNLjtugtifQkD-0k66zNUoSWghUg523ZaAvY/exec?action=done", {
                 method: "POST",
                 body: JSON.stringify(sheetData),
                 redirect: "follow"
