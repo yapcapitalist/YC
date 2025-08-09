@@ -15,11 +15,11 @@ const Webinar = () => {
         <div>
             <StickyHeader />
             <WebHero />
-            <Curriculum />
+            <Curriculum/>
             <BonusTracks/>
             <YCForm/>
-            <WhoThisIsFor />
-            <StartCreatorCareer />
+            <WhoThisIsFor/>
+            <StartCreatorCareer/>
             <FAQSection/>
             <Footer/>
         </div>
