@@ -1,31 +1,27 @@
 import React from 'react'
-// import WebHero from './WebinarHero.jsx'
-// import StickyHeader from './Head.jsx';
-// import WhoThisIsFor from './WhoThisIsFor.jsx';
-// import Curriculum from './WebCurriculum.jsx';
-// import StartCreatorCareer from './ReadytoStart.jsx';
-// import StickyHeader from './Head.jsx';
-// import Footer from './Footer.jsx';
-// import BonusTracks from './BonusTracks.jsx';
-// import FAQSection from './Faq.jsx';
-// import YCForm from './WebinarForm.jsx';
+import WebHero from './WebinarHero.jsx'
+import WhoThisIsFor from './WhoThisIsFor.jsx';
+import Curriculum from './WebCurriculum.jsx';
+import StartCreatorCareer from './ReadytoStart.jsx';
+import StickyHeader from './Head.jsx';
+import Footer from './Footer.jsx';
+import BonusTracks from './BonusTracks.jsx';
+import FAQSection from './Faq.jsx';
+import YCForm from './WebinarForm.jsx';
 
 
 const Webinar = () => {
     return (
         <div>
-            <div className='webinar'>
-                this is important comment
-            </div>
-            {/* <StickyHeader />
-            <WebHero /> */}
-            {/* <Curriculum/>
+            <StickyHeader />
+            <WebHero />
+            <Curriculum/>
             <BonusTracks/>
             <YCForm/>
             <WhoThisIsFor/>
             <StartCreatorCareer/>
             <FAQSection/>
-            <Footer/> */}
+            <Footer/>
         </div>
     )
 }
