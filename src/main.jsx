@@ -23,7 +23,7 @@ import ApplicationForm from './components/Question.jsx';
 import TermsandCondition from './components/TermsandCondition.jsx';
 import SocialLinks from './components/Social.jsx';
 import BonusTracks from './components/BonusTracks.jsx';
-import Webinar from './components/webinar.jsx';
+import Webinar from './components/Webinar.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
