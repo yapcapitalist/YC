@@ -123,7 +123,7 @@ const WhyChooseUs = () => {
           <div className="flex flex-col gap-y-4 sm:gap-y-12 sm:gap-y-38 items-center lg:items-end">
             {items.slice(0, 2).map((item, idx) => (
               <div key={idx} className="bg-gradient-to-br from-[#FEFE00] to-[#464600] p-[1px] rounded-[10px] w-full max-w-[106px] sm:max-w-[292px]" >
-                <div className="bg-[#131313] flex items-center rounded-[9px] p-1 sm:p-4">
+                <div className="bg-black flex items-center rounded-[9px] p-1 sm:p-4">
                   <div className="rounded-full border-1 sm:border-2 border-[#FEFE00] p-[4px] sm:p-[10px] mr-1 sm:mr-4">
                     <svg width="12" height="12" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -204,7 +204,7 @@ const WhyChooseUs = () => {
           <div className="flex flex-col gap-y-4 sm:gap-y-12 sm:gap-y-38 items-center lg:items-start">
             {items.slice(2).map((item, idx) => (
               <div key={idx} className="bg-gradient-to-br from-[#FEFE00] to-[#464600] p-[1px] rounded-[10px] w-full max-w-[106px] sm:max-w-[292px]">
-                <div className="bg-[#131013] flex items-center rounded-[9px] p-1 sm:p-4">
+                <div className="bg-black flex items-center rounded-[9px] p-1 sm:p-4">
                   <div className="rounded-full border-1 sm:border-2 border-[#FEFE00] p-[4px] sm:p-[10px] mr-1 sm:mr-4">
                     <svg width="12" height="12" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path

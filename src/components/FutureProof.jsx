@@ -23,7 +23,7 @@ export default function AiProofHero() {
                     </div>
                 </div>
 
-                <div className="bg-transparent rounded-xl mb-6 sm:mb-12 backdrop-blur-md border border-gray-600 p-4 sm:p-8">
+                <div className="bg-transparent rounded-xl mb-6 sm:mb-12 backdrop-blur border border-gray-600 p-4 sm:p-8">
                     {/* Key Message */}
                     <div className="text-center mb-12 md:mb-16">
                         <div className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">

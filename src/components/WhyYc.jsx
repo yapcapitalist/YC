@@ -105,7 +105,7 @@ const WhyYc = () => {
                 {benefits.map((item, idx) => (
                     <div key={idx} className={`absolute ${item.className} w-[116px] sm:w-[348px]`} >
                         <div className="bg-gradient-to-br from-[#FEFE00] to-[#464600] p-[1px] rounded-[4px] sm:rounded-[10px]">
-                            <div className="bg-[#131013] flex items-center rounded-[4px] sm:rounded-[9px] px-1 py-1 sm:px-5 sm:py-4">
+                            <div className="bg-black flex items-center rounded-[4px] sm:rounded-[9px] px-1 py-1 sm:px-5 sm:py-4">
                                 <div className="rounded-[8px] sm:rounded-full border-1 sm:border-2 border-[#FEFE00] p-[2px] sm:p-[10px] mr-1 sm:mr-4">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
