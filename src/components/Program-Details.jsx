@@ -44,7 +44,7 @@ useEffect(() => {
             <div className="relative flex flex-col sm:flex-row gap-6 z-1 max-w-6xl mx-auto">
                 <div className="flex flex-col w-[100%] sm:w-[50%] gap-6">
                     {/* Left Box */}
-                    <div className="bg-[#131012] border border-gray-600 rounded-xl p-4 sm:px-6 sm:py-6 sm:pb-16 sm:h-[452px]">
+                    <div className="bg-black backdrop-blur-md border border-gray-600 rounded-xl p-4 sm:px-6 sm:py-6 sm:pb-16 sm:h-[452px]">
                         <p className="!text-[#fefe00] font-small mb-4 !font-bold">Your Next Level Starts Here</p>
                         <ul className="space-y-2 sm:space-y-4 text-gray-200">
                             <li className="flex items-start gap-2">
@@ -107,7 +107,7 @@ useEffect(() => {
 
                 {/* Payment Options */}
                 <div className=" flex flex-col w-[100%] sm:w-[50%] space-y-6" id="program-details">
-                    <div className="bg-[#131012] border border-gray-600 rounded-xl p-5 flex flex-col h-auto sm:h-[452px]">
+                    <div className="bg-black backdrop-blur-md border border-gray-600 rounded-xl p-5 flex flex-col h-auto sm:h-[452px]">
                         <p className="!font-bold font-small !text-[#fefe00] mb-4">INTERESTED?</p>
                         <span className="spannum text-gray-300 mb-4">
                             We Offer This Cohort Only 20 Members And Every Application Is Assessed And Individually Handpicked Based On Our Internal Criteria.
@@ -135,14 +135,14 @@ useEffect(() => {
 
                 </div>
             </div>
-            <div className=" relative grid bg-[#131012] md:grid-cols-2 gap-6 p-5 border border-gray-600 rounded-xl h-auto sm:h-[158px] z-10 w-full  max-w-6xl mx-auto mt-8">
-                <div className="bg-black flex flex-col gap-2 sm:gap-0 rounded-xl p-6 sm:p-0 h-full justify-center text-center">
+            <div className=" relative grid bg-transparent backdrop-blur-md md:grid-cols-2 gap-6 p-5 border border-gray-600 rounded-xl h-auto sm:h-[158px] z-10 w-full  max-w-6xl mx-auto mt-8">
+                <div className="bg-black border border-gray-600 flex flex-col gap-2 sm:gap-0 rounded-xl p-6 sm:p-0 h-full justify-center text-center">
                     <span className="price-light text-sm !font-bold sm:!text-base mb-2">PAY UPFRONT</span>
                     <span className="price-bold text-3xl font-bold !text-[#fefe00] ">₹69,000</span>
                     <span className="price-light text-gray-400 mt-1 text-sm">₹58,474 + 18% GST Via Razorpay</span>
                 </div>
 
-                <div className="bg-black flex flex-col rounded-xl gap-2 sm:gap-0 p-6 sm:p-0 h-full justify-center text-center">
+                <div className="bg-black flex border border-gray-600 flex-col rounded-xl gap-2 sm:gap-0 p-6 sm:p-0 h-full justify-center text-center">
                     <span className="price-light text-sm !font-bold sm:!text-base mb-2">PAY VIA STRIPE</span>
                     <span className="price-bold text-3xl font-bold !text-[#fefe00] ">$800</span>
                     <span className="price-light text-gray-400 mt-1 text-sm">For International Payments</span>
