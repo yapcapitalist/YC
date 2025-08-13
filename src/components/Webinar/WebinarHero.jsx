@@ -36,7 +36,7 @@ export default function WebHero() {
         {/* Down arrow with sequential brightening effect */}
         <div className="mt-6 flex justify-center items-center"
           onClick={() => {
-            const el = document.getElementById("program-details");
+            const el = document.getElementById("webform");
             if (el) el.scrollIntoView({ behavior: "smooth" });
           }}>
           <svg class="homesvg" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">

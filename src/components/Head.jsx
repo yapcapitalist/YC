@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import yclogo from '../assets/YAAP_CAPITAL.svg';
 import GradientButton from "./ui/GradientButton";
 
 export default function StickyHeader() {
+
+  const {pathname} = useLocation()
+
+  const pageLocation = pathname==='/webinar'
+
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -22,13 +28,18 @@ export default function StickyHeader() {
         {/* Logo */}
         <div
           className={`transition-all duration-300 ${scrolled
-              ? "opacity-100 -translate-y-4 pointer-events-none mt-4"
-              : "opacity-100 translate-y-0 mt-4"
+            ? "opacity-100 -translate-y-4 pointer-events-none mt-4"
+            : "opacity-100 translate-y-0 mt-4"
             }`}
         >
-          <div className="w-8 sm:w-11">
-            <img src={yclogo} alt="Logo" className="w-full h-auto" />
-          </div>
+          <Link to="/">
+
+            <div className="w-8 sm:w-11">
+              <img src={yclogo} alt="Logo" className="w-full h-auto" />
+            </div>
+
+          </Link>
+
         </div>
 
         {/* Button */}
@@ -38,7 +49,9 @@ export default function StickyHeader() {
             if (el) el.scrollIntoView({ behavior: "smooth" });
           }}
         >
-          JOIN WAITLIST
+
+          {pageLocation ? 'JOIN WAITLIST':'JOIN WEBINAR'}
+          
         </GradientButton>
       </div>
     </header>

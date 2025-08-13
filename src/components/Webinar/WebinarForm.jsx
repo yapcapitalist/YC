@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import {useRef } from "react";
 import emailjs from '@emailjs/browser';
 // import booksmockup from '../assets/Books.png';
 import dot from "../../assets/Dot Background.svg";
-import GradientButton from "../ui/GradientButton.jsx";
+import GradientButton from "../ui/GradientButton";
 
 
 export default function YCForm() {
@@ -10,7 +11,6 @@ export default function YCForm() {
         name: '',
         phone: '',
         email: '',
-        city: '',
         age: '',
         consent: false
     });
@@ -79,12 +79,11 @@ export default function YCForm() {
                 firstName: formData.name,
                 email: formData.email,
                 message: formData.phone, // Phone is stored as message in original code
-                company: formData.city,
                 jobTitle: formData.age,
                 consent: formData.consent,
             };
 
-            const sheetResponse = fetch("https://script.google.com/macros/s/AKfycbylgr4S4vxBRVwkCkzLuIaGmrMA1OwPKGYdGbuw-9rBefmWi9Wngk8BIqe9TFG7xaQMEg/exec?action=done", {
+            const sheetResponse = fetch("https://script.google.com/macros/s/AKfycbxtpWECr-5Q_ZN4l1jYz2I8ujDTnJcTaOFYq6c5HIcLuc44giQouYD3gFEvEWBR9ObDXw/exec?action=done", {
                 method: "POST",
                 body: JSON.stringify(sheetData),
                 redirect: "follow"
@@ -95,15 +94,14 @@ export default function YCForm() {
                 from_name: formData.name,
                 user_email: formData.email,
                 user_phone: formData.phone,
-                company: formData.city,
                 jobTitle: formData.age,
                 message: "Form submitted via YC site",
             };
 
-            await emailjs.send("service_q0wuesq", "template_g1wxjuj", emailData);
+            await emailjs.send("service_4cnh4n3", "template_bxmxfk3", emailData);
 
             showPopup(
-                "<h2>Form Submitted</h2><p>Please check your promotion and spam folder and move the email to primary inbox. You'll receive your book within the next 2 to 5 minutes</p>",
+                "<h2>Form Submitted</h2><p>Please check your promotion and spam folder and move the email to primary inbox. You'll receive your invite within the next 2 to 5 minutes</p>",
                 "success"
             );
 
@@ -112,7 +110,6 @@ export default function YCForm() {
                 name: '',
                 phone: '',
                 email: '',
-                city: '',
                 age: '',
                 consent: false
             });
@@ -126,7 +123,7 @@ export default function YCForm() {
     };
 
     return (
-        <div className="relative pb-16 sm:pb-[158px] px-4 sm:px-0 overflow-hidden">
+        <div className="relative pb-16 sm:pb-[158px] px-4 sm:px-0 overflow-hidden" id='webform'>
             <div className="absolute grid-svg  top-0 left-[-48px] sm:left-[-320px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>
@@ -172,18 +169,18 @@ export default function YCForm() {
 
                 </div>
                 <h2 className='!text-white text-center pb-8'>Fill out the form and join the webinar for <span className='!text-[#ffff00]'>Free</span></h2>
-                <div className="grid md:grid-cols-2 sm:gap-20 gap-7 items-center max-w-[1600px] mx-auto">
+                <div className="grid sm:gap-20 gap-7 items-center max-w-[1600px] mx-auto">
                     {/* Left - Book Cover */}
 
                     {/* Right - Form */}
                     <div className="">
 
-                        <p className="text-gray-300 mb-6">
+                        <p className="text-center text-gray-300 mb-6">
                             And get a Free  Book which  is dedicated to the communication masters of tomorrow
                         </p>
 
-                        <form onSubmit={handleSubmit} className="space-y-6">
-                            <div className="grid md:grid-cols-1 gap-4">
+                        <form onSubmit={handleSubmit} className="space-y-8">
+                            <div className="grid md:grid-cols-2 gap-8">
                                 <div>
                                     <label htmlFor="name" className="block !text-[#ababab] text-sm font-medium mb-2">
                                         Name*
@@ -218,44 +215,28 @@ export default function YCForm() {
                                     />
                                 </div>
                             </div>
-
-                            {/* Email */}
-                            <div>
-                                <label htmlFor="email" className="block !text-[#ababab] text-sm font-medium mb-2">
-                                    Email*
-                                </label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleInputChange}
-                                    required
-                                    placeholder="Enter your email"
-                                    className="w-full form-background px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
-                                />
-                            </div>
-
-                            {/* City and Age */}
-                            <div className="grid md:grid-cols-2 gap-4">
+                            <div className="grid md:grid-cols-2 gap-8">
+                                {/* Email */}
                                 <div>
-                                    <label htmlFor="city" className="block !text-[#ababab] text-sm font-medium mb-2">
-                                        City*
+                                    <label htmlFor="email" className="block !text-[#ababab] text-sm font-medium mb-2">
+                                        Email*
                                     </label>
                                     <input
-                                        type="text"
-                                        id="city"
-                                        name="city"
-                                        value={formData.city}
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        value={formData.email}
                                         onChange={handleInputChange}
                                         required
-                                        placeholder="Enter your city name"
+                                        placeholder="Enter your email"
                                         className="w-full form-background px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
                                     />
                                 </div>
+
+                                {/* City and Age */}
                                 <div>
                                     <label htmlFor="age" className="block !text-[#ababab] text-sm font-medium mb-2">
-                                        Age*
+                                        What do you do right now?*
                                     </label>
                                     <input
                                         type="text"
@@ -264,7 +245,7 @@ export default function YCForm() {
                                         value={formData.age}
                                         onChange={handleInputChange}
                                         required
-                                        placeholder="Your age"
+                                        placeholder="What do you do right now ?"
                                         className="w-full form-background px-3 py-2  border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white"
                                     />
                                 </div>
@@ -282,25 +263,25 @@ export default function YCForm() {
                                     className="mt-1 w-4 h-4 text-yellow-400 bg-gray-800 border-gray-700 rounded focus:ring-yellow-400"
                                 />
                                 <label htmlFor="consent" className="text-sm text-gray-300">
-                                    I agree to receive the book on my email. We respect your privacy.
+                                    I agree to receive the Invite on my email. We respect your privacy.
                                 </label>
                             </div>
 
                             {/* Submit Button */}
-                            <button
+                            <GradientButton
                                 type="submit"
                                 disabled={isLoading}
 
                                 className="w-full sm:w-auto py-3 !px-24"
                             >
                                 {isLoading ? 'Submitting...' : 'Submit'}
-                            </button>
+                            </GradientButton>
                         </form>
                     </div>
                 </div>
             </div>
 
-            <div className="absolute top-[6px] right-[-6px] sm:top-148 sm:right-20 z-1">
+            <div className="absolute top-[6px] right-[-6px] sm:top-18 sm:right-[-140px] z-1">
                 <svg class="mobsvg" width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.6">
                         <path opacity="0.5" d="M152.425 109.357V108.357H151.425V109.357H152.425ZM147.091 374.492C147.091 377.437 149.479 379.825 152.425 379.825C155.37 379.825 157.758 377.437 157.758 374.492C157.758 371.546 155.37 369.158 152.425 369.158C149.479 369.158 147.091 371.546 147.091 374.492ZM355.991 109.357V108.357H152.425V109.357V110.357H355.991V109.357ZM152.425 109.357H151.425V374.492H152.425H153.425V109.357H152.425Z" fill="url(#paint0_linear_313_3598)" />
@@ -363,7 +344,7 @@ export default function YCForm() {
                         />
                         <GradientButton
                             onClick={closePopup}
-                            className="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded font-medium"
+                            // className="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded font-medium"
                         >
                             Close
                         </GradientButton>

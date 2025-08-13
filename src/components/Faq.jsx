@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import dot from "../assets/Dot Background.svg";
 
 const faqs = [
+    { question: "How do I join the webinar?", answer: "Once you register, you’ll receive a confirmation email with the webinar link. On the day, just click the link a few minutes before the start time—no downloads required" },
+    { question: "Will there be a recording?", answer: "Yes, but only for registered attendees. We’ll send the replay to your email within 24 hours after the session." },
+    { question: "Can I ask questions during the webinar?", answer: "Absolutely. We’ll have a live Q&A at the end, and you can also drop questions in the chat throughout the session." },
+    { question: "Is it really free?", answer: "Yes. This webinar is completely free to attend. Seats are limited, so secure your spot early." },
     { question: "Who is this cohort for?", answer: "This cohort is for ambitious individuals looking to master communication for leadership and influence." },
     { question: "What makes YC different from other public speaking or communication courses?", answer: "YC focuses on real-world leadership communication—not just English or public speaking." },
     { question: "I’m not very confident on camera or in English. Can I still join?", answer: "Absolutely. YC is built to transform your confidence step-by-step." },
@@ -14,8 +18,13 @@ const faqs = [
     { question: "Will I get a certificate after completing YC?", answer: "Yes. You will get an industry recoginised certificate which can also be displayed on your linkedin" }
 ];
 
+
 export default function FAQSection() {
-    const [openIndexes, setOpenIndexes] = useState(Array(faqs.length).fill(false));
+    const currentPage = location.pathname === '/'
+
+    const filteredFaq = currentPage ? faqs.slice(4) : faqs;
+
+    const [openIndexes, setOpenIndexes] = useState(Array(filteredFaq.length).fill(false));
 
     const toggleFAQ = (index) => {
         setOpenIndexes(prev => {
@@ -69,13 +78,12 @@ export default function FAQSection() {
                         </linearGradient>
                     </defs>
                 </svg>
-
             </div>
 
             <div className="relative max-w-6xl mx-auto z-1">
                 <h2 className="text-center pb-12">FAQs</h2>
                 <div className="space-y-6">
-                    {faqs.map((faq, index) => (
+                    {filteredFaq.map((faq, index) => (
                         <div className="!border-b !border-[#494949] m-0" key={index}>
                             <button
                                 onClick={() => toggleFAQ(index)}
