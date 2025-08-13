@@ -179,30 +179,30 @@ export default function Component() {
           <div className=" sm:w-1/2 w-full pr-0 sm:pr-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg border border-white/10">
               <p className="!font-semibold mb-2">MONTH 1</p>
-              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">The Unshakeable Communicator</h2>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Instant Communication Mastery (25 min)</h2>
               <p className="text-gray-400 text-sm mb-4">ESSENTIALS</p>
 
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className=" mr-2">•</span>
-                  <span>Is there enough opportunity in video editing?</span>
+                  <span>Speak on Command – How to deliver clear, confident answers without notes or prep.</span>
                 </li>
                 <li className="flex items-start">
                   <span className=" mr-2">•</span>
-                  <span>Instant Speech Tactics: Speak on command, without notes or prep — with clarity and authority</span>
+                  <span>Tone & Accent Control – Simple drills to sound sharper and reduce mother-tongue influence.</span>
                 </li>
                 <li className="flex items-start">
                   <span className=" mr-2">•</span>
-                  <span>Accent Precision: Reduce unnecessary mother-tongue influence with daily drills</span>
+                  <span>Composure Under Pressure – Verbal Aikido for staying calm in conflict or interruptions.</span>
                 </li>
-                <li className="flex items-start">
+                {/* <li className="flex items-start">
                   <span className=" mr-2">•</span>
                   <span>Tone Command: Calibrate tone, pacing, and volume based on audience psychology</span>
                 </li>
                 <li className="flex items-start">
                   <span className=" mr-2">•</span>
                   <span>Verbal Aikido: Stay composed in pressure, interruptions, or conflict</span>
-                </li>
+                </li> */}
                 {/* <li className="flex items-start">
                   <span className=" mr-2">•</span>
                   <span>Gestures & Body Language That Signal Authority</span>
@@ -229,30 +229,30 @@ export default function Component() {
           <div className="sm:w-1/2 w-full pl-0 sm:pl-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
               <p className="font-semibold mb-2">MONTH 2</p>
-              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Tactical Content Communication</h2>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Content That Captivates (30 min)</h2>
               <p className="mb-4">THE DEVELOPMENT</p>
 
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Insight Structuring: Speak and write like a category expert — structure that elevates status</span>
+                  <span>Structuring Insights Like a Pro – Frameworks that make you sound like an industry authority.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Hook Thinking: Instantly recognize and create high-retention hooks for any idea</span>
+                  <span>Hook Thinking – How to grab and hold attention from the first 5 seconds.  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Camera Leadership: Deliver single-take videos without sounding robotic or scripted</span>
+                  <span>Camera Leadership – Single-take video delivery without sounding robotic.</span>
                 </li>
-                <li className="flex items-start">
+                {/* <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span>Language of Authority: Eliminate filler language, sound sharper and more decisive</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span>Mental Models for Clarity: Frame thoughts like a strategist, not a rambler</span>
-                </li>
+                </li> */}
                 {/* <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span>Vlog & Film Video Frameworks (Personal Story + Offer)</span>
@@ -271,23 +271,23 @@ export default function Component() {
           <div className="sm:w-1/2 w-full pr-0 sm:pr-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
               <p className="font-semibold mb-2">MONTH 3</p>
-              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Performance Communication in Business</h2>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4"> High-Stakes Communication for Business (30 min)</h2>
               <p className="mb-4">MASTERY</p>
 
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Dominating High-Stakes Rooms: Sales, investors, hiring, conflict — lead every situation</span>
+                  <span>Owning the Room – Influence clients, teams, or investors with presence.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Commanding Group Energy: Influence not just individuals but entire rooms or calls</span>
+                  <span>Handling Objections – Tactics to dismantle resistance without sounding defensive.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Objection Destruction: Defuse resistance using calibrated questions and presence</span>
+                  <span>Decision Driving – Using voice, story, and structure to move people to action.</span>
                 </li>
-                <li className="flex items-start">
+                {/* <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span>Positioning as a Premium Provider</span>
                 </li>
@@ -298,7 +298,7 @@ export default function Component() {
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span>Decision Driving: Use voice and narrative to move people to take action</span>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -312,7 +312,7 @@ export default function Component() {
 
       </div>
 
-      <div className="relative z-1 max-w-3xl mx-auto mt-20">
+      {/* <div className="relative z-1 max-w-3xl mx-auto mt-20">
         <div className="flex justify-center mb-10">
           <h2 className="text-[#fefe00] flex items-center gap-2">
            Beyond the Curriculum
@@ -320,7 +320,6 @@ export default function Component() {
         </div>
 
         <div className="space-y-8">
-          {/* Item 1 */}
           <div className="flex items-start gap-4 border-b border-[#fefe00] py-6">
             <div className="currsvg sm:w-[52] sm:h-[52]">
               <img src={discussiionicon} alt="" />
@@ -331,7 +330,6 @@ export default function Component() {
             </div>
           </div>
 
-          {/* Item 2 */}
           <div className="flex items-start gap-4 border-b border-[#fefe00] pb-6">
             <div className="currsvg sm:w-[52] sm:h-[52]">
               <img src={maskicon} alt="" />
@@ -342,7 +340,6 @@ export default function Component() {
             </div>
           </div>
 
-          {/* Item 3 */}
           <div className="flex items-start gap-4 border-b border-[#fefe00] pb-6">
             <div className="currsvg sm:w-[52] sm:h-[52]">
               <img src={trophyicon} alt="" />
@@ -353,7 +350,7 @@ export default function Component() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
     </div>
   )
