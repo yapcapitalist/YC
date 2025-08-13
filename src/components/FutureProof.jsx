@@ -68,9 +68,9 @@ export default function AiProofHero() {
                         <p className="text-xl text-yellow-400 font-semibold">YC will get you there.</p>
                     </div>
 
-                    <div className="pt-8 p-4 sm:p-0 rounded-2xl max-w-2xl mx-auto">
+                    <div className="pt-4 sm:pt-8 p-4 sm:p-0 rounded-2xl max-w-2xl mx-auto">
                         <h3 className="mb-4 text-[#fefe00]">Applications are open.</h3>
-                        <p className="mb-6">Don't wait until AI makes your current skillset obsolete.</p>
+                        <p className="mb-4">Don't wait until AI makes your current skillset obsolete.</p>
 
                         <GradientButton
                             onClick={() => {
