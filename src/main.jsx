@@ -23,7 +23,7 @@ import ApplicationForm from './components/Question.jsx';
 import TermsandCondition from './components/TermsandCondition.jsx';
 import SocialLinks from './components/Social.jsx';
 import BonusTracks from './components/BonusTracks.jsx';
-import Webinar from './components/Webinar.jsx';
+import Webinar from './components/Webinar/Webinar.jsx';
 // import Widget from './components/Widget.jsx';
 import AiProofHero from './components/FutureProof.jsx';
 

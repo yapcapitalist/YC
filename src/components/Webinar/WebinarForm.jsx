@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-import booksmockup from '../assets/Books.png';
-import dot from "../assets/Dot Background.svg";
-import GradientButton from "./ui/GradientButton.jsx";
-
+// import booksmockup from '../assets/Books.png';
+import dot from "../../assets/Dot Background.svg";
+import GradientButton from "../ui/GradientButton.jsx";
 
 
 export default function YCForm() {
@@ -175,13 +174,6 @@ export default function YCForm() {
                 <h2 className='!text-white text-center pb-8'>Fill out the form and join the webinar for <span className='!text-[#ffff00]'>Free</span></h2>
                 <div className="grid md:grid-cols-2 sm:gap-20 gap-7 items-center max-w-[1600px] mx-auto">
                     {/* Left - Book Cover */}
-                    <div className="flex justify-center">
-                        <img
-                            src={booksmockup}
-                            alt="Guide Cover"
-                            className="relative w-full h-auto rounded-lg shadow-8xl z-10"
-                        />
-                    </div>
 
                     {/* Right - Form */}
                     <div className="">

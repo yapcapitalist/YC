@@ -1,7 +1,6 @@
-// import scroll from '../assets/Scroll.svg';
-// import heroBrain from '../assets/hero-brain.svg';
-import dot from "../assets/Dot Background.svg";
-import Illustration from '../assets/Header.png'
+
+import dot from "../../assets/Dot Background.svg";
+import Illustration from '../../assets/Header.png'
 
 
 export default function WebHero() {

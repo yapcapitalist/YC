@@ -1,12 +1,11 @@
 import React from 'react'
 import WebHero from './WebinarHero.jsx'
-import WhoThisIsFor from './WhoThisIsFor.jsx';
+import WhoThisIsFor from '../WhoThisIsFor.jsx';
 import Curriculum from './WebCurriculum.jsx';
-import StartCreatorCareer from './ReadytoStart.jsx';
-import StickyHeader from './Head.jsx';
-import Footer from './Footer.jsx';
-import BonusTracks from './BonusTracks.jsx';
-import FAQSection from './Faq.jsx';
+// import StartCreatorCareer from '../ReadytoStart.jsx';
+import StickyHeader from '../Head.jsx';
+import Footer from '../Footer.jsx';
+import FAQSection from '../Faq.jsx';
 import YCForm from './WebinarForm.jsx';
 
 
@@ -16,10 +15,9 @@ const Webinar = () => {
             <StickyHeader />
             <WebHero />
             <Curriculum/>
-            <BonusTracks/>
             <YCForm/>
             <WhoThisIsFor/>
-            <StartCreatorCareer/>
+            {/* <StartCreatorCareer/> */}
             <FAQSection/>
             <Footer/>
         </div>
