@@ -15,17 +15,14 @@ export default function WebHero() {
       </div>
 
       <div className="max-w-6xl text-center z-10">
-        <h1 className="leading-tight mb-6">What it takes to make money as a video editor?</h1>
+        <h1 className="leading-tight mb-6">Your Technical Skills Won’t Save You in 2025 — But Your Communication Will.</h1>
 
         <p className="px-2 sm:py-0 max-w-3xl mx-auto">
-        Video editors don’t make enough is a myth.
-Our students make anything between 3.6LPA to 30 LPA
-
-
+        Learn the communication systems top entrepreneurs use to win clients, close deals, and dominate their space — even in a noisy market.
         </p>
 
         <p className="text-sm text-white-600 font-semibold mt-2">
-        Join this masterclass to learn what it takes to make as much as the top 1% video editor.
+        Free Live Webinar | Limited Seats
         </p>
 
         

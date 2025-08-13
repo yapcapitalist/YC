@@ -25,7 +25,7 @@ export default function SocialLinks() {
             <div className="absolute top-0 right-[0px] !z-0 w-[140px] sm:w-auto">
               <img src={lines} alt="" width="" height="" />
             </div>
-      <div className="container relative px-4 md:px-6 mx-auto max-w-6xl z-1">
+      <div className="container relative mx-auto max-w-6xl z-1">
         <h2 className="mb-12 tracking-tight text-center">Social Links</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Founder Page Link */}
