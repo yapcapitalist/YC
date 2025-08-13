@@ -167,7 +167,7 @@ export default function Component() {
           className="absolute left-3 sm:left-1/2 transform -translate-x-1/2 dotted-line-container"
           style={{
             top: "2rem",
-            bottom: "24rem",
+            bottom: "32rem",
             width: "2px",
           }}
         >
