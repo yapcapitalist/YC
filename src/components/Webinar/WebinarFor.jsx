@@ -50,7 +50,7 @@ export default function WebinarFor() {
             <div className="absolute grid-svg !w-2/3 top-0 right-[-300px] !z-0">
                 <img src={dot} alt="" width="" height="" />
             </div>
-            <div className="absolute top-[-144px] left-[-20px] sm:top-[-180px] sm:left-[-88px]">
+            <div className="absolute top-0 left-[-20px] sm:top-0 sm:left-[-88px]">
                 <svg class="mobsvg" width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.6">
                         <path opacity="0.5" d="M203.586 109.357V108.357H204.586V109.357H203.586ZM208.919 374.492C208.919 377.437 206.531 379.825 203.586 379.825C200.64 379.825 198.253 377.437 198.253 374.492C198.253 371.546 200.64 369.158 203.586 369.158C206.531 369.158 208.919 371.546 208.919 374.492ZM0.0195465 109.357V108.357H203.586V109.357V110.357H0.0195465V109.357ZM203.586 109.357H204.586V374.492H203.586H202.586V109.357H203.586Z" fill="url(#paint0_linear_326_4023)" />

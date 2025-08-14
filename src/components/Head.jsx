@@ -45,12 +45,14 @@ export default function StickyHeader() {
         {/* Button */}
         <GradientButton
           onClick={() => {
-            const el = document.getElementById("program-details");
+                const targetId = pageLocation ? "webform" : "program-details";
+
+            const el = document.getElementById(targetId);
             if (el) el.scrollIntoView({ behavior: "smooth" });
           }}
         >
 
-          {pageLocation ? 'JOIN WAITLIST':'JOIN WEBINAR'}
+          {pageLocation ? 'JOIN WEBINAR':'JOIN WAITLIST'}
           
         </GradientButton>
       </div>

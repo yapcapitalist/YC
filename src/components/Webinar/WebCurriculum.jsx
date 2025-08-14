@@ -35,21 +35,21 @@ export default function Component() {
     const handleScroll = () => {
       const scrollY = window.scrollY
       const windowHeight = window.innerHeight
-      
+
       // Calculate progress based on center of screen position
       const centerY = scrollY + windowHeight / 2
-      
+
       // Get the line container element position
       const lineElement = document.querySelector('.dotted-line-container')
       if (lineElement) {
         const rect = lineElement.getBoundingClientRect()
         const lineTop = rect.top + scrollY
         const lineHeight = rect.height
-        
+
         // Calculate progress when center of screen passes through the line
         const relativePosition = centerY - lineTop
         const progress = Math.max(0, Math.min(1, relativePosition / lineHeight))
-        
+
         setScrollProgress(progress)
       }
     }
@@ -67,17 +67,16 @@ export default function Component() {
   const generateDots = () => {
     const dots = []
     const totalDots = 50 // Number of dots in the line
-    
+
     for (let i = 0; i < totalDots; i++) {
       const dotProgress = i / (totalDots - 1)
       const isActive = scrollProgress >= dotProgress
-      
+
       dots.push(
         <div
           key={i}
-          className={`w-1 h-1 rounded-full transition-colors duration-300 ${
-            isActive ? 'bg-[#fefe00]' : 'bg-gray-600'
-          }`}
+          className={`w-1 h-1 rounded-full transition-colors duration-300 ${isActive ? 'bg-[#fefe00]' : 'bg-gray-600'
+            }`}
           style={{
             position: 'absolute',
             top: `${dotProgress * 100}%`,
@@ -87,16 +86,16 @@ export default function Component() {
         />
       )
     }
-    
+
     return dots
   }
 
   return (
     <div className="relative text-white min-h-screen pb-16 sm:pb-[158px] px-4 sm:px-4 max-w-[1600px] mx-auto overflow-hidden">
 
-            <div className="absolute grid-svg bottom-[20px] left-[-160px] sm:bottom-[-30px] sm:left-[-298px] !z-0">
-                <img src={dot} alt="" width="" height="" />
-            </div>
+      <div className="absolute grid-svg bottom-[20px] left-[-160px] sm:bottom-[-30px] sm:left-[-298px] !z-0">
+        <img src={dot} alt="" width="" height="" />
+      </div>
 
       <div className="absolute bottom-160 right-26">
         <svg class="mobsvg" width="356" height="380" viewBox="0 0 356 380" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,13 +138,14 @@ export default function Component() {
 
       {/* Header */}
       <div className="text-center mb-10 sm:mb-20">
-        <h2 className="text-3xl font-bold mb-4">What will you learn in 2 hours</h2>
+        <h2 className="text-3xl font-bold mb-4">What will you learn in 90 minutes</h2>
 
         <div className="max-w-2xl mx-auto">
-          <p className="text-xl font-semibold mb-4">The "1%" Method: Built to Elevate You in 12 Weeks</p>
+          <p className="text-xl font-semibold mb-4">The "1%" Method: Built to Elevate You in 90 minutes</p>
           <p className="text-gray-300 text-sm leading-relaxed">
-            We recommend allocating a minimum of <span className="!text[15px] sm:!text[22px] !text-[#fefe00]">15-20 hours </span>per week to create standard work & get the most out of the
-            program experience.
+            We recommend setting aside
+            <span className="!text-[15px] sm:!text-[22px] !text-[#fefe00]"> 90 minutes </span>
+            of focused time to fully engage, take notes, and apply the strategies from this webinar.
           </p>
         </div>
       </div>
@@ -154,7 +154,7 @@ export default function Component() {
         <img src={mainbrain} alt="" />
       </div>
 
-        <div className="absolute left-30 top-[36%] transform -translate-x-1/2 -translate-y-1/2 block sm:hidden">
+      <div className="absolute left-30 top-[36%] transform -translate-x-1/2 -translate-y-1/2 block sm:hidden">
         <img src={halfbrain} alt="" />
       </div>
 
@@ -167,7 +167,7 @@ export default function Component() {
           className="absolute left-3 sm:left-1/2 transform -translate-x-1/2 dotted-line-container"
           style={{
             top: "2rem",
-            bottom: "32rem",
+            bottom: "24rem",
             width: "2px",
           }}
         >
@@ -178,7 +178,7 @@ export default function Component() {
         <div className="flex flex-row-reverse w-fit sm:w-auto sm:flex-row items-start mb-16" ref={sectionRefs[0]}>
           <div className=" sm:w-1/2 w-full pr-0 sm:pr-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg border border-white/10">
-              <p className="!font-semibold mb-2">MONTH 1</p>
+              <p className="!font-semibold mb-2"></p>
               <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Instant Communication Mastery (25 min)</h2>
               <p className="text-gray-400 text-sm mb-4">ESSENTIALS</p>
 
@@ -228,7 +228,7 @@ export default function Component() {
 
           <div className="sm:w-1/2 w-full pl-0 sm:pl-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
-              <p className="font-semibold mb-2">MONTH 2</p>
+              <p className="font-semibold mb-2"></p>
               <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Content That Captivates (30 min)</h2>
               <p className="mb-4">THE DEVELOPMENT</p>
 
@@ -270,7 +270,7 @@ export default function Component() {
         <div className="w-fit sm:w-auto flex flex-row-reverse sm:flex-row items-start" ref={sectionRefs[2]}>
           <div className="sm:w-1/2 w-full pr-0 sm:pr-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
-              <p className="font-semibold mb-2">MONTH 3</p>
+              <p className="font-semibold mb-2"></p>
               <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4"> High-Stakes Communication for Business (30 min)</h2>
               <p className="mb-4">MASTERY</p>
 
