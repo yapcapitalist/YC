@@ -85,7 +85,7 @@ const Widget = ({ apiUrl }) => {
             </div>
 
             {/* Input */}
-            <div className="p-3 border-t border-gray-300 flex items-center gap-2 bg-white/70 backdrop-blur-sm">
+            <div className="p-3 bg-[#2b2b2b] border-t border-gray-300 flex items-center gap-2 backdrop-blur-sm">
               <input
                 className="flex-1 bg-[#1a1a1a] border border-gray-300 rounded-full px-4 py-2"
                 value={input}
