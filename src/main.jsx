@@ -55,7 +55,7 @@ createRoot(document.getElementById('root')).render(
               <AiProofHero />
               <FAQSection />
               <YCContactFooter />
-              <Widget apiUrl="https://chatbot-box.onrender.com"/>
+              <Widget apiUrl="https://chatbot-box.onrender.com/chat"/>
             </>
           }
         />
