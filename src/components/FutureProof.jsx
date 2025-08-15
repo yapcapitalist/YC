@@ -50,12 +50,12 @@ export default function AiProofHero() {
                     </div>
 
                     {/* YC Cohort Section */}
-                    <div className="text-center">
+                    {/* <div className="text-center">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">The YC Cohort exists for this exact reason.</h2>
                         <p className="text-xl text-gray-300 max-w-4xl mx-auto">
                             We'll turn your communication into an asset so sharp, no algorithm can replace it:
                         </p>
-                    </div>
+                    </div> */}
 
                 </div>
 
