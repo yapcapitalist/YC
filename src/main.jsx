@@ -24,7 +24,7 @@ import TermsandCondition from './components/TermsandCondition.jsx';
 import SocialLinks from './components/Social.jsx';
 import BonusTracks from './components/BonusTracks.jsx';
 import Webinar from './components/Webinar/Webinar.jsx';
-// import Widget from './components/Widget.jsx';
+import Widget from './components/Widget.jsx';
 import AiProofHero from './components/FutureProof.jsx';
 
 createRoot(document.getElementById('root')).render(
@@ -55,7 +55,7 @@ createRoot(document.getElementById('root')).render(
               <AiProofHero />
               <FAQSection />
               <YCContactFooter />
-              {/* <Widget apiUrl="http://localhost:3000/chat"/> */}
+              <Widget apiUrl="http://localhost:3000/chat"/>
             </>
           }
         />
