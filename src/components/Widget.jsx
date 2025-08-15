@@ -48,7 +48,7 @@ const Widget = ({ apiUrl }) => {
     <div className="fixed bottom-4 right-4 z-[9999]">
       {/* Toggle Button */}
       <button
-        className="border border-[#fefe00] hover:scale-110 transition-transform text-black p-3 rounded-full shadow-lg flex items-center justify-center"
+        className="border border-[#fefe00] bg-black hover:scale-110 transition-transform text-black p-3 rounded-full shadow-lg flex items-center justify-center"
         onClick={() => setIsOpen(!isOpen)}
       >
         <MessageCircle size={22} strokeWidth={2.5} />
@@ -87,7 +87,7 @@ const Widget = ({ apiUrl }) => {
             {/* Input */}
             <div className="p-3 border-t border-gray-300 flex items-center gap-2 bg-white/70 backdrop-blur-sm">
               <input
-                className="flex-1 bg-[#1a1a1a] border border-gray-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2b2b2b]"
+                className="flex-1 bg-[#1a1a1a] border border-gray-300 rounded-full px-4 py-2"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Type a message..."

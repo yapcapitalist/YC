@@ -36,14 +36,14 @@ createRoot(document.getElementById('root')).render(
           path="/"
           element={
             <>
-             <StickyHeader />
+              <StickyHeader />
               <Hero />
               <WhatIsYc />
               <WhyYc />
               <WhoThisIsFor />
               <WhyChooseUs />
               <Curriculum />
-              <BonusTracks/>
+              <BonusTracks />
               <Extraordinary />
               <FormatStructure />
               <WalkWith />
@@ -51,20 +51,39 @@ createRoot(document.getElementById('root')).render(
               <YCDifference />
               <ProgramDetails />
               <TheManBehindYc />
-              <SocialLinks/>
+              <SocialLinks />
               <AiProofHero />
               <FAQSection />
               <YCContactFooter />
-              <Widget apiUrl="https://chatbot-box.onrender.com/chat"/>
+              <Widget apiUrl="https://chatbot-box.onrender.com/chat" />
             </>
           }
         />
 
         {/* Application Page */}
-        <Route path="/apply" element={<Apply />} />
-        <Route path="/application-form" element={<ApplicationForm />} />
-        <Route path='/termsandconditions' element={<TermsandCondition/>}/>
-        <Route path='/webinar' element={<Webinar/>}/>
+        <Route path="/apply" element={
+          <>
+            <Widget apiUrl="https://chatbot-box.onrender.com/chat" />
+            <Apply />
+          </> } />
+        <Route path="/application-form" element={
+          <>
+            <Widget apiUrl="https://chatbot-box.onrender.com/chat" />
+            <ApplicationForm />
+          </>
+        } />
+        <Route path='/termsandconditions' element={
+          <>
+            <Widget apiUrl="https://chatbot-box.onrender.com/chat" />
+            <TermsandCondition />
+          </>
+        } />
+        <Route path='/webinar' element={
+          <>
+            <Widget apiUrl="https://chatbot-box.onrender.com/chat" />
+            <Webinar />
+          </>
+        } />
       </Routes>
     </BrowserRouter>
   </StrictMode>
