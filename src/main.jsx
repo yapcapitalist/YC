@@ -55,7 +55,7 @@ createRoot(document.getElementById('root')).render(
               <AiProofHero />
               <FAQSection />
               <YCContactFooter />
-              <Widget apiUrl="https://chatbot-box.onrender.com/chat" />
+              <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
             </>
           }
         />
@@ -63,24 +63,24 @@ createRoot(document.getElementById('root')).render(
         {/* Application Page */}
         <Route path="/apply" element={
           <>
-            <Widget apiUrl="https://chatbot-box.onrender.com/chat" />
+            <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
             <Apply />
           </> } />
         <Route path="/application-form" element={
           <>
-            <Widget apiUrl="https://chatbot-box.onrender.com/chat" />
+            <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
             <ApplicationForm />
           </>
         } />
         <Route path='/termsandconditions' element={
           <>
-            <Widget apiUrl="https://chatbot-box.onrender.com/chat" />
+            <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
             <TermsandCondition />
           </>
         } />
         <Route path='/webinar' element={
           <>
-            <Widget apiUrl="https://chatbot-box.onrender.com/chat" />
+            <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
             <Webinar />
           </>
         } />
