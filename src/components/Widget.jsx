@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { MessageCircle } from "lucide-react"; // Lucide icon
+import GradientButton from "./ui/GradientButton";
+
 
 const Widget = ({ apiUrl }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,14 +47,14 @@ const Widget = ({ apiUrl }) => {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 z-[9999]">
+    <div className="fixed bottom-6 right-4 sm:bottom-12 sm:right-8 z-[9999]">
       {/* Toggle Button */}
-      <button
+      <GradientButton
         className="border border-[#fefe00] bg-black hover:scale-110 transition-transform text-black p-3 rounded-full shadow-lg flex items-center justify-center"
         onClick={() => setIsOpen(!isOpen)}
       >
         <MessageCircle size={22} strokeWidth={2.5} />
-      </button>
+      </GradientButton>
 
       {/* Chat Window */}
       <div
