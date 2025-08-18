@@ -10,7 +10,7 @@ import Popup from "./ui/popup";
 const questions = [
     { label: "Your Name", type: "text" },
     { label: "Where did you hear about this YC?", options: ["YouTube", "Twitter", "LinkedIn", "Instagram", "From a friend or colleague", "Other"] },
-    { label: "Your public profile Link (LinkedIn, Twitter etc.)", type: "text" },
+    { label: "Your public profile Link (LinkedIn Link, Twitter etc.)", type: "text" },
     { label: "Which of these describes you best?", options: ["Aspiring Creator", "Working Professional", "Artist", "Freelancer", "Entrepreneur", "Other"] },
     { label: "How many years of work experience do you have?", type: "text" },
     { label: "Tell us more about yourself!", type: "text" },
