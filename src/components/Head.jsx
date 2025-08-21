@@ -45,6 +45,7 @@ export default function StickyHeader() {
         <div className="flex items-center gap-4">
 
         {/* Button */}
+        {pageLocation && (
         <GradientButton
           onClick={() => {
             const targetId = pageLocation ? "webform" : "program-details";
@@ -57,6 +58,7 @@ export default function StickyHeader() {
           {pageLocation ? 'JOIN WEBINAR' : 'JOIN WAITLIST'}
 
         </GradientButton>
+        )}
 
         {!pageLocation && (
           <GradientButton
