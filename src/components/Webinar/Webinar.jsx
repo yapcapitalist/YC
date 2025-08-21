@@ -14,8 +14,8 @@ const Webinar = () => {
         <div>
             <StickyHeader />
             <WebHero />
-            <Curriculum/>
             <YCForm/>
+            <Curriculum/>
             <WebinarFor/>
             {/* <StartCreatorCareer/> */}
             <FAQSection/>

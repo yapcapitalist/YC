@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import yclogo from '../assets/YAAP_CAPITAL.svg';
 import GradientButton from "./ui/GradientButton";
 
 export default function StickyHeader() {
 
   const {pathname} = useLocation()
+  const Navigate = useNavigate();
 
   const pageLocation = pathname==='/webinar'
 
@@ -55,6 +56,18 @@ export default function StickyHeader() {
           {pageLocation ? 'JOIN WEBINAR':'JOIN WAITLIST'}
           
         </GradientButton>
+
+{!pageLocation &&(
+      <GradientButton
+          onClick={() => {
+            Navigate('/webinar')
+          }}
+        >
+
+        'JOIN WEBINAR'
+          
+        </GradientButton>
+        )}
       </div>
     </header>
   );
