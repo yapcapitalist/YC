@@ -5,10 +5,10 @@ import GradientButton from "./ui/GradientButton";
 
 export default function StickyHeader() {
 
-  const {pathname} = useLocation()
+  const { pathname } = useLocation()
   const Navigate = useNavigate();
 
-  const pageLocation = pathname==='/webinar'
+  const pageLocation = pathname === '/webinar'
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -42,32 +42,36 @@ export default function StickyHeader() {
           </Link>
 
         </div>
+        <div className="">
 
         {/* Button */}
         <GradientButton
           onClick={() => {
-                const targetId = pageLocation ? "webform" : "program-details";
+            const targetId = pageLocation ? "webform" : "program-details";
 
             const el = document.getElementById(targetId);
             if (el) el.scrollIntoView({ behavior: "smooth" });
           }}
         >
 
-          {pageLocation ? 'JOIN WEBINAR':'JOIN WAITLIST'}
-          
+          {pageLocation ? 'JOIN WEBINAR' : 'JOIN WAITLIST'}
+
         </GradientButton>
 
-{!pageLocation &&(
-      <GradientButton
-          onClick={() => {
-            Navigate('/webinar')
-          }}
-        >
+        {!pageLocation && (
+          <GradientButton
+            onClick={() => {
+              Navigate('/webinar')
+                  window.scrollTo({ top: 0, behavior: "smooth" });
 
-        'JOIN WEBINAR'
-          
-        </GradientButton>
+            }}
+          >
+
+            JOIN WEBINAR
+
+          </GradientButton>
         )}
+        </div>
       </div>
     </header>
   );
