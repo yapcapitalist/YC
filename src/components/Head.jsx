@@ -64,7 +64,9 @@ export default function StickyHeader() {
           <GradientButton
             onClick={() => {
               Navigate('/webinar')
-                  window.scrollTo({ top: 0, behavior: "smooth" });
+                  const targetId = pageLocation ? "webform" : "program-details";
+            const elwebi = document.getElementById(targetId);
+            if (elwebi) elwebi.scrollIntoView({ behavior: "smooth" });
 
             }}
           >
