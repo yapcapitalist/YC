@@ -38,10 +38,7 @@ export default function StickyHeader() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
         <div
-          className={`transition-all duration-300 ${scrolled
-              ? "opacity-100 -translate-y-4 pointer-events-none mt-4"
-              : "opacity-100 translate-y-0 mt-4"
-            }`}
+          className=""
         >
           <Link to="/">
             <div className="w-8 sm:w-11">
