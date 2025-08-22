@@ -176,7 +176,7 @@ export default function YCForm() {
                     <div className="">
 
                         <p className="text-center text-gray-300 mb-6">
-                            Webinar is at 7th September 2:00 PM IST. Limited Seats Available. Reserve your spot now!
+                            Webinar is at 7th September 2:00 PM IST. Limited seats available, reserve your spot now.
                         </p>
 
                         <form onSubmit={handleSubmit} className="space-y-8 flex justify-center items-center flex-col">
