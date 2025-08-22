@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
-import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import yclogo from '../assets/YAAP_CAPITAL.svg';
 import GradientButton from "./ui/GradientButton";
 
 export default function StickyHeader() {
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
 
-  const { pathname } = useLocation()
-  const Navigate = useNavigate();
-
-  const pageLocation = pathname === '/webinar'
-
+  const pageLocation = pathname === "/webinar";
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -20,6 +18,18 @@ export default function StickyHeader() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // ✅ Scroll to webform ONLY when webinar page loads
+  useEffect(() => {
+    if (pageLocation) {
+      const el = document.getElementById("webform");
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 300); // small delay ensures element is in DOM
+      }
+    }
+  }, [pageLocation]);
+
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all overflow-hidden duration-300 ${scrolled ? "bg-black/80 backdrop-blur-md shadow-md" : "bg-transparent"
@@ -29,52 +39,39 @@ export default function StickyHeader() {
         {/* Logo */}
         <div
           className={`transition-all duration-300 ${scrolled
-            ? "opacity-100 -translate-y-4 pointer-events-none mt-4"
-            : "opacity-100 translate-y-0 mt-4"
+              ? "opacity-100 -translate-y-4 pointer-events-none mt-4"
+              : "opacity-100 translate-y-0 mt-4"
             }`}
         >
           <Link to="/">
-
             <div className="w-8 sm:w-11">
               <img src={yclogo} alt="Logo" className="w-full h-auto" />
             </div>
-
           </Link>
-
         </div>
+
         <div className="flex items-center gap-4">
+          {/* Button */}
+          {pageLocation && (
+            <GradientButton
+              onClick={() => {
+                const el = document.getElementById("webform");
+                if (el) el.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              JOIN WEBINAR
+            </GradientButton>
+          )}
 
-        {/* Button */}
-        {pageLocation && (
-        <GradientButton
-          onClick={() => {
-            const targetId = pageLocation ? "webform" : "program-details";
-
-            const el = document.getElementById(targetId);
-            if (el) el.scrollIntoView({ behavior: "smooth" });
-          }}
-        >
-
-          {pageLocation ? 'JOIN WEBINAR' : 'JOIN WAITLIST'}
-
-        </GradientButton>
-        )}
-
-        {!pageLocation && (
-          <GradientButton
-            onClick={() => {
-              Navigate('/webinar')
-                  const targetId = pageLocation ? "webform" : "program-details";
-            const elwebi = document.getElementById(targetId);
-            if (elwebi) elwebi.scrollIntoView({ behavior: "smooth" });
-
-            }}
-          >
-
-            JOIN WEBINAR
-
-          </GradientButton>
-        )}
+          {!pageLocation && (
+            <GradientButton
+              onClick={() => {
+                navigate("/webinar");
+              }}
+            >
+              JOIN WEBINAR
+            </GradientButton>
+          )}
         </div>
       </div>
     </header>
