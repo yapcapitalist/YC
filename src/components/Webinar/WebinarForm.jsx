@@ -168,7 +168,7 @@ export default function YCForm() {
                     </svg>
 
                 </div> */}
-                <h2 className='!text-white text-center pb-8'>Fill out the form and join the webinar for <span className='!text-[#ffff00]'>Free</span></h2>
+                <h2 className='!text-white text-center pb-8'>Reserve your seat now—entry is free, but seats are limited.</h2>
                 <div className="grid sm:gap-20 gap-7 items-center max-w-[1600px] mx-auto">
                     {/* Left - Book Cover */}
 
