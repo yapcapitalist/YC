@@ -26,7 +26,6 @@ import BonusTracks from './components/BonusTracks.jsx';
 import Webinar from './components/Webinar/Webinar.jsx';
 import Widget from './components/Widget.jsx';
 import AiProofHero from './components/FutureProof.jsx';
-import BulkSender from './components/Webinar/BulkMail.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -85,8 +84,6 @@ createRoot(document.getElementById('root')).render(
             <Webinar />
           </>
         } />
-      <Route path='/bulksend' element={<BulkSender />} />
-
       </Routes>
     </BrowserRouter>
   </StrictMode>
