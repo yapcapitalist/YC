@@ -1,16 +1,17 @@
 import React from "react";
-import contacts from "./contacts.json"; // if kept in src/
+import contacts from "./contacts.json"; 
+import emailjs from '@emailjs/browser';
+
 
 export default function BulkSender() {
   const sendEmail = async (contact) => {
     const payload = {
-      service_id: "your_service_id",
-      template_id: "your_template_id",
-      user_id: "your_public_key",
+      service_id: "service_4cnh4n3",
+      template_id: "template_bxmxfk3",
+      user_id: "0JqlPgikGhhqhh965",
       template_params: {
         user_name: contact.name,
         user_email: contact.email,
-        message: `Hey ${contact.name}, this is a test email from React.`,
       },
     };
 
