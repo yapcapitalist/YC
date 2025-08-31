@@ -26,6 +26,10 @@ import BonusTracks from './components/BonusTracks.jsx';
 import Webinar from './components/Webinar/Webinar.jsx';
 import Widget from './components/Widget.jsx';
 import AiProofHero from './components/FutureProof.jsx';
+import PrivacyPolicy from './components/PrivacyPolicy.jsx';
+import ContactUs from './components/ContactUs.jsx'
+import RefundCancelation from './components/Refund-Cancelation.jsx';
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -65,7 +69,7 @@ createRoot(document.getElementById('root')).render(
           <>
             <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
             <Apply />
-          </> } />
+          </>} />
         <Route path="/application-form" element={
           <>
             <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
@@ -82,6 +86,27 @@ createRoot(document.getElementById('root')).render(
           <>
             <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
             <Webinar />
+          </>
+        } />
+
+        <Route path='/privacy' element={
+          <>
+            <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
+            <PrivacyPolicy />
+          </>
+        } />
+
+        <Route path='/contact' element={
+          <>
+            <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
+            <ContactUs />
+          </>
+        } />
+
+        <Route path='/refund' element={
+          <>
+            <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
+            <RefundCancelation />
           </>
         } />
       </Routes>
