@@ -36,6 +36,9 @@ const Footer = () => {
           >
             @gurmeet__oberoi
           </a>
+          <Link to="/termsandconditions">
+            <p className=''>Terms And Conditions</p>
+          </Link>
 
           <Link to="/privacy">
             <p className=''>Privacy Policy</p>
@@ -48,7 +51,6 @@ const Footer = () => {
           <Link to="/refudandcancelation">
             <p className=''>Refund and Cancelation</p>
           </Link>
-          
         </div>
 
         {/* Center Title */}
