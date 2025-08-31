@@ -15,9 +15,9 @@ const RefundCancelation = () => {
             <h2 className="font-bold !text-[#fefe00] mb-6">Refund and Cancelation</h2>
             <p>We believe in transparent pricing and delivering value.</p>
             <div>
-                <p> <span className='font-bold !text-[#fefe00] mb-4'>1</span>If you are not satisfied after two sessions, we offer a 100% full refund—no questions asked.</p>
-                <p><span className='font-bold !text-[#fefe00] mb-4'>2</span>Refund requests must be submitted in writing within a day of the second session.</p>
-                <p><span className='font-bold !text-[#fefe00] mb-4'>3</span>Beyond this point, refunds are not available, but we’ll do our best to support you with alternatives.</p>
+                <p> <span className='!font-extrabold !text-[#fefe00] mb-4'>1-</span> If you are not satisfied after two sessions, we offer a 100% full refund—no questions asked.</p>
+                <p><span className='!font-bold !text-[#fefe00] mb-4'>2-</span> Refund requests must be submitted in writing within a day of the second session.</p>
+                <p><span className='!font-bold !text-[#fefe00] mb-4'>3-</span> Beyond this point, refunds are not available, but we’ll do our best to support you with alternatives.</p>
             </div>
         </div>
     )
