@@ -103,7 +103,7 @@ createRoot(document.getElementById('root')).render(
           </>
         } />
 
-        <Route path='/refund' element={
+        <Route path='/refundandcancelation' element={
           <>
             <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
             <RefundCancelation />

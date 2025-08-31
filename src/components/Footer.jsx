@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="text-white px-6 md:px-12 pb-8">
 
-        
+
       {/* Main Grid */}
       <div className="max-w-[1600px] mx-auto flex flex-col sm:flex-row justify-center items-center gap-6 pb-12 sm:pb-50 z-0 overflow-hidden">
         {/* Left Contact Info */}
@@ -14,31 +14,41 @@ const Footer = () => {
           <div className="relative w-28 rounded">
             <img src={yclogo} alt="" />
           </div>
-                {/* <div className="relative text-center z-8"> */}
+          {/* <div className="relative text-center z-8"> */}
           <h2 className="pb-0 m-0">
             Contact Us
           </h2>
-      {/* </div> */}
-          <a href="mailto:info@yapcapitalist.com"  className="!text-[18px] mb-2">info@yapcapitalist.com</a>
+          {/* </div> */}
+          <a href="mailto:info@yapcapitalist.com" className="!text-[18px] mb-2">info@yapcapitalist.com</a>
           <a
-                href="https://www.instagram.com/yapcapitalist/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#fefe00] !mb-2 hover:underline font-medium !text-[18px]"
-              >
-                @yapcapitalist
-              </a>
-              <a
-                href="https://www.instagram.com/gurmeet__oberoi/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#fefe00] !mb-2 hover:underline font-medium !text-[18px]"
-              >
-                @gurmeet__oberoi
-              </a>
-            <Link to="/termsandconditions">
-            <p className=''>Terms And Conditions</p>
-            </Link>
+            href="https://www.instagram.com/yapcapitalist/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#fefe00] !mb-2 hover:underline font-medium !text-[18px]"
+          >
+            @yapcapitalist
+          </a>
+          <a
+            href="https://www.instagram.com/gurmeet__oberoi/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#fefe00] !mb-2 hover:underline font-medium !text-[18px]"
+          >
+            @gurmeet__oberoi
+          </a>
+
+          <Link to="/privacy">
+            <p className=''>Privacy Policy</p>
+          </Link>
+
+          <Link to="/contact">
+            <p className=''>Contact Us</p>
+          </Link>
+
+          <Link to="/refudandcancelation">
+            <p className=''>Refund and Cancelation</p>
+          </Link>
+          
         </div>
 
         {/* Center Title */}
