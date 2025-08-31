@@ -48,7 +48,7 @@ const Footer = () => {
             <p className=''>Contact Us</p>
           </Link>
 
-          <Link to="/refudandcancelation">
+          <Link to="/refundandcancelation">
             <p className=''>Refund and Cancelation</p>
           </Link>
         </div>
