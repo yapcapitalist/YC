@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import yclogo from '../assets/YAAP_CAPITAL.svg'
 
 const ContactUs = () => {
     return (
-        <div className='relative pb-12 sm:pb-[158px] px-6 sm:px-4 max-w-[1600px] mx-auto'>
+        <div className='max-w-6xl mx-auto px-4 py-8 text-sm leading-relaxed text-white'>
             <div className="relative  rounded z-2 py-8 max-w-7xl mx-auto">
                 <Link to="/">
                     <div className='w-8 sm:w-11'>
@@ -11,10 +12,10 @@ const ContactUs = () => {
                     </div>
                 </Link>
             </div>
-            <h2>Contact Us</h2>
-            <h4>If you have questions about our policies, or need support, reach out:</h4>
+            <h2 className="font-bold !text-[#fefe00] mb-6">Contact Us</h2>
+            <p>If you have questions about our policies, or need support, reach out:</p>
 
-            <h4> YapCapitalist Cohort</h4>
+            <p className='!text-[#fefe00] mb-6'> YapCapitalist Cohort</p>
             <p> 📧 Email: info@yapcapitalist.com </p>
 
             {/* <p> 📞 Phone: [+91-XXXXXXXXXX] </p> */}
