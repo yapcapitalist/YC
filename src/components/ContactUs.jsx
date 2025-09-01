@@ -16,10 +16,10 @@ const ContactUs = () => {
             <p>If you have questions about our policies, or need support, reach out:</p>
 
             <p className='!text-[#fefe00] mb-6'> YapCapitalist Cohort</p>
-            <p> 📧 Email: info@yapcapitalist.com </p>
-
-            {/* <p> 📞 Phone: [+91-XXXXXXXXXX] </p> */}
-            <p>🌐 Website: www.yapcapitalist.com</p>
+            <p>Email: info@yapcapitalist.com </p>
+            <p>Address: C007, PRAKRUTHI MEADOWS, KASINAGAR, Byatarayanapura,Bengaluru Urban, Karnataka - 560092</p>
+            <p>Phone: +918069640821</p>
+            <p>Website: www.yapcapitalist.com</p>
         </div>
     )
 }
