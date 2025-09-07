@@ -49,7 +49,7 @@ export default function StickyHeader() {
 
         <div className="flex items-center gap-4">
           {/* Button */}
-          {pageLocation && (
+       
             <GradientButton
               onClick={() => {
                 const el = document.getElementById("webform");
@@ -58,9 +58,8 @@ export default function StickyHeader() {
             >
               JOIN WEBINAR
             </GradientButton>
-          )}
 
-          {!pageLocation && (
+          {/* {!pageLocation && (
             <GradientButton
               onClick={() => {
                 navigate("/webinar");
@@ -68,7 +67,7 @@ export default function StickyHeader() {
             >
               JOIN WEBINAR
             </GradientButton>
-          )}
+          )} */}
         </div>
       </div>
     </header>
