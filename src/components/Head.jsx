@@ -49,7 +49,18 @@ export default function StickyHeader() {
 
         <div className="flex items-center gap-4">
           {/* Button */}
-       
+
+          <GradientButton
+            onClick={() => {
+              const el = document.getElementById("program-details");
+              if (el) el.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            JOIN WAITLIST
+          </GradientButton>
+
+          {/* 
+            {pageLocation && (
             <GradientButton
               onClick={() => {
                 const el = document.getElementById("webform");
@@ -57,8 +68,9 @@ export default function StickyHeader() {
               }}
             >
               JOIN WEBINAR
-            </GradientButton>
-
+            </GradientButton> 
+                      )}
+                      */}
           {/* {!pageLocation && (
             <GradientButton
               onClick={() => {
@@ -67,7 +79,7 @@ export default function StickyHeader() {
             >
               JOIN WEBINAR
             </GradientButton>
-          )} */}
+            )} */}
         </div>
       </div>
     </header>
