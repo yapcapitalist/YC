@@ -142,11 +142,11 @@ useEffect(() => {
                     <span className="price-light text-gray-400 mt-1 text-sm">₹58,474 + 18% GST Via Razorpay</span>
                 </div>
 
-                <div className="bg-black flex border border-gray-600 flex-col rounded-xl gap-2 sm:gap-0 p-6 sm:p-0 h-full justify-center text-center">
+                {/* <div className="bg-black flex border border-gray-600 flex-col rounded-xl gap-2 sm:gap-0 p-6 sm:p-0 h-full justify-center text-center">
                     <span className="price-light text-sm !font-bold sm:!text-base mb-2">PAY VIA STRIPE</span>
                     <span className="price-bold text-3xl font-bold !text-[#fefe00] ">$800</span>
                     <span className="price-light text-gray-400 mt-1 text-sm">For International Payments</span>
-                </div>
+                </div> */}
             </div>
         </section>
     );
