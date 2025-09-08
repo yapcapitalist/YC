@@ -135,7 +135,7 @@ useEffect(() => {
 
                 </div>
             </div>
-            <div className=" relative grid bg-transparent backdrop-blur-md md:grid-cols-2 gap-6 p-5 border border-gray-600 rounded-xl h-auto sm:h-[158px] z-10 w-full  max-w-6xl mx-auto mt-8">
+            <div className=" relative grid bg-transparent backdrop-blur-md gap-6 p-5 border border-gray-600 rounded-xl h-auto sm:h-[158px] z-10 w-full  max-w-6xl mx-auto mt-8">
                 <div className="bg-black border border-gray-600 flex flex-col gap-2 sm:gap-0 rounded-xl p-6 sm:p-0 h-full justify-center text-center">
                     <span className="price-light text-sm !font-bold sm:!text-base mb-2">PAY UPFRONT</span>
                     <span className="price-bold text-3xl font-bold !text-[#fefe00] ">₹69,000</span>
