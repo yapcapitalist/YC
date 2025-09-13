@@ -48,10 +48,11 @@ const [phone, setPhone] = useState("");
             setPopupMessage("Please enter a valid email address.");
             return;
         }
-if (!phone || phone.trim().length < 10) {
-    setPopupMessage("Please enter a valid phone number.");
-    return;
-}
+        
+        if (!phone || !/^\d{10}$/.test(phone)) {
+            setPopupMessage("Please enter a valid 10-digit phone number.");
+            return;
+        }
         // Check if all questions are answered
         const unanswered = answers.some((answer, index) => !answer.trim());
         if (unanswered) {
@@ -149,7 +150,7 @@ if (!phone || phone.trim().length < 10) {
                             onClick={() => {
                                 if (!email || !email.includes('@')) {
                                     alert("Please enter a valid email address.");
-                                } else if (!phone || phone.trim().length < 10) {
+                                } else if (!phone || !/^\d{10}$/.test(phone)){
                                     alert("Please enter a valid phone number.");
                                 } else {
                                     setCurrent(0);
