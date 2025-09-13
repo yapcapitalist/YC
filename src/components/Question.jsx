@@ -24,6 +24,7 @@ const questions = [
 export default function ApplicationForm() {
     const [current, setCurrent] = useState(-1); // Start with email collection
     const [popupMessage, setPopupMessage] = useState("");
+const [phone, setPhone] = useState("");
 
     const [answers, setAnswers] = useState(Array(questions.length).fill(""));
     const [email, setEmail] = useState("");
@@ -47,7 +48,10 @@ export default function ApplicationForm() {
             setPopupMessage("Please enter a valid email address.");
             return;
         }
-
+if (!phone || phone.trim().length < 10) {
+    setPopupMessage("Please enter a valid phone number.");
+    return;
+}
         // Check if all questions are answered
         const unanswered = answers.some((answer, index) => !answer.trim());
         if (unanswered) {
@@ -61,13 +65,14 @@ export default function ApplicationForm() {
             // Prepare data for Google Sheets to match your Apps Script expectations
             const formData = {
                 email: email,
+                    phone: phone,
                 answers: answers
             };
 
             console.log("Submitting data:", formData);
 
             // Send to Google Sheets
-            const response = await fetch('https://script.google.com/macros/s/AKfycby-mBdNXDcae4cPBUz9NRiUI9ZCXCfHJn4pmuTgS8ZQ-FKyEAaEaKeOd4EMiLZv53YW7A/exec?action=done', {
+            const response = await fetch('https://script.google.com/macros/s/AKfycbxznuOh2fnPdgiTet2WPH594TP6aFhaiHKNr50mu3AGXZawi96vqyAi0pGwSJ4MdZcFsQ/exec?action=done', {
                 method: 'POST',
                 mode: 'no-cors', // Important for Google Apps Script
                 headers: {
@@ -86,6 +91,7 @@ export default function ApplicationForm() {
             const emailParams = {
                 message: emailFormData,
                 user_email: email,
+                user_phone: phone,
                 to_email: 'your-email@example.com', // Add your recipient email
             };
 
@@ -116,31 +122,44 @@ export default function ApplicationForm() {
     const renderRightSide = () => {
         if (current === -1) {
             return (
-                <div className="">
-                    <div className="w-full max-w-md text-white">
-                        <p className="text-lg mb-6 font-semibold">Your Email <span className="text-[#FFD700]">*</span></p>
-                        <input
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            className="w-full mt-2 p-2 rounded-md bg-transparent border-b border-yellow-600 outline-none text-white placeholder-gray-400"
-                            placeholder="Enter your email"
-                            required
-                        />
+                    <div className="w-full max-w-md text-white space-y-6">
+                        <div>
+                            <p className="text-lg mb-2 font-semibold">Your Email <span className="text-[#FFD700]">*</span></p>
+                            <input
+                                type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                className="w-full mt-2 p-2 rounded-md bg-transparent border-b border-yellow-600 outline-none text-white placeholder-gray-400"
+                                placeholder="Enter your email"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <p className="text-lg mb-2 font-semibold">Your Phone Number <span className="text-[#FFD700]">*</span></p>
+                            <input
+                                type="tel"
+                                value={phone}
+                                onChange={(e) => setPhone(e.target.value)}
+                                className="w-full mt-2 p-2 rounded-md bg-transparent border-b border-yellow-600 outline-none text-white placeholder-gray-400"
+                                placeholder="Enter your phone number"
+                                required
+                            />
+                        </div>
                         <GradientButton
                             onClick={() => {
-                                if (email && email.includes('@')) {
-                                    setCurrent(0);
-                                } else {
+                                if (!email || !email.includes('@')) {
                                     alert("Please enter a valid email address.");
+                                } else if (!phone || phone.trim().length < 10) {
+                                    alert("Please enter a valid phone number.");
+                                } else {
+                                    setCurrent(0);
                                 }
                             }}
-                            className="mt-8 px-5 py-2 border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black transition rounded-md"
+                            className="mt-4 px-5 py-2 border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black transition rounded-md"
                         >
                             Next →
                         </GradientButton>
                     </div>
-                </div>
             );
         }
 
