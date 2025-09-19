@@ -14,12 +14,12 @@ const Webinar = () => {
         <div>
             <StickyHeader />
             <WebHero />
-            <YCForm/>
+            {/* <YCForm/> */}
             <Curriculum/>
-            <WebinarFor/>
+            {/* <WebinarFor/> */}
             {/* <StartCreatorCareer/> */}
-            <FAQSection/>
-            <Footer/>
+            {/* <FAQSection/>
+            <Footer/> */}
         </div>
     )
 }

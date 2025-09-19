@@ -137,16 +137,16 @@ export default function Component() {
       </div>
 
       {/* Header */}
-      <div className="text-center mb-10 sm:mb-20">
-        <h2 className="text-3xl font-bold mb-4">What will you learn in 90 minutes</h2>
+      <div className="text-center mb-10 sm:mb-20 flex flex-col items-center justify-center relative z-10">
+        <h2 className="max-w-6xl text-3xl font-bold mb-4">Master the Core Systems of a High-Performance Agency in Just 90 Minutes</h2>
 
         <div className="max-w-2xl mx-auto">
-          <p className="text-xl font-semibold mb-4">The "1%" Method: Built to Elevate You in 90 minutes</p>
-          <p className="text-gray-300 text-sm leading-relaxed">
+          <p className="text-xl font-semibold mb-4">Discover the strategies, systems, and shortcuts that separate struggling agencies from high-performing ones — no fluff, just proven methods.</p>
+          {/* <p className="text-gray-300 text-sm leading-relaxed">
             We recommend setting aside
             <span className="!text-[15px] sm:!text-[22px] !text-[#fefe00]"> 90 minutes </span>
             of focused time to fully engage, take notes, and apply the strategies from this webinar.
-          </p>
+          </p> */}
         </div>
       </div>
 
@@ -167,7 +167,7 @@ export default function Component() {
           className="absolute left-3 sm:left-1/2 transform -translate-x-1/2 dotted-line-container"
           style={{
             top: "2rem",
-            bottom: "24rem",
+            bottom: "22rem",
             width: "2px",
           }}
         >
@@ -179,27 +179,27 @@ export default function Component() {
           <div className=" sm:w-1/2 w-full pr-0 sm:pr-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg border border-white/10">
               <p className="!font-semibold mb-2"></p>
-              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Instant Communication Mastery (25 min)</h2>
-              <p className="text-gray-400 text-sm mb-4">ESSENTIALS</p>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Agency Foundations (20 min)</h2>
+              <p className="text-gray-400 text-sm mb-4">THE ESSENTIALS</p>
 
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className=" mr-2">•</span>
-                  <span>Speak on Command – How to deliver clear, confident answers without notes or prep.</span>
+                  <span>Lead Generation - 40+ brands a month wanting to work with you.</span>
                 </li>
                 <li className="flex items-start">
                   <span className=" mr-2">•</span>
-                  <span>Tone & Accent Control – Simple drills to sound sharper and reduce mother-tongue influence.</span>
+                  <span>Client Onboarding Flow – A step-by-step system that sets expectations and reduces friction.</span>
                 </li>
                 <li className="flex items-start">
                   <span className=" mr-2">•</span>
-                  <span>Composure Under Pressure – Verbal Aikido for staying calm in conflict or interruptions.</span>
+                  <span>Positioning Framework – How to stand out in a crowded market and attract the right clients.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className=" mr-2">•</span>
+                  <span>Pricing Models That Scale – Retainer, performance-based, and hybrid approaches that maximize profitability.</span>
                 </li>
                 {/* <li className="flex items-start">
-                  <span className=" mr-2">•</span>
-                  <span>Tone Command: Calibrate tone, pacing, and volume based on audience psychology</span>
-                </li>
-                <li className="flex items-start">
                   <span className=" mr-2">•</span>
                   <span>Verbal Aikido: Stay composed in pressure, interruptions, or conflict</span>
                 </li> */}
@@ -229,21 +229,21 @@ export default function Component() {
           <div className="sm:w-1/2 w-full pl-0 sm:pl-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
               <p className="font-semibold mb-2"></p>
-              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Content That Captivates (30 min)</h2>
-              <p className="mb-4">THE DEVELOPMENT</p>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">High-Performance Delivery (25 min)</h2>
+              <p className="mb-4">THE SYSTEM</p>
 
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Structuring Insights Like a Pro – Frameworks that make you sound like an industry authority.</span>
+                  <span>Building SOPs – How to make your agency run without bottlenecks.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Hook Thinking – How to grab and hold attention from the first 5 seconds.  </span>
+                  <span>Accountability Loops – Structures to keep teams and freelancers aligned.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Camera Leadership – Single-take video delivery without sounding robotic.</span>
+                  <span>Quality Control – Ensuring consistent client results without founder burnout.</span>
                 </li>
                 {/* <li className="flex items-start">
                   <span className="mr-2">•</span>
@@ -267,25 +267,25 @@ export default function Component() {
         </div>
 
         {/* Month 3 - Mastery */}
-        <div className="w-fit sm:w-auto flex flex-row-reverse sm:flex-row items-start" ref={sectionRefs[2]}>
+        <div className="w-fit sm:w-auto flex flex-row-reverse sm:flex-row items-start mb-16" ref={sectionRefs[2]}>
           <div className="sm:w-1/2 w-full pr-0 sm:pr-8">
             <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
               <p className="font-semibold mb-2"></p>
-              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4"> High-Stakes Communication for Business (30 min)</h2>
-              <p className="mb-4">MASTERY</p>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4"> Retention & Growth Engine (25 min)</h2>
+              <p className="mb-4">THE GROWTH</p>
 
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Owning the Room – Influence clients, teams, or investors with presence.</span>
+                  <span>Client Communication Rhythm – Reporting and meetings that build trust and reduce churn.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Handling Objections – Tactics to dismantle resistance without sounding defensive.</span>
+                  <span>Upsell Playbook – Turning one-time projects into long-term accounts.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Decision Driving – Using voice, story, and structure to move people to action.</span>
+                  <span>Growth Loops – Simple referral and case study systems to keep new clients coming in.</span>
                 </li>
                 {/* <li className="flex items-start">
                   <span className="mr-2">•</span>
@@ -303,6 +303,7 @@ export default function Component() {
             </div>
           </div>
 
+
           <div className={`flex items-center absolute ml-1 sm:ml-0 left-[-28px] sm:left-[0px] sm:relative justify-center bg-black w-[54px] h-[34px] sm:w-18 sm:h-16  rounded-full border-2 border-white-600 relative z-10 ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`}>
             <Brain className={`w-8 h-6 sm:w-8 sm:h-8  ${activeSection === 2 ? "text-[#fefe00]" : "text-white-400"}`} />
           </div>
@@ -310,47 +311,98 @@ export default function Component() {
           <div className="w-1/2 pl-0 sm:pl-8"></div>
         </div>
 
+        <div className="flex w-fit sm:w-auto items-start mb-16" ref={sectionRefs[1]}>
+          <div className="w-1/2 pr-0 sm:pr-8"></div>
+
+          <div className={`flex items-center ml-1 sm:ml-0 absolute left-[-28px] sm:left-[0px] sm:relative justify-center !bg-black w-[54px] h-[34px] sm:w-18 sm:h-16 rounded-full bg-black/20 backdrop-blur-mdl border-2 border-white-600 relative z-10 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`}>
+            <Brain className={`w-8 h-6 sm:w-8 sm:h-8 ${activeSection === 1 ? "text-[#fefe00]" : "text-white-400"}`} />
+          </div>
+
+          <div className="sm:w-1/2 w-full pl-0 sm:pl-8">
+            <div className="w-[260px] sm:w-auto bg-black/20 border-2 border-[#2a2a2a] backdrop-blur-md p-6 rounded-lg">
+              <p className="font-semibold mb-2"></p>
+              <h2 className="font-bold !text-[#fefe00] !text-[14px] sm:!text-[28px] mb-4">Scaling Beyond You (20 min)</h2>
+              <p className="mb-4">THE FUTURE</p>
+
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>Hiring Your First A-Players – Who to bring in first and how to train them.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>Automation & Tools – Leveraging tech to save hours each week.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>Founder Freedom – Creating an agency that grows even when you step away.</span>
+                </li>
+                {/* <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>Positioning as a Premium Provider</span>
+                </li>
+                <li className="flex items-start">
+                  <span className=" mr-2">•</span>
+                  <span>Framework Delivery: Build mental slides for any topic and deliver without rambling</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>Decision Driving: Use voice and narrative to move people to take action</span>
+                </li> */}
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
-      {/* <div className="relative z-1 max-w-3xl mx-auto mt-20">
+      <div className="relative z-1 max-w-3xl mx-auto mt-20">
         <div className="flex justify-center mb-10">
-          <h2 className="text-[#fefe00] flex items-center gap-2">
-           Beyond the Curriculum
+          <h2 className="text-[#fefe00] flex items-center gap-2 text-center">
+            Your Agency Doesn’t Need More Hustle. It Needs a System.
           </h2>
         </div>
 
         <div className="space-y-8">
           <div className="flex items-start gap-4 border-b border-[#fefe00] py-6">
-            <div className="currsvg sm:w-[52] sm:h-[52]">
+            {/* <div className="currsvg sm:w-[52] sm:h-[52]">
               <img src={discussiionicon} alt="" />
-            </div>
+            </div> */}
             <div>
-              <h4 className="!font-semibold text-lg text-white">Live 1:1 Feedback</h4>
-              <p className="!text-gray-400 text-sm">Personal coaching with mentors who won't let you hide.</p>
+              {/* <h4 className="!font-semibold text-lg text-white">Live 1:1 Feedback</h4> */}
+              <p className="!text-gray-400 text- text-center">In just 90 minutes, you’ll see the exact frameworks high-performing agencies use to win clients, deliver consistently, and scale without burning out.</p>
             </div>
           </div>
 
           <div className="flex items-start gap-4 border-b border-[#fefe00] pb-6">
-            <div className="currsvg sm:w-[52] sm:h-[52]">
+            {/* <div className="currsvg sm:w-[52] sm:h-[52]">
               <img src={maskicon} alt="" />
-            </div>
+            </div> */}
             <div>
-              <h4 className="!font-semibold text-lg text-white">High-Stake Projects</h4>
-              <p className="!text-gray-400 text-sm">Simulate real-world scenarios. Build confidence under pressure.</p>
+              {/* <h4 className="!font-semibold text-lg text-white">High-Stake Projects</h4> */}
+              <p className="!text-gray-400 text-sm text-center">This isn’t another free webinar — it’s a paid, limited-seat session designed for founders who are serious about growth.</p>
             </div>
           </div>
 
-          <div className="flex items-start gap-4 border-b border-[#fefe00] pb-6">
+          {/* <div className="flex items-start gap-4 border-b border-[#fefe00] pb-6">
             <div className="currsvg sm:w-[52] sm:h-[52]">
               <img src={trophyicon} alt="" />
             </div>
             <div>
-              <h4 className="!font-semibold text-lg text-white">Final Showcase</h4>
+              <h4 className="!font-semibold text-lg text-white">Secure your seat now before registrations close.</h4>
               <p className="!text-gray-400 text-sm">Present your skills to elite judges. No scripts. Just you.</p>
             </div>
-          </div>
+          </div> */}
         </div>
-      </div> */}
+
+        <div className="flex justify-center mt-10">
+          <p className="!font-semibold text-lg text-white flex items-center gap-2">
+            Your Agency Doesn’t Need More Hustle. It Needs a System.
+          </p>
+        </div>
+
+      </div>
 
     </div>
   )

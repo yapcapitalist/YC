@@ -47,40 +47,28 @@ export default function StickyHeader() {
           </Link>
         </div>
 
-        <div className="flex items-center gap-4">
-          {/* Button */}
-
-          <GradientButton
-            onClick={() => {
-              const el = document.getElementById("program-details");
-              if (el) el.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            JOIN WAITLIST
-          </GradientButton>
-
-          {/* 
-            {pageLocation && (
-            <GradientButton
-              onClick={() => {
-                const el = document.getElementById("webform");
-                if (el) el.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              JOIN WEBINAR
-            </GradientButton> 
-                      )}
-                      */}
-          {/* {!pageLocation && (
-            <GradientButton
-              onClick={() => {
-                navigate("/webinar");
-              }}
-            >
-              JOIN WEBINAR
-            </GradientButton>
-            )} */}
-        </div>
+<div className="flex items-center gap-4">
+  {pageLocation ? (
+    // Show only on webinar page
+    <GradientButton
+  onClick={() => {
+            window.open("https://pages.razorpay.com/pl_RJ7BNosGN9dF4e/view", "_blank");
+          }}  
+    >
+                RESERVE MY SEAT
+    </GradientButton>
+  ) : (
+    // Show on every other page
+    <GradientButton
+      onClick={() => {
+        const el = document.getElementById("program-details");
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }}
+    >
+      JOIN WAITLIST
+    </GradientButton>
+  )}
+</div>
       </div>
     </header>
   );

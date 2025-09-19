@@ -205,6 +205,10 @@ button:hover{
 }
 
 
+#rzp-root a{
+  color:#000 !important;
+}
+
 @media (max-width:768px) {
 
   h1,
