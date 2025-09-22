@@ -8,34 +8,20 @@ const Footer = () => {
 
 
       {/* Main Grid */}
-      <div className="max-w-[1600px] mx-auto flex flex-col sm:flex-row justify-center items-center gap-6 pb-12 sm:pb-50 z-0 overflow-hidden">
+      <div className="max-w-[1600px] mx-auto flex flex-col sm:flex-row justify-center items-center gap-6  z-0 overflow-hidden">
         {/* Left Contact Info */}
-        <div className="space-y-4 flex  items-center flex-col justify-center items-center sm:items-center  z-2">
+        <div className="space-y-4 flex flex-col sm:flex-row  items-center w-full  justify-between items-center sm:items-center  z-2">
           <div className="relative w-28 rounded">
             <img src={yclogo} alt="" />
           </div>
           {/* <div className="relative text-center z-8"> */}
-          <h2 className="pb-0 m-0">
+          {/* <h2 className="pb-0 m-0">
             Contact Us
-          </h2>
+          </h2> */}
           {/* </div> */}
-          <a href="mailto:info@yapcapitalist.com" className="!text-[18px] mb-2">info@yapcapitalist.com</a>
-          <a
-            href="https://www.instagram.com/yapcapitalist/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#fefe00] !mb-2 hover:underline font-medium !text-[18px]"
-          >
-            @yapcapitalist
-          </a>
-          <a
-            href="https://www.instagram.com/gurmeet__oberoi/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#fefe00] !mb-2 hover:underline font-medium !text-[18px]"
-          >
-            @gurmeet__oberoi
-          </a>
+          <div className='flex gap-4 flex-col sm:flex-row text-center pb-4 sm:pb-0 '>
+          {/* <a href="mailto:info@yapcapitalist.com" className="!text-[18px] mb-2">info@yapcapitalist.com</a> */}
+
           <Link to="/termsandconditions">
             <p className=''>Terms And Conditions</p>
           </Link>
@@ -51,6 +37,7 @@ const Footer = () => {
           <Link to="/refundandcancelation">
             <p className=''>Refund and Cancelation</p>
           </Link>
+          </div>
         </div>
 
         {/* Center Title */}

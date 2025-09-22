@@ -47,7 +47,12 @@ export default function StickyHeader() {
           </Link>
         </div>
 
+
 <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6 text-[28px]">
+          <Link to="/resources">Resources</Link>
+          </div>
+
   {pageLocation ? (
     // Show only on webinar page
     <GradientButton

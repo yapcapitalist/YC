@@ -295,14 +295,14 @@ export default function YCForm() {
                             </div>
 
                             {/* Submit Button */}
-                            <button
+                            <GradientButton
                                 type="submit"
                                 disabled={isLoading}
 
                                 className="w-full sm:w-auto py-3 !px-24"
                             >
                                 {isLoading ? 'Submitting...' : 'Submit'}
-                            </button>
+                            </GradientButton>
                         </form>
                     </div>
                 </div>

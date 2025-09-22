@@ -29,6 +29,7 @@ import AiProofHero from './components/FutureProof.jsx';
 import PrivacyPolicy from './components/PrivacyPolicy.jsx';
 import ContactUs from './components/ContactUs.jsx'
 import RefundCancelation from './components/Refund-Cancelation.jsx';
+import DriveVideoPlayer from './components/Resources.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -51,7 +52,7 @@ createRoot(document.getElementById('root')).render(
               <Extraordinary />
               <FormatStructure />
               <WalkWith />
-              <YCForm />
+              {/* <YCForm /> */}
               <YCDifference />
               <ProgramDetails />
               <TheManBehindYc />
@@ -109,6 +110,15 @@ createRoot(document.getElementById('root')).render(
             <RefundCancelation />
           </>
         } />
+
+         <Route path="/resources" element={ 
+<>
+                      <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
+        <DriveVideoPlayer />
+        </>
+          
+         } />
+     
       </Routes>
     </BrowserRouter>
   </StrictMode>
