@@ -15,7 +15,7 @@ export default function Reshero() {
       </div>
 
       <div className="max-w-6xl text-center z-10">
-        <h1 className="leading-tight mb-6"> 50 Applied | 4 selected</h1>
+        <h1 className="leading-tight mb-6"> 62 Applied | 12 selected</h1>
       </div>
 
     </section>
