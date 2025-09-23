@@ -17,7 +17,7 @@ export default function DriveVideoPlayer() {
 
       <div className="w-full max-w-6xl mx-auto pb-12 sm:pb-[158px] px-6 sm:px-4 ">
         <h2 className="font-bold !text-[#fefe00] mb-12 text-center">
-        Mastering Effective Communication
+         Communication Masterclass
       </h2>
         <iframe
           src={embedUrl}
