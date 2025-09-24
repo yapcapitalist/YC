@@ -63,7 +63,7 @@ export default function StickyHeader() {
           {/* ✅ Resources link white + margin */}
           <Link
             to="/resources"
-            className="text-white mr-4 md:mr-6 text-[28px] font-medium hover:opacity-90"
+            className="text-white mr-4 md:mr-6 text-[18px] font-normal hover:opacity-90"
           >
             Resources
           </Link>
