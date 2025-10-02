@@ -209,6 +209,12 @@ button:hover{
   color:#000 !important;
 }
 
+.master-frame iframe{
+    width: 1018px;
+    height: 571px;
+    border-radius: 16px;
+}
+
 @media (max-width:768px) {
 
   h1,
@@ -324,6 +330,12 @@ footer a{
 
 .stacking-card{
   margin-top: 4px !important;
+}
+
+.master-frame iframe {
+    width: 340px;
+    height: 472px;
+    border-radius: 16px;
 }
 
 }
