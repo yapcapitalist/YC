@@ -30,6 +30,7 @@ import PrivacyPolicy from './components/PrivacyPolicy.jsx';
 import ContactUs from './components/ContactUs.jsx'
 import RefundCancelation from './components/Refund-Cancelation.jsx';
 import DriveVideoPlayer from './components/Resources.jsx';
+import MasterClass from './MasterClass.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -112,11 +113,17 @@ createRoot(document.getElementById('root')).render(
         } />
 
          <Route path="/resources" element={ 
-<>
-                      <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
-        <DriveVideoPlayer />
-        </>
-          
+          <>
+          <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
+          <DriveVideoPlayer />
+          </>
+         } />
+
+          <Route path="/masterclass" element={ 
+            <>
+            <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" />
+            <MasterClass/>
+            </>
          } />
      
       </Routes>
