@@ -2,31 +2,59 @@ import React from "react";
 import StickyHeader from "./Head.jsx";
 import ProgramDetails from './Program-Details.jsx';
 import Footer from "./Footer.jsx";
+import yclogo from '../assets/YAAP_CAPITAL.svg';
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import GradientButton from "./ui/GradientButton";
+
 
 
 export default function Master() {
   const embedUrl = "https://drive.google.com/file/d/1ikvZfoeIYqfQuY8rgHlJnqpRnqohI1Cg/preview";
 
+  const gotoWaitlist = () => {
+    const scrollToTarget = () => {
+      const el = document.getElementById("program-details");
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    };
+
+    scrollToTarget();
+
+  };
+
   return (
     <>
-                          <StickyHeader />
-    
-    <section className="w-full bg-black flex-col flex justify-center items-center py-10 pb-16 sm:pb-[158px] max-w-6xl mx-auto">
-      <h2 className="font-bold !text-[#fefe00] mb-12 text-center">
-        Masterclass </h2>
-      <div className="w-full max-w-5xl aspect-video border-4 border-[#fefe00] rounded-2xl">
-        <iframe
-          src={embedUrl}
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-          className="w-full h-full rounded-2xl shadow-lg border-0"
-        ></iframe>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+        <div>
+          <Link to="/">
+            <div className="w-8 sm:w-11">
+              <img src={yclogo} alt="Logo" className="w-full h-auto" />
+            </div>
+          </Link>
+        </div>
+
+        <div className="flex items-center">
+          <GradientButton onClick={gotoWaitlist}>
+            JOIN WAITLIST
+          </GradientButton>
+        </div>
       </div>
-    </section>
 
-              <ProgramDetails />
+      <section className="w-full bg-black flex-col flex justify-center items-center py-10 pb-16 sm:pb-[158px] px-4 sm:px-0 max-w-6xl mx-auto">
+        <h2 className="font-bold !text-[#fefe00] mb-12 text-center">
+          Masterclass </h2>
+        <div className="w-full max-w-5xl aspect-video border-4 border-[#fefe00] rounded-2xl">
+          <iframe
+            src={embedUrl}
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            className="w-full h-full rounded-2xl shadow-lg border-0"
+          ></iframe>
+        </div>
+      </section>
 
-              <Footer />
+      <ProgramDetails />
+
+      <Footer />
 
     </>
   );
