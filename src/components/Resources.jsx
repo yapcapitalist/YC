@@ -24,7 +24,7 @@ export default function DriveVideoPlayer() {
           width="100%"
           height="480"
           allow="autoplay"
-          className="rounded-xl shadow-lg"
+          className="rounded-xl shadow-lg border-4 border-[#fefe00] rounded-2xl"
         ></iframe>
       </div>
 

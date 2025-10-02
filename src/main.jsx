@@ -30,7 +30,7 @@ import PrivacyPolicy from './components/PrivacyPolicy.jsx';
 import ContactUs from './components/ContactUs.jsx'
 import RefundCancelation from './components/Refund-Cancelation.jsx';
 import DriveVideoPlayer from './components/Resources.jsx';
-import MasterClass from './MasterClass.jsx';
+import MasterClass from './components/MasterClass.jsx';
 
 
 createRoot(document.getElementById('root')).render(
