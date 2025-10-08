@@ -65,7 +65,7 @@ export default function StickyHeader() {
         </div>
 
         {/* Right-side button */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center z-[60]">
+        <div className="absolute sm:relative left-1/2 transform -translate-x-1/2 flex items-center z-[60]">
           {pageLocation ? (
             <GradientButton
               onClick={() =>
@@ -83,7 +83,7 @@ export default function StickyHeader() {
         </div>
 
         <button
-          className="md:hidden text-white !p-0 z-[60]"
+          className="md:hidden text-white !p-0 z-[64]"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -93,7 +93,7 @@ export default function StickyHeader() {
 
       {/* ✅ Full-Screen Slide-In Menu with Smooth Transition */}
 <div
-  className={`fixed top-0 right-0 h-screen bg-black/95 backdrop-blur-md flex flex-col items-start justify-start gap-4 text-white text-2xl font-medium transform transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] z-[999999] px-8 py-20 ${
+  className={`fixed top-0 right-0 h-screen bg-black/95 backdrop-blur-md flex flex-col items-start justify-start gap-4 text-white text-2xl font-medium transform transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] z-[62] px-8 py-20 ${
     menuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
   }`}
   style={{
@@ -104,13 +104,13 @@ export default function StickyHeader() {
   }}
 >
   {/* Close button */}
-  <button
+  {/* <button
     onClick={() => setMenuOpen(false)}
     className="absolute top-6 right-6 text-white hover:text-gray-300 transition"
     aria-label="Close menu"
   >
     <X size={28} />
-  </button>
+  </button> */}
 
   {/* Menu links */}
   <Link
