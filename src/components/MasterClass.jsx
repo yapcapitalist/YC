@@ -23,7 +23,7 @@ export default function Master() {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         <div>
           <Link to="/">
             <div className="w-8 sm:w-11">
@@ -37,7 +37,9 @@ export default function Master() {
             JOIN WAITLIST
           </GradientButton>
         </div>
-      </div>
+      </div> */}
+
+      <StickyHeader/>
 
       <section className="w-full bg-black flex-col flex justify-center items-center py-10 pb-16 sm:pb-[158px] px-4 sm:px-0 max-w-6xl mx-auto">
         <h2 className="font-bold !text-[#fefe00] mb-12 text-center">
