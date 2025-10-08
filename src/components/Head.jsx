@@ -29,6 +29,10 @@ export default function StickyHeader() {
     }
   }, [pageLocation]);
 
+  useEffect(() => {
+  document.body.style.overflow = menuOpen ? "hidden" : "auto";
+}, [menuOpen]);
+
   const gotoWaitlist = () => {
     const scrollToTarget = () => {
       const el = document.getElementById("program-details");
@@ -88,53 +92,44 @@ export default function StickyHeader() {
       </div>
 
       {/* ✅ Full-Screen Slide-In Menu with Smooth Transition */}
-      <div
-        className={`fixed top-0 left-0 h-screen w-full bg-black/95 backdrop-blur-md flex flex-col items-center justify-center gap-10 text-white text-2xl font-medium transform transition-all duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] z-50 ${menuOpen
-            ? "translate-y-0 opacity-100"
-            : "-translate-y-full opacity-0"
-          }`}
-      >
-        <Link
-          to="/resources"
-          onClick={() => setMenuOpen(false)}
-          className="hover:text-yellow-400 transition-colors duration-200"
-        >
-          Resources
-        </Link>
+<div
+  className={`fixed top-0 right-0 h-screen bg-black/95 backdrop-blur-md flex flex-col items-start justify-start gap-4 text-white text-2xl font-medium transform transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] z-[999999] px-8 py-20 ${
+    menuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
+  }`}
+  style={{
+    width: "fit-content",
+    minWidth: "250px",
+    inset: "0 0 0 auto",
+    pointerEvents: menuOpen ? "auto" : "none",
+  }}
+>
+  {/* Close button */}
+  <button
+    onClick={() => setMenuOpen(false)}
+    className="absolute top-6 right-6 text-white hover:text-gray-300 transition"
+    aria-label="Close menu"
+  >
+    <X size={28} />
+  </button>
 
-        {/* {pageLocation ? (
-          <GradientButton
-            onClick={() => {
-              window.open(
-                "https://pages.razorpay.com/pl_RJ7BNosGN9dF4e/view",
-                "_blank"
-              );
-              setMenuOpen(false);
-            }}
-          >
-            RESERVE MY SEAT
-          </GradientButton>
-        ) : (
-          <GradientButton
-            onClick={() => {
-              gotoWaitlist();
-              setMenuOpen(false);
-            }}
-          >
-            JOIN WAITLIST
-          </GradientButton>
-        )} */}
+  {/* Menu links */}
+  <Link
+    to="/resources"
+    onClick={() => setMenuOpen(false)}
+    className="hover:text-[#fefefe] transition-colors duration-200 mt-16 !text-[16px]"
+  >
+    Resources
+  </Link>
 
-        <Link
-          to="/masterclass"
-          onClick={() => setMenuOpen(false)}
-          className="hover:text-yellow-400 transition-colors duration-200"
-        >
-          Masterclass
-        </Link>
+  <Link
+    to="/masterclass"
+    onClick={() => setMenuOpen(false)}
+    className="hover:text-[#fefefe] transition-colors duration-200 !text-[16px]"
+  >
+    Agency Masterclass
+  </Link>
+</div>
 
-
-      </div>
     </header>
   );
 }
