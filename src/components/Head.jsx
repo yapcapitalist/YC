@@ -49,7 +49,7 @@ export default function StickyHeader() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all overflow-hidden duration-300 ${scrolled ? "bg-black/80 backdrop-blur-md shadow-md" : "bg-transparent"
+      className={`fixed top-0 left-0 w-full z-50 transition-all overflow-hidden duration-300 ${scrolled ? "bg-black/80 sm:backdrop-blur-md shadow-md" : "bg-transparent"
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between py-3 relative">
@@ -93,7 +93,7 @@ export default function StickyHeader() {
 
       {/* ✅ Full-Screen Slide-In Menu with Smooth Transition */}
 <div
-  className={`fixed top-0 right-0 h-screen bg-black/95 backdrop-blur-md flex flex-col items-start justify-start gap-4 text-white text-2xl font-medium transform transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] z-[62] px-8 py-20 ${
+  className={`fixed top-0 right-0 h-screen bg-black  flex flex-col items-start justify-start gap-4 text-white text-2xl font-medium transform transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] z-[62] px-8 py-20 ${
     menuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
   }`}
   style={{
