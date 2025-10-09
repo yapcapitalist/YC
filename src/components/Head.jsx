@@ -93,7 +93,7 @@ export default function StickyHeader() {
 
       {/* ✅ Full-Screen Slide-In Menu with Smooth Transition */}
 <div
-  className={`fixed top-0 right-0 h-screen bg-black  flex flex-col items-start justify-start gap-4 text-white text-2xl font-medium transform transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] z-[62] px-8 py-20 ${
+  className={`fixed top-0 right-0 h-screen bg-black flex flex-col items-start justify-start gap-4 text-white text-2xl font-medium transform transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] z-[62] px-8 py-12 ${
     menuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
   }`}
   style={{
@@ -116,7 +116,7 @@ export default function StickyHeader() {
   <Link
     to="/resources"
     onClick={() => setMenuOpen(false)}
-    className="hover:text-[#fefefe] transition-colors duration-200 mt-16 !text-[16px]"
+    className=" text-[#fff] hover:border-[#fff] border-l-4 border-[#ffff00] pl-1 hover:text-[#ffff00] transition-colors duration-200 mt-16 !text-[16px]"
   >
     Resources
   </Link>
@@ -124,7 +124,7 @@ export default function StickyHeader() {
   <Link
     to="/masterclass"
     onClick={() => setMenuOpen(false)}
-    className="hover:text-[#fefefe] transition-colors duration-200 !text-[16px]"
+    className="text-[#fff] hover:border-[#fff] border-l-4 border-[#ffff00] pl-1 hover:text-[#ffff00] transition-colors duration-200 !text-[16px]"
   >
     Agency Masterclass
   </Link>
