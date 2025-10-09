@@ -41,7 +41,7 @@ export default function Master() {
 
       <StickyHeader/>
 
-      <section className="w-full bg-black flex-col flex justify-center items-center py-10 pb-16 sm:pb-[158px] px-4 sm:px-0 max-w-6xl mx-auto">
+      <section className="w-full bg-black flex-col flex justify-center items-center mt-20 py-10 pb-16 sm:pb-[158px] px-4 sm:px-0 max-w-6xl mx-auto">
         <h2 className="font-bold !text-[#fefe00] mb-12 text-center">
          Agency Masterclass </h2>
         <div className="w-full max-w-5xl aspect-video border-4 border-[#fefe00] rounded-2xl master-frame">
