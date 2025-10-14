@@ -87,7 +87,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/webinar' element={
           <>
             {/* <Widget apiUrl="https://chatbot-box-production.up.railway.app/chat" /> */}
-            {/* <Webinar /> */}
+            <Webinar />
           </>
         } />
 
