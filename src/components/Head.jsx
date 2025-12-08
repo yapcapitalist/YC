@@ -65,7 +65,7 @@ export default function StickyHeader() {
         </div>
 
         {/* Right-side button */}
-        <div className="absolute sm:relative sm:left-0 left-1/2 transform -translate-x-1/2 flex items-center z-[60]">
+        <div className="absolute sm:relative sm:left-0 left-1/2 hidden sm:flex items-center z-[60]">
           {pageLocation ? (
             <GradientButton
               onClick={() =>
@@ -78,7 +78,10 @@ export default function StickyHeader() {
               RESERVE MY SEAT
             </GradientButton>
           ) : (
-            <GradientButton onClick={gotoWaitlist}>JOIN WAITLIST</GradientButton>
+            <div>
+                <GradientButton onClick={gotoWaitlist}>JOIN WAITLIST</GradientButton>
+                <GradientButton ><Link to="/resources" > RESOURCES </Link></GradientButton>
+            </div>
           )}
         </div>
 
