@@ -31,6 +31,8 @@ import ContactUs from './components/ContactUs.jsx'
 import RefundCancelation from './components/Refund-Cancelation.jsx';
 import DriveVideoPlayer from './components/Resources.jsx';
 import MasterClass from './components/MasterClass.jsx';
+import Alumni from "./components/alumni/Alumni.jsx";
+
 
 
 createRoot(document.getElementById('root')).render(
@@ -125,7 +127,12 @@ createRoot(document.getElementById('root')).render(
             <MasterClass/>
             </>
          } />
-     
+          <Route path="/alumni" element={ 
+            <>
+              <StickyHeader />
+             <Alumni />
+             </>
+         }/>
       </Routes>
     </BrowserRouter>
   </StrictMode>
