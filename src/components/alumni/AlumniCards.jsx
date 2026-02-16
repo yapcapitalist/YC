@@ -1,9 +1,9 @@
 import React from "react";
 import "./alumni.css";
 
-const AlumniCard = ({ data }) => {
+const AlumniCard = ({ data, onClick }) => {
   return (
-    <div className="alumni-row">
+    <div className="alumni-row" onClick={onClick}>
       {/* LEFT GRID */}
       <div className="alumni-left">
         <div className="grid-item profile">

@@ -8,11 +8,44 @@
   grid-template-columns: 500px 1fr;
   gap: 80px;
   align-items: center;
+  transition: all 0.5s cubic-bezier(0.33, 0.66, 0.66, 1);
+  cursor: pointer;
+  position: relative;
+  padding: 40px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.alumni-row:hover {
+  transform: translateY(-20px) scale(1.02);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 40px 80px rgba(0, 0, 0, 0.4),
+    0 8px 16px rgba(0, 0, 0, 0.25);
 }
 .alumni-fill-available {
   height: -webkit-fill-available;
   width: -moz-available;
 
+}
+
+.grid-item.name {
+  position: relative;
+  background-image: url("/src/assets/Dot%20Background.svg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+}
+
+.grid-item.name h3 {
+  position: relative;
+  z-index: 2;
 }
 
 .alumni-left {
