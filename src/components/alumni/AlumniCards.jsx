@@ -1,43 +1,51 @@
 import React from "react";
+import { Linkedin, Twitter } from "lucide-react";
 import "./alumni.css";
 
 const AlumniCard = ({ data, onClick }) => {
+  const roleLine = [data.title, data.company ? `at ${data.company}` : ""]
+    .filter(Boolean)
+    .join(" ");
+
   return (
-    <div className="alumni-row" onClick={onClick}>
-      {/* LEFT GRID */}
-      <div className="alumni-left">
-        <div className="grid-item profile">
-          <img src={data.profileImage} alt={data.name} />
-        </div>
-
-        <div className="grid-item location">
-          <span>{data.location}</span>
-        </div>
-
-        <div className="grid-item cohort">
-          <span>{data.cohort}</span>
-        </div>
-
-        <div className="grid-item name">
-          <h3>{data.name}</h3>
-        </div>
-{/* 
-        <div className="grid-item level">
-          <span>Level up as a designer</span>
-        </div> */}
-
-        <div className="grid-item company">
-          <img src={data.companyLogo} alt={data.company} />
-          {/* <span>{data.title}</span> */}
-        </div>
+    <article className="alumni-row" onClick={onClick}>
+      <div className="alumni-card-image-wrap">
+        <img className="alumni-card-image" src={data.profileImage} alt={data.name} />
       </div>
 
-      {/* RIGHT CONTENT */}
-      <div className="alumni-right flex flex-col alumni-fill-available justify-between">
-        <h3>{data.headline}</h3>
-        <p>{data.description}</p>
+      <div className="alumni-card-content">
+        <h3 className="alumni-card-name">{data.name}</h3>
+        {roleLine && <p className="alumni-card-role">{roleLine}</p>}
+
+        <div className="alumni-card-socials">
+          {data.twitter && (
+            <a
+              href={data.twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="alumni-card-social-link"
+              onClick={(event) => event.stopPropagation()}
+              aria-label={`${data.name} on Twitter`}
+            >
+              <Twitter size={24} strokeWidth={1.9} />
+            </a>
+          )}
+
+          {data.linkedin && (
+            <a
+              href={data.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="alumni-card-social-link"
+              onClick={(event) => event.stopPropagation()}
+              aria-label={`${data.name} on LinkedIn`}
+            >
+              <Linkedin size={24} strokeWidth={1.9} />
+            </a>
+          )}
+        </div>
       </div>
-    </div>
+    </article>
   );
 };
 
