@@ -106,7 +106,7 @@
 
   .alumni-row {
     min-height: 0;
-    padding: 24px;
+    padding: 21px;
   }
 
   .alumni-card-image-wrap {
@@ -116,10 +116,10 @@
   }
 
   .alumni-card-name {
-    font-size: 27px;
+    font-size: 21px;
   }
 
   .alumni-card-role {
-    font-size: 19px;
+    font-size: 14px;
   }
 }

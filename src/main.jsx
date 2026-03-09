@@ -131,6 +131,7 @@ createRoot(document.getElementById('root')).render(
             <>
               <StickyHeader />
              <Alumni />
+              <YCContactFooter />
              </>
          }/>
       </Routes>
