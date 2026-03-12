@@ -53,7 +53,7 @@ const AlumniModal = ({ data, onClose }) => {
                 </svg>
               </a>
             <a 
-                href={data.graduation} 
+                href={data.certificate} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="social-link certificate"
