@@ -13,7 +13,7 @@ const alumniData = [
     companyLogo: "/alumni/gglogo.jpeg",
     twitter: "https://twitter.com/",
     linkedin: "https://linkedin.com/in/armaanpal/",
-    graduation: "https://cdn.shopify.com/s/files/1/0789/6920/9067/files/Armaan.png?v=1771245942"
+    graduation: "https://cdn.shopify.com/s/files/1/0789/6920/9067/files/Armaan.png?v=1771246445"
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const alumniData = [
     companyLogo: "/alumni/gglogo.jpeg",
     twitter: "https://twitter.com/",
     linkedin: "linkedin.com/in/itsfaisalahmad",
-    certificate: "https://cdn.shopify.com/s/files/1/0789/6920/9067/files/Faisal.png?v=1771245942",
+    certificate: "https://cdn.shopify.com/s/files/1/0789/6920/9067/files/faisal.png?v=1771246445",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const alumniData = [
     companyLogo: "/alumni/gglogo.jpeg",
     twitter: "https://x.com/therealsidd",
     linkedin: "https://linkedin.com/in/therealsidd",
-    certificate: "https://cdn.shopify.com/s/files/1/0789/6920/9067/files/Siddhant.png?v=1771245942",
+    certificate: "https://cdn.shopify.com/s/files/1/0789/6920/9067/files/sidhant.png?v=1771246564",
   },
   // {
   //   id: 4,
