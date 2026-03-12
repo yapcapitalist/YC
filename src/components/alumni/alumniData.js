@@ -13,7 +13,7 @@ const alumniData = [
     companyLogo: "/alumni/gglogo.jpeg",
     twitter: "https://twitter.com/",
     linkedin: "https://linkedin.com/in/armaanpal/",
-    graduation: "https://cdn.shopify.com/s/files/1/0789/6920/9067/files/Armaan.png?v=1771246445"
+    certificate: "https://cdn.shopify.com/s/files/1/0789/6920/9067/files/Armaan.png?v=1771246445"
   },
   {
     id: 2,
