@@ -47,22 +47,22 @@ const alumniData = [
     linkedin: "https://linkedin.com/in/therealsidd",
     certificate: "https://cdn.shopify.com/s/files/1/0789/6920/9067/files/sidhant.png?v=1771246564",
   },
-  // {
-  //   id: 4,
-  //   name: "Pratik Patel",
-  //   location: "Gujarat, India",
-  //   cohort: "Cohort 1",
-  //   title: "Product",
-  //   company: "His own company",
-  //   headline: "Pratik secured a role",
-  //   description:
-  //     "Pratik was a founder before joining the GoGrowth cohort. After the cohort, he secured a role in his company.",
-  //   profileImage: "/alumni/Khushi.jpg",
-  //   companyLogo: "/alumni/gglogo.jpeg",
-  //   twitter: "https://twitter.com/",
-  //   linkedin: "https://linkedin.com/in/",
-  //   certificate: "",
-  // },
+  {
+    id: 4,
+    name: "Inder Sandhu",
+    location: "Bangalore, India",
+    cohort: "Cohort 1",
+    title: "CEO",
+    company: "Beyond One ",
+    headline: "Inder is CEO at Beyond One",
+    description:
+      "CEO at Beyond One | Helping QSR, Café & Restaurant Brands Scale from 3–5 to 20+ Outlets Through Franchise Expansion Systems ",
+    profileImage: "/alumni/Inder.JPG",
+    companyLogo: "",
+    twitter: "https://twitter.com/",
+    linkedin: "https://www.linkedin.com/in/inderpal-singh-3a055331b/?skipRedirect=true",
+    certificate: "https://cdn.shopify.com/s/files/1/0789/6920/9067/files/sidhant.png?v=1771246564",
+  },
 ];
 
 export default alumniData;
