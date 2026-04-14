@@ -36,20 +36,21 @@ h3 {
   color: #fefe00;
   font-weight: 700;
 }
-
 p {
   font-family: 'Satoshi', sans-serif;
   font-size: 1.375rem;
   font-weight: 400;
   color: #ffffff;
 }
-
 span,
 li {
   font-size: 14px;
-
 }
-
+.form-style{
+  z-index: 9;
+    display: block;
+    position: relative;
+}
 h2 span {
   font-size: 2.875rem;
 }

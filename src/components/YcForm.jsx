@@ -190,7 +190,7 @@ export default function YCForm() {
                             This Book is dedicated to the communication masters of tomorrow
                         </p>
 
-                        <form onSubmit={handleSubmit} className="space-y-6">
+                        <form onSubmit={handleSubmit} className="form-style space-y-6">
                             <div className="grid md:grid-cols-1 gap-4">
                                 <div>
                                     <label htmlFor="name" className="block !text-[#ababab] text-sm font-medium mb-2">
